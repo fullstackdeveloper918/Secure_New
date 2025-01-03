@@ -9,10 +9,10 @@ const HeaderMenus = () => {
     <ul>
       {menu_data.map((menu) => (
         <li key={menu.id} className="has-dropdown">
-          <Link href={menu.link}>{menu.title}</Link>
+          <Link href="#">{menu.title}</Link>
           {menu.home_menus ? (
             <div className="tp-submenu submenu tp-mega-menu">
-              <div className="tp-menu-fullwidth">
+              {/* <div className="tp-menu-fullwidth">
                 <div className="tp-homemenu-wrapper">
                 <div className="row gx-25 row-cols-xl-6 row-cols-lg-2 row-cols-md-2 row-cols-1">
                     {menu.home_menus.map((home_menu, i) => (
@@ -34,11 +34,11 @@ const HeaderMenus = () => {
                     ))}
                   </div> 
                 </div>
-              </div>
+              </div> */}
             </div>
           ) : menu.pages_mega_menu ? (
             <div className="tp-submenu submenu tp-mega-menu">
-              <div className="tp-megamenu-wrapper">
+              {/* <div className="tp-megamenu-wrapper">
                 <div className="row gx-50">
                   <div className="col-xl-8">
                     <div className="tp-megamenu-list-box">
@@ -105,11 +105,11 @@ const HeaderMenus = () => {
                     </div>
                   </div>
                 </div> 
-              </div>
+              </div> */}
             </div>
           ) : menu.portfolio_mega_menus ? (
             <div className="tp-submenu submenu tp-mega-menu">
-              <div className="tp-menu-fullwidth">
+              {/* <div className="tp-menu-fullwidth">
                 <div className="tp-megamenu-portfolio p-relative">
                   <div className="tp-megamenu-portfolio-banner">
                     <Image
@@ -184,17 +184,17 @@ const HeaderMenus = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           ) : menu.dropdown_menus ? (
-            
-            <ul className="tp-submenu submenu">
-              {menu.dropdown_menus.map((mm, i) => (
-                <li key={i}>
-                  <Link href={mm.link}>{mm.title}</Link>
-                </li>
-              ))}
-            </ul>
+            ""
+            // <ul className="tp-submenu submenu">
+            //   {menu.dropdown_menus.map((mm, i) => (
+            //     <li key={i}>
+            //       <Link href={mm.link}>{mm.title}</Link>
+            //     </li>
+            //   ))}
+            // </ul>
           ) : null}
         </li>
       ))}

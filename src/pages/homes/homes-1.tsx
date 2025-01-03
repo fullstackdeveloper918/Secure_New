@@ -110,15 +110,9 @@ const HomeMain = () => {
               <ServiceOne />
 
         
+              <AwardTwo />
+              <CounterOne />
 
-              <div id="smooth-wrapper bg-black">
-                <div id="smooth-content">
-                  <main>
-                    <ProjectFour />
-                   
-                  </main>
-                </div>
-              </div>
 <ProjectOne/>
               <AwardOne />
               <div className="container-fluid p-0">
@@ -133,8 +127,16 @@ const HomeMain = () => {
 
 
             
-              <AwardTwo />
-              <CounterOne />
+
+              <div id="smooth-wrapper bg-black">
+                <div id="smooth-content">
+                  <main>
+                    <ProjectFour />
+                   
+                  </main>
+                </div>
+              </div>
+
 
         
 
