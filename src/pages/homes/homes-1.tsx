@@ -152,7 +152,7 @@ const HomeMain = () => {
         </div>
 
         <div className="tp-footer-shape-wrap z-index-5 smooth">
-          <Link href="/contact">
+          <Link href="#">
             <div className="tp-footer-shape p-relative">
               <Image className="img-1" src={shape_1} alt="shape" />
               <Image className="img-2" src={shape_2} alt="shape" />
