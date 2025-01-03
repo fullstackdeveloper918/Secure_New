@@ -10,7 +10,7 @@ export function useIsotop() {
 
     if (!isotopContainer.current) return;
 
-    // Initialize Isotope
+    // Initialize Isotope mani code
     const isotope = new Isotope(isotopContainer.current, {
       itemSelector: ".grid-item",
       percentPosition: true,
