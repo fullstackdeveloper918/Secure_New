@@ -9,6 +9,8 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import "./globals.scss";
 
+
+// Error in deployment
 const gellery = localFont({
   src: [
     {
