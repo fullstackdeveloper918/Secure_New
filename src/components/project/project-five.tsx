@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import LineTextFour from "../line-text/line-text/line-text-4";
+import LineTextFour from "../line-text/line-text-4";
 import { UpArrow } from "../svg";
 import Link from "next/link";
 // images
