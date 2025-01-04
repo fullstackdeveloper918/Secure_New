@@ -14,6 +14,8 @@ import {
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 
 import Wrapper from "@/layouts/wrapper";
+import PreLoad from "@/components/PreLoad/PreLoad";
+import ZoomEffect from "@/components/ZoomEffect/ZoomEffect";
 import HeaderOne from "@/layouts/headers/header-one";
 import HeroBannerOne from "@/components/hero-banner/hero-banner-one";
 import ServiceOne from "@/components/service/service-one";
@@ -44,6 +46,8 @@ import AwardTwo from "@/components/award/award-two";
 import { awardAnimOne } from "@/utils/award-anim";
 import { instagramAnim } from "@/utils/instagram-anim";
 import ProjectOne from "@/components/project/project-one";
+import VideOne from "@/video/video-one";
+import BrandOne from "@/components/brand/brand-one";
 
 const HomeMain = () => {
   const comp = useRef(null);
@@ -101,20 +105,25 @@ const HomeMain = () => {
           <div id="ball"></div>
         </div>
 
+        <PreLoad />
+
         <div id="smooth-wrapper">
           <div id="smooth-content">
             <main>
               <HeaderOne />
               <HeroBannerOne />
+              <VideOne />
+
+              <BrandOne />
 
               <ServiceOne />
 
         
-              <AwardTwo />
-              <CounterOne />
 
-<ProjectOne/>
+              <ProjectOne />
+
               <AwardOne />
+
               <div className="container-fluid p-0">
                 <div className="row g-0">
                   <div className="col-xl-12">
@@ -123,29 +132,12 @@ const HomeMain = () => {
                 </div>
               </div>
 
-              {/* <MissionOne /> */}
-
-
-            
-
-              <div id="smooth-wrapper bg-black">
-                <div id="smooth-content">
-                  <main>
-                    <ProjectFour />
-                   
-                  </main>
-                </div>
-              </div>
-
-
-        
+              <CounterOne />
 
               <TeamOne />
 
               <TestimonialOne />
-
             </main>
-         
 
             <FooterOne />
           </div>

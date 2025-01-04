@@ -67,7 +67,7 @@ const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
     <div className={`tp-award-area ${cls}`}>
       <div className="container container-1630">
         <div className="row">
-          <div className="col-xxl-6 col-xl-7">
+          <div className="col-xxl-12 col-xl-12">
             {!abStyle && (
               <div className="tp-award-title-box">
                 <h4 className="tp-section-title">

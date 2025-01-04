@@ -19,7 +19,7 @@ const HeaderOne = () => {
 
   return (
     <>
-      <header className="tp-header-height" ref={headerRef} data-theme="dark">
+      <header className="tp-header-height" ref={headerRef}>
         <div
           id="header-sticky"
           className={`tp-header-area tp-header-mob-space tp-transparent pl-60 pr-60 z-index-9 ${sticky?'header-sticky':''}`}

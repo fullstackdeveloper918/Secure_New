@@ -192,7 +192,7 @@
 	font-size: 50px;
   }
   .padding_below{
-	padding-bottom: 484px;
+	padding-bottom: 430px;
   }
   .banner_img::after{
 	background: url(../../assets//img/home-04/hero/bannerright_img.webp);
@@ -272,6 +272,7 @@ div#welcome {
 }
 .textblue{
 	color:#009dd6;
+  padding-left: 10px;
 }
 .bannerVideo .videoV::after {
     position: fixed;
@@ -296,12 +297,20 @@ div#welcome {
 .tp-service-item.d-flex.align-items-start.mb-75.tp_fade_bottom {
     transition: .5s all;
 }
-/* .tp-hero-title {
-    font-size: 140px !important;
+h1, h2, h4, h4, h5, h6 {
+  font-family: "__Onest_492953" !important;
 }
-.tp-hero-subtitle {
+.tp-section-title {
+  font-family: '__Onest_492953';
+  font-weight: 600;
+}
+.tp-section-title span {
+  color: #009dd6 !important;
+  font-family: '__Onest_492953' !important;
+}
+/* .tp-hero-subtitle {
     left: -27% !important;
-} */
+}  */
 .preloader-wrap {
   position: fixed;
   top: 0;
@@ -318,7 +327,9 @@ div#welcome {
   visibility: visible;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
+.tp-footer-shape-wrap.z-index-5.smooth {
+  display: none !important;
+}
 .preloader-wrap.hidden {
   opacity: 0;
   visibility: hidden;
@@ -378,3 +389,107 @@ div#welcome {
     min-height: 60px !important;
     /* border-radius: 60px; */
 }
+
+
+/* 04-01-25 */
+footer .tp-footer-big-title {
+  font-size: 150px;
+}
+.tp-footer-menu ul li a .tp-menu-text {
+  font-family: '__Onest_492953' !important;
+}
+.bannerVideo .tp-hero-title-wrap {
+  max-width: 95%;
+  width: 100%;
+  display: block !important;
+  margin: 0px auto;
+}
+.bannerVideo .tp-hero-title {
+  font-weight: 400;
+  font-size: 70px;
+  font-family: "__Onest_492953";
+  text-align: left;
+  line-height: 130px;
+  color: #000;
+  text-transform: lowercase;
+  display: flex;
+  align-items: end;
+}
+.bannerVideo .tp-hero-title .boldHeading {
+  font-size: 170px;
+
+}
+.bannerVideo .tp-hero-title b{
+  font-weight: 600 !important;
+}
+header.tp-header-height .container {
+  max-width: 120rem;
+  margin: 0px auto;
+}
+.bannerVideo .tp-hero-content p {
+  font-weight: 400;
+  font-size: 42px;
+  letter-spacing: 0.01em;
+  color: #000;
+  font-family: '__Onest_492953';
+  max-width: 50rem;
+  line-height: 55px;
+  margin: 40px 0px 0px;
+}
+.bannerVideo .tp-hero-content {
+  max-width: 95%;
+}
+
+
+
+
+@media (max-width:1440px){
+  .bannerVideo .tp-hero-content p {
+    font-size: 30px;
+    max-width: 35rem;
+    line-height: 47px;
+    margin: 40px 0px 0px;
+}
+.bannerVideo .tp-hero-title {
+  font-size: 60px;
+  line-height: 120px;
+}
+.bannerVideo .tp-hero-title .boldHeading {
+  font-size: 130px;
+}
+.bannerVideo.tp-hero-ptb {
+  padding-top: 120px;
+}
+footer .tp-footer-big-title {
+  font-size: 100px;
+}
+.tp-footer-menu ul li a .tp-menu-text {
+  font-size: 30px;
+}
+.tp-section-title {
+  font-size: 60px !important;
+}
+.tp-service-title-sm {
+  font-size: 22px !important;
+}
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.section-zoom {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-zoom{
+  font-size: 200px;
+  text-align: center;
+  font-weight: 900;
+}
+
+

@@ -89,7 +89,7 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
       <div
         className={`${style_2 ? "tp-project-area-2" : "tp-project-area"} fix`}
       >
-        {/* {!style_2 && (
+        {!style_2 && (
           <div className="container-fluid p-0">
             <div className="row g-0">
               <div className="col-xl-12">
@@ -97,9 +97,9 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
               </div>
             </div>
           </div>
-        )} */}
+        )}
         <div className="tp-project-gallery-wrapper">
-          {/* <div className="container container-1630">
+          <div className="container container-1630">
             <div className="tp-project-gallery-top pb-50">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6">
@@ -132,7 +132,7 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           {!style_2 && (
             <div className="container-fluid p-0">
               <div className="row g-0">
