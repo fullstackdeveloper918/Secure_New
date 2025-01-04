@@ -132,7 +132,7 @@ const HomeMain = () => {
                 </div>
               </div>
 
-              <CounterOne />
+              {/* <CounterOne /> */}
 
               <TeamOne />
 
