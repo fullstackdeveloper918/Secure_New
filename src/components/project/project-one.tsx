@@ -66,7 +66,7 @@ function ProjectItem({ item }: { item: IProject }) {
         className={`tp-project-img ${item.cls_2} fix not-hide-cursor`}
         data-cursor="View<br>Demo"
       >
-        <Link className="cursor-hide" href="/portfolio-details-3">
+        <Link className="cursor-hide" href="#">
           <Image
             data-speed=".8"
             src={item.img}
@@ -119,7 +119,7 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
                       <div className="tp-btn-bounce">
                         <Link
                           className="tp-btn-border"
-                          href="/portfolio-grid-col-3"
+                          href="#"
                         >
                           <span className="tp-btn-border-wrap">
                             <span className="text-1">View all projects</span>

@@ -49,20 +49,20 @@ const HeroBannerOne = () => {
                       Your <b>Ultimate</b> Gateway to
                       <br />
                       <span className="boldHeading">
-                        <b>Everything  </b>
-                      </span>
-                    </motion.div>
-                      </div>
-                    <motion.div
+                        <b>Everything</b> <motion.div
                       initial={{ opacity: 0,  y: 450 }}
                       animate={{ opacity: 1, y: 0, }}
                       transition={{ duration: 0.9, delay: 12 }}
                       className="p-relative "
                     >
                       <span className="boldHeading">
-                        <b className="textblue"> Secure</b>
+                        <b className="textblue">Secure</b>
                       </span>
                     </motion.div>
+                      </span>
+                    </motion.div>
+                      </div>
+                    
                   </h1>
                 </div>
               </div>
