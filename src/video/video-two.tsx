@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import  Leaf  from "../components/svg/leaf";
+// import  Leaf  from "../components/svg/leaf";
 
 const VideoTwo = () => {
   
@@ -24,9 +24,10 @@ const VideoTwo = () => {
               </video>
               <div className="tp-video-content text-center">
                 <span className="tp-video-subtitle">
-                  <span>
+                  {/* <span>
                     <Leaf />
-                  </span>
+             
+                  </span> */}
                   Work in motion
                 </span>
                 <h2 className="tp-video-title">Play Reel</h2>
