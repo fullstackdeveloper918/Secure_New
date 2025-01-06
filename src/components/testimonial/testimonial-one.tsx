@@ -8,19 +8,15 @@ import { SwiperOptions } from "swiper/types";
 const testimonial_data = [
   {
     id: 1,
-    desc: `“Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-    turpis. Ut bibendum tempor tempus. Ut scelerisque est
-    posuere ex pretium laoreet.”`,
-    name: "Louis Fantun",
-    designation: "Designer",
+    desc: `“Praesent tincidunt enim et dolor auctor, a tincidunt velit pharetra. Etiam ultrices est vel turpis suscipit, vel interdum quam fringilla.”`,
+    name: "Maria DeLuca",
+    designation: "Marketing Specialist",
   },
   {
     id: 2,
-    desc: `“Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-    turpis. Ut bibendum tempor tempus. Ut scelerisque est
-    posuere ex pretium laoreet.”`,
-    name: "Robert Smith",
-    designation: "Developer",
+    desc: `“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec ac mi vitae erat imperdiet dignissim.”`,
+    name: "James",
+    designation: "Product Manager",
   },
 ];
 
@@ -59,8 +55,9 @@ const TestimonialOne = () => {
     <div className="tp-testimonial-area pb-120">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-xl-10">
+          <div className="col-xl-10 tp_fade_bottom">
             <div className="tp-testimonial-slider-wrapper p-relative">
+            <h2 className=" mb-96 text-center">Testimonials from Professionals</h2>
               <div className="tp-testimonial-arrow-box d-none d-lg-block">
                 <button className="tp-testimonial-prev">
                   <span>
@@ -81,6 +78,7 @@ const TestimonialOne = () => {
                 {testimonial_data.map((item) => (
                   <SwiperSlide key={item.id}>
                     <div className="tp-testimonial-item text-center">
+                      
                       <p>{item.desc}</p>
                       <span>
                         <em>{item.name}</em> - {item.designation}

@@ -38,10 +38,10 @@ const service_data = [
 
 const ServiceOne = () => {
   return (
-    <div className="tp-service-area pt-180 pb-80 tp-btn-trigger">
+    <div className="tp-service-area pt-120 pb-80 tp-btn-trigger">
       <div className="container container-1630">
         <div className="row">
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
             <div className="tp-service-title-box p-relative">
               <span className="tp-section-subtitle subtitle-position tp_fade_bottom">
               
@@ -62,7 +62,7 @@ const ServiceOne = () => {
               </Link>
             </div>
           </div>
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
             <div className="tp-service-right-wrap">
               {service_data.map((s, i) => (
                 <div

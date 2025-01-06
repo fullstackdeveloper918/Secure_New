@@ -48,6 +48,7 @@ import { instagramAnim } from "@/utils/instagram-anim";
 import ProjectOne from "@/components/project/project-one";
 import VideOne from "@/video/video-one";
 import BrandOne from "@/components/brand/brand-one";
+import ScrollBanner from "@/components/ScrollBanner";
 
 const HomeMain = () => {
   const comp = useRef(null);
@@ -112,7 +113,8 @@ const HomeMain = () => {
             <main>
               <HeaderOne />
               <HeroBannerOne />
-              <VideOne />
+              {/* <ScrollBanner /> */}
+              {/* <VideOne /> */}
 
               <BrandOne />
 

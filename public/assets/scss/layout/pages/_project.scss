@@ -3087,13 +3087,13 @@
                 font-size: 110px;
             }
             @media #{$lg}{
-                font-size: 100px;
+                font-size: 70px;
             }
             @media #{$md}{
-                font-size: 90px;
+                font-size: 60px;
             }
             @media #{$xs}{
-                font-size: 60px;
+                font-size: 40px;
                 margin-bottom: 20px;
             }
         }
@@ -3488,7 +3488,7 @@
         }
     }
     &-inner-title{
-        font-size: 100px;
+        font-size: 70px;
         font-weight: 700;
         line-height: 1;
         margin-bottom: 0;
