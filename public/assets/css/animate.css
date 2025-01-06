@@ -618,6 +618,9 @@ footer .tp-footer-big-title {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
+.lotify > div canvas {
+  display: none;
+}
 }
 
 

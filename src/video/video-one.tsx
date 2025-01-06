@@ -7,7 +7,7 @@ const VideOne = ({}) => {
     <div className="tp-hero-bottom-img-wrap">
       <div className="tp-hero-bottom-img">
         <video loop={true} muted={true} autoPlay={true} playsInline={true}>
-          <source src="/assets/video/Cyber Security Opener (After Effects template).mp4" type="video/mp4" />
+          <source src="https://html.hixstudio.net/videos/liko/liko.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

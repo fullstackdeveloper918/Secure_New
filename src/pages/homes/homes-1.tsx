@@ -114,7 +114,7 @@ const HomeMain = () => {
               <HeaderOne />
               <HeroBannerOne />
               {/* <ScrollBanner /> */}
-              {/* <VideOne /> */}
+              <VideOne />
 
               <BrandOne />
 
