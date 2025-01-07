@@ -11,25 +11,25 @@ const team_data:ITeamDT[] = [
     id:2,
     image:"/assets/img/home-01/team/team-1-2.png",
     designation:"Frontend Developer",
-    name:"Abhishek Rana",
+    name:"Abhishek",
   },
   {
     id:3,
     image:"/assets/img/home-01/team/team-1-3.png",
     designation:"Manager",
-    name:"Satish Notiyal",
+    name:"Satish",
   },
   {
     id:4,
     image:"/assets/img/home-01/team/team-1-4.png",
     designation:"Web designer",
-    name:"Mani Sharma",
+    name:"Mani",
   },
   {
     id:5,
     image:"/assets/img/home-01/team/team-1-5.png",
     designation:"Wordpress Developer",
-    name:"Herry",
+    name:"Harry",
   },
   {
     id:6,
@@ -41,7 +41,7 @@ const team_data:ITeamDT[] = [
     id:7,
     image:"/assets/img/home-01/team/team-1-7.png",
     designation:"Frontend Developer",
-    name:"Ravi Kumar",
+    name:"Ravi",
   },
   {
     id:8,

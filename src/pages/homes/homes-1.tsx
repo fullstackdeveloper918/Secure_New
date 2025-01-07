@@ -49,6 +49,13 @@ import ProjectOne from "@/components/project/project-one";
 import VideOne from "@/video/video-one";
 import BrandOne from "@/components/brand/brand-one";
 import ScrollBanner from "@/components/ScrollBanner";
+import ProjectSix from "@/components/project/project-six";
+import FooterTwo from "@/layouts/footers/footer-two";
+import FooterThree from "@/layouts/footers/footer-three";
+import FooterFive from "@/layouts/footers/footer-five";
+import FooterFour from "@/layouts/footers/footer-four";
+import FooterSix from "@/layouts/footers/footer-six";
+import TeamTwo from "@/components/team/team-two";
 
 const HomeMain = () => {
   const comp = useRef(null);
@@ -106,23 +113,43 @@ const HomeMain = () => {
           <div id="ball"></div>
         </div>
 
-        <PreLoad />
+        {/* <PreLoad /> */}
 
         <div id="smooth-wrapper">
           <div id="smooth-content">
             <main>
               <HeaderOne />
               <HeroBannerOne />
+              <ProjectSix />
               {/* <ScrollBanner /> */}
-              <VideOne />
+              {/* <VideOne /> */}
 
               <BrandOne />
 
+              <section className="challange_sec pt-80 pb-80">
+                <div className="container">
+                <h2>
+                  We empower businesses ▪ to leverage cutting-edge technology
+                  and ▪ stay ahead in a rapidly evolving digital landscape by
+                  delivering ▪ innovative IT solutions.
+                </h2>
+                <div className="challangeDiv">
+                  <div className="main_content">
+                    <h5>The Challenge</h5>
+                    <p>Modern businesses face complex challenges in integrating advanced IT solutions, often struggling with outdated systems and evolving technological demands. Our mission is to bridge this gap with innovative, scalable, and efficient IT services.</p>
+                    <Link href="#"> About Us<span className="svgIcon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><title></title><g data-name="Layer 2" id="Layer_2"><path d="M23.05,22a1,1,0,0,0-1.41,0L17,26.56V3a1,1,0,1,0-2,0V26.53L10.47,22a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l6.37,6.37a.9.9,0,0,0,1.27,0l6.36-6.37A1,1,0,0,0,23.05,22Z"></path></g></svg>
+                      </span></Link>
+                  </div>
+                </div>
+                </div>
+              </section>
+              <section className="animationContent">
+                <h2> What Makes Us Different?</h2>
+              </section>
+
               <ServiceOne />
 
-        
-
-              <ProjectOne />
+              {/* <ProjectOne /> */}
 
               <AwardOne />
 
@@ -141,7 +168,12 @@ const HomeMain = () => {
               <TestimonialOne />
             </main>
 
-            <FooterOne />
+            {/* <FooterOne /> */}
+            {/* <FooterTwo />
+            <FooterThree /> */}
+            {/* <FooterFive /> */}
+            <FooterFour />
+            {/* <FooterSix /> */}
           </div>
         </div>
 

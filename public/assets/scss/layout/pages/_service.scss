@@ -51,7 +51,6 @@
     }
     &-content{
         & p{
-            padding-right: 100px;
             margin-bottom: 0;
             @media #{$xxl}{
                 padding-right: 70px;
@@ -184,7 +183,6 @@
         }
         @media #{$md}{
             padding: 0;
-            padding-right: 100px;
         }
         @media #{$xs}{
             padding: 0;

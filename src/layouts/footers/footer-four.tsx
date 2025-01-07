@@ -51,7 +51,7 @@ export default function FooterFour() {
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights reserved
+                    {new Date().getFullYear()} Secure 365 <br /> © All rights reserved
                   </p>
                 </div>
               </div>
@@ -67,8 +67,8 @@ export default function FooterFour() {
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <a href="tel:+725214456">+ 725 214 456</a></span>
-                    <span>E: <a href="mailto:contact@liko.com">contact@liko.com</a></span>
+                    <span>P: <a href="tel:+725214456">+6 314 678 886</a></span>
+                    <span>E: <a href="mailto:contact@liko.com">secure@gmail.com</a></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">

@@ -19,7 +19,7 @@ const HeroBannerOne = () => {
   // nothing dvvdssv jhbsdcdbsbs
 
   return (
-    <div>
+    <div className="bannersection">
       <div
         className="tp-hero-area tp-hero-ptb main-slider bannerVideo "
         style={{
@@ -129,6 +129,32 @@ const HeroBannerOne = () => {
           </div> */}
         </div>
       </div>
+
+      <div className="flipelements">
+        <div className="fleiptag">
+          <div className="button-text sticky left">
+            <span className="starsvg">
+              <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width={20} height={20}><title/><g data-name="Layer 2" id="Layer_2"><path d="M23.05,22a1,1,0,0,0-1.41,0L17,26.56V3a1,1,0,1,0-2,0V26.53L10.47,22a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l6.37,6.37a.9.9,0,0,0,1.27,0l6.36-6.37A1,1,0,0,0,23.05,22Z"/></g></svg></span>
+          <span data-hover="Scroll to Explore">Scroll to Explore</span> 
+          </div>
+        </div>
+
+      <div className="flip-thumbs-wrapper">
+        <div className="flip-move-thumb show-counter">
+           <img src="/assets/img/home-01/project/project-1-1.jpg" className="grid__item-img grid__item-img--large" alt="" />
+        </div>
+        <div className="flip-move-thumb show-counter">
+          <img src="/assets/img/home-01/project/project-1-2.jpg" className="grid__item-img grid__item-img--large" alt="" /> 
+        </div>
+        <div className="flip-move-thumb show-counter">
+        <img src="/assets/img/home-01/project/project-1-3.jpg" className="grid__item-img grid__item-img--large" alt="" />
+        </div>
+      </div>
+
+      <div className="projects">
+<span>Featured Projects</span>
+        </div>
+    </div>
     </div>
   );
 };
