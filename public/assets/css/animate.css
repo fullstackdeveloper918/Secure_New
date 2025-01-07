@@ -1081,6 +1081,46 @@ section.challange_sec {
   padding: 80px 0px;
   margin: 100px 0px 0px;
 }
+section.challange_sec h2 {
+  font-size: 4vw;
+  text-align: center;
+  line-height: 4vw;
+}
+.challangeDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 60px 0px 0px;
+}
+.challangeDiv a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  color: #111;
+  font-weight: 600;
+  font-family: '__Onest_492953';
+  margin: 30px 0px 0px;
+}
+.challange_sec .container {
+  max-width: 110rem;
+  padding: 0px 2rem;
+}
+.challangeDiv span.svgIcon {
+  background: #000;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.challangeDiv a span.svgIcon svg {
+  width: 16px;
+  height: 12px;
+  color: #fff;
+  fill: #fff;
+  transform: rotate(234deg);
+}
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;

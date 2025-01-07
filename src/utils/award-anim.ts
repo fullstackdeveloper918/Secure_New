@@ -1,6 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 
+
+
+
+
+
 function awardAnimOne() {
   const awardItem = document.querySelector(".tp-award-2-area");
   if(!awardItem) return
