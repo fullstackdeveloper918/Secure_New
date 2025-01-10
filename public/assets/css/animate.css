@@ -285,8 +285,8 @@ div#welcome {
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%;
-    background: #fff;
+    height: 100vh;
+    background: #f9f9f9;
     z-index: 1;
 }
 .tp-service-icon img {
@@ -966,7 +966,8 @@ section.animationContent h2 {
   flex-wrap: wrap;
   width: calc(100% - 80px);
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 40px;
+  background: #f9f9f9;
 }
 .showcase-portfolio.expand-grid .clapat-item {
   position: relative;

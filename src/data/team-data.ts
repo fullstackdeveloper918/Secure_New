@@ -43,12 +43,39 @@ const team_data:ITeamDT[] = [
     designation:"Frontend Developer",
     name:"Ravi",
   },
-  // {
-  //   id:8,
-  //   image:"/assets/img/home-01/team/team-1-3.png",
-  //   designation:"Wordpress Developer",
-  //   name:"Herry",
-  // },
+ 
+  {
+    id:8,
+    image:"/assets/img/home-01/team/team-1-12.png",
+    designation:"Wordpress Developer",
+    name:"Hitesh",
+  },
+  {
+    id:9,
+    image:"/assets/img/home-01/team/team-1-11.png",
+    designation:"Shopify Developer",
+    name:"Sukhveer",
+  },
+  {
+    id:10,
+    image:"/assets/img/home-01/team/team-1-13.png",
+    designation:"Abhay",
+    name:"Web Developer",
+  },
+  {
+    id:11,
+    image:"/assets/img/home-01/team/team-1-10.png",
+    designation:"CEO",
+    name:"Pankaj",
+  },
+  {
+    id:12,
+    image:"/assets/img/home-01/team/team-1-9.png",
+    designation:"Neha",
+    name:"Human Resource",
+  },
+ 
+  
 ];
 
 export default team_data;

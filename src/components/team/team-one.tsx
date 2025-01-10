@@ -12,7 +12,7 @@ const slider_setting: SwiperOptions = {
   slidesPerView: 6,
   loop: true,
   autoplay: false,
-  spaceBetween: 30,
+  spaceBetween: 50,
   breakpoints: {
     "1400": {
       slidesPerView: 6,

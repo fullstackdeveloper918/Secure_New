@@ -115,7 +115,7 @@ const HomeMain = () => {
           <div id="ball"></div>
         </div>
 
-        <PreLoad />
+        {/* <PreLoad /> */}
 
         <div id="smooth-wrapper">
           <div id="smooth-content">

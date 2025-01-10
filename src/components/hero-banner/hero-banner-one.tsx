@@ -155,6 +155,7 @@ const HeroBannerOne = () => {
 <span>Featured Projects</span>
         </div>
     </div>
+
     </div>
   );
 };
