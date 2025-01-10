@@ -57,6 +57,8 @@ import FooterFive from "@/layouts/footers/footer-five";
 import FooterFour from "@/layouts/footers/footer-four";
 import FooterSix from "@/layouts/footers/footer-six";
 import TeamTwo from "@/components/team/team-two";
+import BlogClassicSlider from "@/components/blog/slider/blog-classic-slider";
+import BlogOne from "@/components/blog/blog-one";
 
 const HomeMain = () => {
   const comp = useRef(null);
@@ -172,6 +174,10 @@ const HomeMain = () => {
               <TeamOne />
 
               <TestimonialOne />
+              <BlogOne />
+              {/* <BlogItem /> */}
+              
+
             </main>
 
             {/* <FooterOne /> */}

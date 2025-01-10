@@ -1122,6 +1122,34 @@ section.challange_sec h2 {
   fill: #fff;
   transform: rotate(234deg);
 }
+.blog_sec p {
+  text-align: center;
+  margin: 0px 0px 30px;
+}
+.blogOnemain {
+  background: #f9f9f9;
+  padding: 60px 0px;
+}
+.tp-team-area .tp-team-slider-wrapper {
+  position: relative;
+}
+
+.tp-team-area .tp-team-slider-wrapper .tp-testimonial-arrow-box button {
+  background: #000000;
+  z-index: 999;
+  border: 0px;
+}
+.tp-team-area .tp-team-slider-wrapper .tp-testimonial-arrow-box button svg path {
+  color: #fff;
+}
+
+.tp-team-area .tp-team-slider-wrapper .tp-testimonial-arrow-box button.tp-testimonial-next {
+  right: 2rem;
+}
+
+.tp-team-area .tp-team-slider-wrapper .tp-testimonial-arrow-box button.tp-testimonial-prev {
+  left: 2rem;
+}
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;

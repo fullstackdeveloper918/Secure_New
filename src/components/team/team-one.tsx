@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
+import { NextIcon, PrevIcon } from "../svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import { SwiperOptions } from "swiper/types";
+import { Navigation } from "swiper/modules";
 import team_data from "@/data/team-data";
 import TeamItem from "./team-item";
 import { ITeamDT } from "@/types/team-d-t";
@@ -33,6 +35,10 @@ const slider_setting: SwiperOptions = {
       slidesPerView: 1,
     },
   },
+  navigation: {
+    prevEl: ".tp-testimonial-prev",
+    nextEl: ".tp-testimonial-next",
+  },
 };
 
 // prop type
@@ -53,9 +59,21 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
           <div className="row">
             <div className="col-xl-12">
               <div className="tp-team-slider-wrapper">
+                  <div className="tp-testimonial-arrow-box d-none d-lg-block">
+                                <button className="tp-testimonial-prev">
+                                  <span>
+                                    <PrevIcon />
+                                  </span>
+                                </button>
+                                <button className="tp-testimonial-next">
+                                  <span>
+                                    <NextIcon />
+                                  </span>
+                                </button>
+                              </div>
                 <Swiper
                   {...slider_setting}
-                  modules={[Autoplay, FreeMode]}
+                  modules={[Autoplay, FreeMode, Navigation]}
                   className="swiper-container tp-team-slider-active"
                 >
                   {team_data.map((t) => (
