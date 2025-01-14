@@ -1150,6 +1150,9 @@ section.challange_sec h2 {
 .tp-team-area .tp-team-slider-wrapper .tp-testimonial-arrow-box button.tp-testimonial-prev {
   left: 2rem;
 }
+.logoPng {
+  margin: 2rem 4rem;
+}
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;

@@ -51,16 +51,13 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom">
-                We are a creative studio that specializes in providing
-                high-quality design and branding solutions to businesses and
-                individuals. Our team is composed of talented designers,
-                developers, and marketers.!
+              Our Core Values
               </p>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-xl-9">
+          <div className="col-xl-12">
             <div className="row">
               <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
@@ -80,21 +77,30 @@ export default function AboutUsArea() {
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
-                        <li>Art direction</li>
-                        <li>Branding</li>
-                        <li>Content Production</li>
-                        <li>User Interface Design</li>
-                        <li>Animation</li>
+                        <li>
+                          <h5>Customer-First Approach</h5>
+                          <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                        </li>
+                        
+                        <li>
+                          <h5>Integrity & Transparency</h5>
+                          <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                        </li>
+
                       </ul>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
-                        <li>Brand Identity</li>
-                        <li>User Interface</li>
-                        <li>User Experience</li>
-                        <li>Responsive Design</li>
+                        <li>
+                        <h5>Security as a Responsibility</h5>
+                        <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                        </li>
+                        <li><h5>Security as a Responsibility</h5>
+                        <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                        </li>
+
                       </ul>
                     </div>
                   </div>

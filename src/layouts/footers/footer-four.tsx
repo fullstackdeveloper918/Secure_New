@@ -17,7 +17,7 @@ export default function FooterFour() {
                   <div className="tp-footer-3-menu">
                     <ul>
                       <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
+                      <li><a href="/about/about-us">About</a></li>
                       <li><a href="#">Landing</a></li>
                       <li><a href="#">Blog</a></li>
                       <li><a href="#">Contact</a></li>

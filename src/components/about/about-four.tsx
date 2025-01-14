@@ -10,19 +10,18 @@ export default function AboutFour() {
             <div className="tp-about-5-title-box pb-90">
               <h4 className="tp-about-5-title p-relative tp_fade_bottom">
                 <span className="tp-about-5-subtitle tp_fade_left">
-                  140+ projects closed
+                Our Services
                 </span>
                 <span className="text-space"></span>
-                As a digital designer, I <br /> focus on
+                We offer expert  <br />solutions  
+                 <span>
+                  <BallRound />
+                </span>
+                in web development, digital marketing, branding,
                 <span>
                   <BallRound />
                 </span>
-                producing top notch and impactful digital
-                <span>
-                  <BallRound />
-                </span>
-                experiences.
-              </h4>
+                and e-commerce to meet your needs.</h4>
             </div>
           </div>
         </div>
@@ -31,31 +30,19 @@ export default function AboutFour() {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-about-5-category">
-              <span className="tp_fade_bottom">Website Development</span>
-              <span className="tp_fade_bottom">Ul / UX Design</span>
-              <span className="tp_fade_bottom">Mobile Apps Development</span>
-              <span className="tp_fade_bottom">
-                Custom Software Development
-              </span>
-              <span className="tp_fade_bottom">Brand Ideation</span>
+            <span className="tp_fade_bottom">Cybersecurity Solutions</span>
+              <span className="tp_fade_bottom">IT Support & Managed Services</span>
+              <span className="tp_fade_bottom">Cloud & Server Management</span>
+              <span className="tp_fade_bottom">Innovation & Growth</span>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-about-5-text">
               <p className="mb-30 tp_fade_bottom">
-                Together, we construct tailored marketing campaigns that engage
-                and resonate with customers on a deeper level. Adaptiv’s
-                approach amplifies brand awareness and loyalty and paves the way
-                for sustainable business growth and success.
+              Despite meticulously documenting each incident and providing evidence to the authorities, he was met with a disappointing lack of support—cases were dismissed as either too complex or too low-priority to pursue. 
               </p>
               <p className="mb-30 tp_fade_bottom">
-                We believe that understanding and solving clients issues is the
-                key to success. Now {"It's"}
-                your time to overcome challenges, face fresh perspective and
-                realize full potential.
-              </p>
-              <p className="tp_fade_bottom">
-                Based on strong expertise and a battle-tested business.!
+              This frustration drove him to seek solutions that went beyond just preventing crime, focusing on supporting victims and helping them recover.
               </p>
             </div>
           </div>

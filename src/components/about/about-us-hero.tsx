@@ -35,12 +35,12 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <span className="ab-inner-hero-subtitle">
-                Digital <br /> creative agency
+                Secure <br /> 365 solutions agency
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-                Building Digital Presence
+              Fighting Cybercrime Building
               </h1>
-              <p>Digital experiences with maximum emotional impact</p>
+              <p>Secure experiences with maximum emotional impact</p>
             </div>
           </div>
         </div>
@@ -52,8 +52,7 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-                Liko develops, designs & delivers websites & creative campaigns
-                that drive results,
+              We provide expert IT and cybersecurity solutions that protect, support, and empower your business.
               </p>
                <a className="tp-btn-white-sm border-style" href="#">Our Story</a>
             </div>

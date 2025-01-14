@@ -9,6 +9,7 @@ import logo from "@/assets/img/logo/logo.png";
 import logo_2 from "@/assets/img/logo/logo-white.png";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
+import MobileOffcanvasTwo from "@/components/offcanvas/mobile-offcanvas-2";
 
 // prop type 
 type IProps = {
@@ -89,8 +90,14 @@ export default function HeaderEleven({transparent=false,cls=''}: IProps) {
       <CartOffcanvas openCartMini={openCartMini} setOpenCartMini={setOpenCartMini} />
       {/* cart mini */}
 
+       {/* off canvas */}
+            {/* off canvas */}
+                 <MobileOffcanvasTwo openOffcanvas={openOffCanvas} setOpenOffcanvas={setOpenOffCanvas} />
+                {/* off canvas */}
+            {/* <MobileOffcanvas openOffcanvas={openOffCanvas} setOpenOffcanvas={setOpenOffCanvas} /> */}
+            {/* off canvas */}
       {/* off canvas */}
-      <MobileOffcanvas openOffcanvas={openOffCanvas} setOpenOffcanvas={setOpenOffCanvas} />
+      {/* <MobileOffcanvas openOffcanvas={openOffCanvas} setOpenOffcanvas={setOpenOffCanvas} /> */}
       {/* off canvas */}
     </>
   );
