@@ -11,7 +11,7 @@ import port_sm_2 from "@/assets/img/home-11/port-sm-2.jpg";
 import port_sm_3 from "@/assets/img/home-11/port-sm-3.jpg";
 import port_sm_4 from "@/assets/img/home-11/port-sm-4.jpg";
 import port_sm_5 from "@/assets/img/home-11/port-sm-5.jpg";
-import { SlickNextArrow, SlickPrevArrow } from "../../slick-arrow";
+// import { SlickNextArrow, SlickPrevArrow } from "../../slick-arrow";
 
 // slider data
 const slider_data = [
@@ -96,8 +96,10 @@ const slider_setting_one = {
   slidesToScroll: 1,
   fade: true,
   speed: 1000,
-  nextArrow: <SlickNextArrow />,
-  prevArrow: <SlickPrevArrow />,
+  nextArrow: "",
+  prevArrow: "",
+  // nextArrow: <SlickNextArrow />,
+  // prevArrow: <SlickPrevArrow />,
 };
 // slider setting two
 const slider_setting_two = {
@@ -108,8 +110,10 @@ const slider_setting_two = {
   focusOnSelect: true,
   centerPadding: "0",
   speed: 600,
-  nextArrow: <SlickNextArrow />,
-  prevArrow: <SlickPrevArrow />,
+  nextArrow: "",
+  prevArrow: "",
+  // nextArrow: <SlickNextArrow />,
+  // prevArrow: <SlickPrevArrow />,
   responsive: [
     {
       breakpoint: 1600,
@@ -220,7 +224,7 @@ export default function PortfolioSliderHomeTen() {
             {...slider_setting_two}
             asNavFor={slider1 as Slider}
             ref={(slider) => setSlider2(slider)}
-            afterChange={(index) => setSliderIndex(index + 1)}
+            afterChange={(index:any) => setSliderIndex(index + 1)}
             className="tp-portfolio-11-slider-nav-active d-none d-lg-block"
           >
             {slider_thumbs.map((item) => (

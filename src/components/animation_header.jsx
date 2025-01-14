@@ -12,7 +12,7 @@ const animation_header = () => {
       
         {/* <!-- Logo --> */}
         <div id="clapat-logo" className="hide-ball">
-            <a className="ajax-link" data-type="page-transition" href="index.html">
+            <a className="ajax-link" data-type="page-transition" href="/">
                 <img className="black-logo" src="images/logo.png" alt="ClaPat Logo"/>
                 <img className="white-logo" src="images/logo-white.png" alt="ClaPat Logo"/>
             </a>
@@ -24,7 +24,7 @@ const animation_header = () => {
         <nav className="clapat-nav-wrapper"> 
             <div className="nav-height">          
                 <ul data-breakpoint="1025" className="flexnav">
-                    <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="index.html"><div className="before-span"><span data-hover="Index">Index</span></div></a></li>
+                    <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="/"><div className="before-span"><span data-hover="Index">Index</span></div></a></li>
                     <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="#"><div className="before-span"><span data-hover="Projects">Projects</span></div></a>
                       <ul>
                             <li><a className="ajax-link" href="index-highlights.html" data-type="page-transition">Highlights</a></li>
@@ -57,7 +57,7 @@ const animation_header = () => {
         
         
         {/* <!-- Menu Burger --> */}
-        {/* <div className="button-wrap right menu burger-lines">
+        <div className="button-wrap right menu burger-lines">
             <div className="icon-wrap parallax-wrap">
                 <div className="button-icon parallax-element">
                     <div id="burger-wrapper">
@@ -70,7 +70,7 @@ const animation_header = () => {
                 </div>
             </div>
             <div className="button-text sticky right"><span data-hover="Menu">Menu</span></div> 
-        </div> */}
+        </div>
         {/* <!--/Menu Burger --> */}
 
     </div>

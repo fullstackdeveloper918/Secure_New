@@ -9,9 +9,9 @@ const preLoader = () => {
                <div className="word">Loading your adventure</div>
            </div>
                
-           <div className="loadbar"></div>
+           {/* <div className="loadbar"></div>
            <div className="percentage-wrapper"><div className="percentage" id="precent"></div></div>
-           <div className="percentage-intro">Please wait, content is loading</div>
+           <div className="percentage-intro">Please wait, content is loading</div> */}
        </div>
   )
 }
