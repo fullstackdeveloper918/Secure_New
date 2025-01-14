@@ -18,17 +18,17 @@ export default function AboutThree() {
                   <FirstBracket />
                 </span>
                 <span className="tp-subtitle-text tp_text_invert">
-                  What we do
+                Our story
                 </span>
                 <span>
                   <FirstBracketTwo />
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                We tell visual stories through smooth motions{" "}
+              While running Techable, Jonathan experienced{" "}
                 <span>
                   {" "}
-                  <br />& fluid Website
+                  <br />firsthand how damaging and pervasive cybercrime could be.
                 </span>
               </h4>
             </div>
@@ -43,12 +43,10 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We are a creative design studio based in London. We specialize
-                in Branding, and Web experiences for beauty.
+              He encountered sophisticated scams, fraudulent buyers using stolen credit cards, and deceptive chargebacks that threatened his business. 
               </p>
               <p className="mb-45 tp_fade_bottom">
-                we’re all about digital experiences. The most creative idea and
-                the most perfect execution mean nothing.
+              Despite meticulously documenting each incident and providing evidence to the authorities, he was met with a disappointing lack of support—cases were dismissed as either too complex or too low-priority to pursue. This frustration drove him to seek solutions that went beyond just preventing crime, focusing on supporting victims and helping them recover.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
                 About Us

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { blog_lists } from "@/data/blog-data";
 import usePagination from "@/hooks/use-pagination";
-import Pagination from "../ui/pagination";
+// import Pagination from "../ui/pagination";
 
 export default function BlogListArea() {
   const blog_items = [...blog_lists];
@@ -55,10 +55,10 @@ export default function BlogListArea() {
           <div className="col-12">
             <div className="basic-pagination mt-80 d-flex align-items-center justify-content-center">
               <nav>
-                <Pagination
+                {/* <Pagination
                   handlePageClick={handlePageClick}
                   pageCount={pageCount}
-                />
+                /> */}
               </nav>
             </div>
           </div>

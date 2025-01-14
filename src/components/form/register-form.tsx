@@ -3,7 +3,7 @@ import { CloseEye, OpenEye } from "../svg";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ErrorMsg from "../error-msg";
+// import ErrorMsg from "../error-msg";
 
 type FormData = {
   name: string;
@@ -38,7 +38,7 @@ export default function RegisterForm() {
           <div className="tp-login-input">
             <input id="name" {...register("name")} type="text" placeholder="Your Name" />
           </div>
-          <ErrorMsg msg={errors.name?.message!} />
+          {/* <ErrorMsg msg={errors.name?.message!} /> */}
         </div>
 
         <div className="tp-login-input-box">
@@ -48,7 +48,7 @@ export default function RegisterForm() {
           <div className="tp-login-input">
             <input id="email" {...register("email")} type="email" placeholder="liko@mail.com" />
           </div>
-          <ErrorMsg msg={errors.email?.message!} />
+          {/* <ErrorMsg msg={errors.email?.message!} /> */}
         </div>
 
         <div className="tp-login-input-box">
@@ -79,7 +79,7 @@ export default function RegisterForm() {
               )}
             </div>
           </div>
-          <ErrorMsg msg={errors.password?.message!} />
+          {/* <ErrorMsg msg={errors.password?.message!} /> */}
         </div>
 
       </div>

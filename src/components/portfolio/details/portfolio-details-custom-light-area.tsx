@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {Swiper,SwiperSlide} from 'swiper/react';
 import {Autoplay} from 'swiper/modules';
 import { SwiperOptions } from 'swiper/types';
-import Social from '@/components/social/social';
+// import Social from '@/components/social/social';
 import { Dots } from '@/components/svg';
 
 // images
@@ -79,7 +79,7 @@ export default function PortfolioDetailsCustomLightArea() {
                         <div className="project-details-1-info tp_fade_bottom">
                           <span>Share</span>
                           <div className="project-details-2-social">
-                              <Social/>
+                              {/* <Social/> */}
                           </div>
                         </div>
                     </div>

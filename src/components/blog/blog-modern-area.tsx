@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { blog_modern } from "@/data/blog-data";
 import usePagination from "@/hooks/use-pagination";
-import Pagination from "../ui/pagination";
+// import Pagination from "../ui/pagination";
 import { IBlogDT } from "@/types/blog-d-t";
 import BlogItem from "./blog-item/blog-item";
 
@@ -48,12 +48,12 @@ export default function BlogModern() {
 
             <div className="col-12">
               <div className="basic-pagination mt-40 d-flex align-items-center justify-content-center">
-                <nav>
+                {/* <nav>
                   <Pagination
                     handlePageClick={handlePageClick}
                     pageCount={pageCount}
                   />
-                </nav>
+                </nav> */}
               </div>
             </div>
           </div>

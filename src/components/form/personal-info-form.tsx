@@ -1,6 +1,6 @@
 import React from "react";
 import { Email, LocationTwo, Phone, User } from "../svg";
-import NiceSelect from "../ui/nice-select";
+// import NiceSelect from "../ui/nice-select";
 
 export default function PersonalInfoForm() {
   const handleGender = (item: { value: string; label: string }) => {};
@@ -81,7 +81,7 @@ export default function PersonalInfoForm() {
         <div className="col-xxl-6 col-md-6">
           <div className="profile__input-box">
             <div className="profile__input">
-              <NiceSelect
+              {/* <NiceSelect
                 options={[
                   { value: "", label: "Gender" },
                   { value: "male", label: "Male" },
@@ -91,7 +91,7 @@ export default function PersonalInfoForm() {
                 defaultCurrent={0}
                 onChange={(item) => handleGender(item)}
                 name="Gender"
-              />
+              /> */}
             </div>
           </div>
         </div>

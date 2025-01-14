@@ -10,7 +10,7 @@ import { blog_classic } from "@/data/blog-data";
 import { Quote, QuoteTwo } from "../svg";
 import usePagination from "@/hooks/use-pagination";
 import { IBlogDT } from "@/types/blog-d-t";
-import PaginationCom from "../ui/pagination";
+// import PaginationCom from "../ui/pagination";
 
 // slider setting
 const slider_setting: SwiperOptions = {
@@ -151,12 +151,12 @@ export default function BlogClassicArea({setIsVideoOpen,setVideoId}:IProps) {
               ))}
 
               <div className="basic-pagination">
-                <nav>
+                {/* <nav>
                   <PaginationCom
                     handlePageClick={handlePageClick}
                     pageCount={pageCount}
                   />
-                </nav>
+                </nav> */}
               </div>
             </div>
           </div>

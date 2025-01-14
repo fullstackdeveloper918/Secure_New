@@ -17,9 +17,17 @@ import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
 import AwardOne from "@/components/award/award-one";
 // animation
-import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-animation";
+import {
+  charAnimation,
+  fadeAnimation,
+  titleAnimation,
+} from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
+import AboutThree from "@/components/about/about-three";
+import AboutFour from "@/components/about/about-four";
+import FooterFour from "@/layouts/footers/footer-four";
+import HeaderOne from "@/layouts/headers/header-one";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -37,41 +45,27 @@ const AboutUsMain = () => {
 
   return (
     <Wrapper>
-      {/* header area start */}
       <HeaderEleven transparent={true} />
-      {/* header area end */}
-
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* about hero */}
             <AboutUsHero />
-            {/* about hero */}
 
-            {/* about area */}
             <AboutUsArea />
-            {/* about area */}
+            <AboutFour/>
+            <AboutThree/>
 
-            {/* team area */}
             <TeamOne spacing="" />
-            {/* team area */}
 
-            {/* fun fact area */}
             <FunFactOne />
-            {/* fun fact area */}
 
-            {/* brand area */}
             <BrandFive />
-            {/* brand area */}
 
-            {/* award area */}
             <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} />
-            {/* award area */}
           </main>
 
-          {/* footer area */}
-          <FooterTwo topCls="" />
-          {/* footer area */}
+          {/* <FooterTwo topCls="" /> */}
+          <FooterFour />
         </div>
       </div>
     </Wrapper>
