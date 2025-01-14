@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Social from "../social/social";
+// import Social from "../social/social";
 import { Leaf } from "../svg";
 
 // images
@@ -13,7 +13,7 @@ export default function AboutMeHero() {
     <div className="ab-2-hero-area ab-2-hero-ptb  p-relative">
       <div className="ab-2-hero-social-wrap d-none d-lg-block">
         <div className="ab-2-hero-social">
-          <Social />
+          {/* <Social /> */}
         </div>
         <div className="ab-2-hero-social-text">
           <span>Follow us</span>
