@@ -22,8 +22,8 @@ export default function Home() {
           className="dark-content"
           data-bgcolor="#ebebeb"
         >
-          {/* <HeaderOne /> */}
           {/* <!-- Header --> */}
+          {/* <HeaderOne /> */}
           <AnimationHeader />
           {/* <!--/Header --> */}
 
