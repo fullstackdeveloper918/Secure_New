@@ -20,7 +20,7 @@ const slider_setting: SwiperOptions = {
       slidesPerView: 6,
     },
     "1200": {
-      slidesPerView: 4,
+      slidesPerView: 5,
     },
     "992": {
       slidesPerView: 4,

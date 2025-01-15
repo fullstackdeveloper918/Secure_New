@@ -594,8 +594,8 @@ h1{
 }
 
 h2{
-  font-size: calc(1rem + 3vw);
-  line-height: calc(1rem + 3.5vw);
+  font-size: calc(1rem + 2vw);
+  line-height: calc(1rem + 2.5vw);
 }
 
 h3{

@@ -309,6 +309,9 @@ h1, h2, h4, h4, h5, h6 {
   font-family: '__Onest_492953' !important;
   font-weight: 600 !important;
 }
+.tp-blog-content span{
+  color: #111 !important;
+}
 /* .tp-hero-subtitle {
     left: -27% !important;
 }  */
@@ -1026,6 +1029,7 @@ section.animationContent h2 {
 .flipelements .button-text.sticky.left {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .flipelements {
   display: flex;
@@ -1212,7 +1216,7 @@ span.textline-1 {
 }
 .btnWrapper {
   font-size: 16px;
-  padding: 5px 16px;
+  padding: 10px 16px;
 }
 .bannerVideo .tp-hero-title .boldHeading {
   font-size: 4rem;
@@ -1265,8 +1269,15 @@ footer .tp-footer-big-title {
 }
 .showcase-portfolio {
   width: calc(100% - 20px);
-  gap: 40px;
+  /* gap: 20px; */
   justify-content: space-between;
+}
+.showcase-portfolio .slide-caption .slide-title {
+  font-size: 18px !important;
+  line-height: 26px !important;
+}
+.tp-team-area .swiper-wrapper .swiper-slide, .tp-team-area .swiper-wrapper .swiper-slide > div, .tp-team-area .swiper-wrapper .swiper-slide .tp-team-area .tp-hover-btn-item, .tp-team-area .swiper-slide .tp-hover-btn-item img {
+  height: 270px !important;
 }
 .showcase-portfolio.expand-grid .clapat-item {
   flex: 0 0 26%;
@@ -1277,6 +1288,40 @@ footer .tp-footer-big-title {
   flex: 0 0 60%;
   max-width: calc(60% - 80px);
 }
+.tp-testimonial-arrow-box button {
+  height: 40px !important;
+  width: 40px !important;
+}
+.awardsSec .tp-award-list-item {
+  border-bottom: 1px solid #a7a7a7 !important;
+}
+.tp-team-slider-wrapper .swiper-slide {
+  margin-right: 20px !important;
+}
+.tp-team-slider-wrapper  .tp-team-content span {
+  font-size: 11px !important;
+}
+.tp-team-slider-wrapper h4.tp-team-title-sm, .tp-team-slider-wrapper .tp-team-title-sm.h4 {
+  font-size: 16px !important;
+}
+.tp-testimonial-item p {
+  font-size: 16px !important;
+  line-height: 28px !important;
+}
+header #header-container {
+  padding: 10px 40px;
+}
+.bannerVideo.tp-hero-ptb {
+  padding-top: 50px;
+}
+/* .showcase-portfolio .slide-inner .flip-thumb-inner, .flip-move-thumb {
+  min-width: 100px !important;
+  min-height: 60px !important;
+  width: 100px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+} */
 }
 @media (max-width:991px){
   .tp-service-right-wrap {
@@ -1284,8 +1329,28 @@ footer .tp-footer-big-title {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
+.bannerVideo .tp-hero-title {
+  font-size: 24px;
+  line-height: 38px;
+}
+.bannerVideo .tp-hero-title .boldHeading {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.tp-section-title {
+  font-size: 36px !important;
+}
+.tp-testimonial-area h2, .tp-testimonial-area .h2 {
+  line-height: 38px;
+}
 .lotify > div canvas {
   display: none;
+}
+#clapat-logo img {
+  max-width: 160px !important;
+}
+header #header-container {
+  padding: 10px 20px;
 }
 }
 

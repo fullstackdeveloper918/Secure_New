@@ -14,7 +14,7 @@ export default function BlogOne() {
             </div>
         <div className="row">
           {blog_items.map((item) => (
-            <div key={item.id} className="col-xl-3 col-lg-6 col-md-6 mb-50">
+            <div key={item.id} className="col-xl-3 col-lg-6 col-md-6">
               <BlogItemTwo item={item} />
             </div>
           ))}
