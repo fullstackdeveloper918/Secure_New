@@ -11,8 +11,8 @@ import HeroSection from "../components/hero_section"
 export default function Home() {
   return (
     <>
-   <PreLoader/>
        {/* <!--/Preloader -->      */}
+   <PreLoader/>
        
        <div className="cd-index cd-main-content">
    
