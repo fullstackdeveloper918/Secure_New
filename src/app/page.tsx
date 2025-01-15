@@ -592,7 +592,7 @@ export default function Home() {
 
             <TeamOne />
             <TestimonialOne />
-            {/* <div className="awardsSec"><BlogOne /></div> */}
+            <div className="awardsSec"><BlogOne /></div>
             </main>
           <FooterFour />
 </div>

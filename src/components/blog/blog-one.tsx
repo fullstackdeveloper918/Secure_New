@@ -6,7 +6,7 @@ export default function BlogOne() {
   const blog_items = [...blog_home_five];
   return (
     <div className="tp-blog-area pb-70 blogOnemain">
-      <div className="container container-1775">
+      <div className=" container-1775 mx-auto">
         <div className="blog_sec"><h2 className="text-center">Our Blog</h2>
         <p>Check the best marketing resources and the latest blogs about our
               company.
