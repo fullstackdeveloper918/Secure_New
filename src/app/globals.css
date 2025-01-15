@@ -584,13 +584,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .big-title {
-  font-size: calc(1rem + 4vw);
-  line-height: calc(1rem + 4vw);
+  font-size: calc(1rem + 3vw);
+  line-height: calc(1rem + 3vw);
 }	
 
 h1{
-  font-size: calc(1rem + 4vw);
-  line-height: calc(1rem + 4vw);
+  font-size: calc(1rem + 3vw);
+  line-height: calc(1rem + 3vw);
 }
 
 h2{
@@ -676,7 +676,6 @@ p {
 }
 
 .container {
-  max-width:1280px;
   width:100%;
   margin:0 auto;
   box-sizing:border-box;

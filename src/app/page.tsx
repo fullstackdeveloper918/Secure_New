@@ -5,6 +5,12 @@ import PreLoader from "../components/preLoader";
 import AnimationHeader from "../components/animation_header";
 import HeroSection from "../components/hero_section";
 import HeaderOne from "@/layouts/headers/header-one";
+import AwardOne from "@/components/award/award-one";
+import ProjectTextLine from "@/components/project/project-text-line";
+import TeamOne from "@/components/team/team-one";
+import TestimonialOne from "@/components/testimonial/testimonial-one";
+import BlogOne from "@/components/blog/blog-one";
+import FooterFour from "@/layouts/footers/footer-four";
 // export const metadata: Metadata = {
 //   title: "Secure365 - Home Page",
 // };
@@ -70,13 +76,13 @@ export default function Home() {
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Bob's Specials</span>
+                                <span>Project 01</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Branding</span>
+                                <span>Web3</span>
                               </div>
                             </div>
                           </div>
@@ -108,7 +114,7 @@ export default function Home() {
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>This is Willo</span>
+                                <span>Project 02</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
@@ -146,7 +152,7 @@ export default function Home() {
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>The Infin</span>
+                                <span>Project 03</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
@@ -164,29 +170,29 @@ export default function Home() {
                       {/* <!-- Row --> */}
                       <div
                         className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
-                        data-bgcolor="transparent"
+                        data-bgcolor="#ebebeb"
                       >
                         <h1 className="text-align-center">
-                          We help businesses{" "}
+                          We empower businesses{" "}
                           <span
                             className="has-scale-image hide-ball"
                             data-img="images/client-01.png"
                             data-bgcolor="#000"
                           ></span>{" "}
-                          to innovate and{" "}
+                          to leverage cutting-edge technology and{" "}
                           <span
                             className="has-scale-image hide-ball"
                             data-img="images/client-02.png"
                             data-bgcolor="#000"
                           ></span>{" "}
-                          remain highly relevant to their customers by
-                          developing{" "}
+                          stay ahead in a rapidly evolving digital landscape by
+                          delivering{" "}
                           <span
                             className="has-scale-image hide-ball"
                             data-img="images/client-03.png"
                             data-bgcolor="#000"
                           ></span>{" "}
-                          edge digital products
+                          innovative IT solutions.
                         </h1>
                       </div>
                       {/* <!--/Row --> */}
@@ -203,13 +209,16 @@ export default function Home() {
                         <div className="one_half last">
                           <p className="bigger has-shuffle">The Challenge</p>
                           <p className="has-opacity" data-delay="0">
-                            There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration
+                            Modern businesses face complex challenges in
+                            integrating advanced IT solutions, often struggling
+                            with outdated systems and evolving technological
+                            demands. Our mission is to bridge this gap with
+                            innovative, scalable, and efficient IT services.
                           </p>
 
                           <div className="button-wrap right button-link has-animation">
                             <div className="icon-wrap parallax-wrap">
-                              <div className="button-icon parallax-element">
+                              <div className="button-icon parallax-ele  ment">
                                 <i className="fa-solid fa-arrow-right"></i>
                               </div>
                             </div>
@@ -393,7 +402,7 @@ export default function Home() {
                       {/* <!--/Row --> */}
 
                       {/* <!-- Row --> */}
-                      <div
+                      {/* <div
                         className="content-row small text-align-center light-section"
                         data-bgcolor="#ebebeb"
                       >
@@ -425,7 +434,7 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       {/* <!--/Row --> */}
                     </div>
                   </div>
@@ -434,7 +443,7 @@ export default function Home() {
                 {/* <!--/Main Page Content --> */}
 
                 {/* <!-- Page Navigation -->  */}
-                <div id="page-nav" className="move-nav-onload">
+                {/* <div id="page-nav" className="move-nav-onload">
                   <div className="page-nav-wrap">
                     <div className="page-nav-caption nav-full-caption content-full-width text-align-center">
                       <div className="inner">
@@ -455,7 +464,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 
                 {/* <!--/Page Navigation --> */}
 
@@ -565,6 +574,29 @@ export default function Home() {
         </div>
         {/* <!--/Page Content --> */}
       </div>
+
+            <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <main>
+            <div className="awardsSec">
+            <AwardOne />
+            </div>
+
+            <div className="container-fluid p-0">
+              <div className="row g-0">
+                <div className="col-xl-12">
+                  <ProjectTextLine />
+                </div>
+              </div>
+            </div>
+
+            <TeamOne />
+            <TestimonialOne />
+            {/* <div className="awardsSec"><BlogOne /></div> */}
+            </main>
+          <FooterFour />
+</div>
+</div>
 
       <div className="cd-cover-layer"></div>
       <div id="magic-cursor">

@@ -13,8 +13,8 @@ const animation_header = () => {
         {/* <!-- Logo --> */}
         <div id="clapat-logo" className="hide-ball">
             <a className="ajax-link" data-type="page-transition" href="/">
-                <img className="black-logo" src="images/logo.png" alt="ClaPat Logo"/>
-                <img className="white-logo" src="images/logo-white.png" alt="ClaPat Logo"/>
+                <img className="black-logo" src="images/logo.png" alt="Secure Logo"/>
+                <img className="white-logo" src="images/logo-white.png" alt="secure Logo"/>
             </a>
         </div>
         {/* <!--/Logo --> */}
@@ -27,13 +27,13 @@ const animation_header = () => {
                     <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="/"><div className="before-span"><span data-hover="Index">Index</span></div></a></li>
                     <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="#"><div className="before-span"><span data-hover="Projects">Projects</span></div></a>
                       <ul>
-                            <li><a className="ajax-link" href="index-highlights.html" data-type="page-transition">Highlights</a></li>
-                            <li><a className="ajax-link" href="index-portfolio.html" data-type="page-transition">Portfolio</a></li>
-                            <li><a className="ajax-link" href="index-playground.html" data-type="page-transition">Playground</a></li>
+                            <li><a className="ajax-link" href="#" data-type="page-transition">Highlights</a></li>
+                            <li><a className="ajax-link" href="#" data-type="page-transition">Portfolio</a></li>
+                            <li><a className="ajax-link" href="#" data-type="page-transition">Playground</a></li>
                         </ul>
                     </li>
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="about.html"><div className="before-span"><span data-hover="Agency">Agency</span></div></a></li>
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="resources.html"><div className="before-span"><span data-hover="Resources">Resources</span></div></a></li>
+                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="#"><div className="before-span"><span data-hover="Agency">Agency</span></div></a></li>
+                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="#"><div className="before-span"><span data-hover="Resources">Resources</span></div></a></li>
                 </ul>
             </div>          
         </nav>

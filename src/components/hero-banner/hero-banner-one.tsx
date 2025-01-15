@@ -36,7 +36,7 @@ const HeroBannerOne = () => {
                       <motion.div
                         initial={{ opacity: 0, y: 200 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 11 }}
+                        transition={{ duration: 0.7, delay: 8 }}
                         className="p-relative "
                       >
                         Expert<b> Business</b>
@@ -44,9 +44,9 @@ const HeroBannerOne = () => {
                         <span className="boldHeading">
                           <b>IT Services</b>
                           <motion.div
-                            initial={{ opacity: 0, y: 450 }}
+                            initial={{ opacity: 0, y: 250 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.9, delay: 12 }}
+                            transition={{ duration: 0.9, delay: 8 }}
                             className="p-relative "
                           >
                             <div className="boldHeading">
@@ -76,7 +76,7 @@ const HeroBannerOne = () => {
               <motion.div
                 initial={{ opacity: 0, y: 200 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 13 }}
+                transition={{ duration: 0.8, delay: 7 }}
                 className="tp-hero-content p-relative Zindex100"
               >
                 <p>

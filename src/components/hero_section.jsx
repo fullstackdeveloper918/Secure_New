@@ -1,10 +1,12 @@
 import React from 'react'
+import HeroBannerOne from './hero-banner/hero-banner-one'
 
 const hero_section = () => {
   return (
     <div id="hero">
     <div id="hero-styles">
-        <div id="hero-caption" className="content-full-width parallax-scroll-caption text-align-center hero-full-caption landing-page-title">
+    <HeroBannerOne />
+        {/* <div id="hero-caption" className="content-full-width parallax-scroll-caption text-align-center hero-full-caption landing-page-title">
             <div className="inner">
             
                 <h1 className="hero-title caption-timeline">
@@ -15,7 +17,7 @@ const hero_section = () => {
                     <span>Bringing brands to life</span> <span>through creative web solutions</span>
                 </div>                                   
             </div>
-        </div>
+        </div> */}
         <div id="hero-footer" className="has-border">
           <div className="hero-footer-left">
               <div className="button-wrap left scroll-down">

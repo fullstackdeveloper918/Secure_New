@@ -275,7 +275,7 @@ div#welcome {
   font-weight: 600 !important;
 }
 .tp-project-textline span.textline-1 {
-  font-family: '__Onest_492953';
+  font-family: '__Onest_492953' !important;
 }
 .bannerVideo::before {
     position: absolute;
@@ -433,6 +433,10 @@ footer .tp-footer-big-title {
 .tp-footer-menu ul li a .tp-menu-text {
   font-family: '__Onest_492953' !important;
 }
+.tp-team-area .swiper-wrapper .swiper-slide, .tp-team-area  .swiper-wrapper .swiper-slide>div, .tp-team-area  .swiper-wrapper .swiper-slide .tp-team-area  .tp-hover-btn-item, 
+.tp-team-area  .swiper-slide .tp-hover-btn-item img {
+  height: 464px !important;
+}
 .bannerVideo .tp-hero-title-wrap {
   max-width: 95%;
   width: 100%;
@@ -502,7 +506,7 @@ h4.tp-team-title-sm {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  height: 93vh;
+  height: 98vh;
 }
 .bannerVideo .container {
   max-width: 114rem !important;
@@ -547,6 +551,7 @@ button.BtnTwo {
   color: #000;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 button.BtnTwo:hover {
   background: #000;
@@ -1074,8 +1079,9 @@ section.animationContent h2 {
 .tp-service-area .container{
   max-width: 1440px;
 }
-.tp-testimonial-area h2 {
-  margin: 0px 0px 50px;
+.tp-testimonial-area h2, .tp-testimonial-area .h2 {
+  margin: 0px 0px 10px;
+  font-size: 30px;
 }
 section.challange_sec {
   background: #f9f9f9;
@@ -1153,6 +1159,40 @@ section.challange_sec h2 {
 .logoPng {
   margin: 2rem 4rem;
 }
+.tp-project-textline {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin: 0px !important;
+}
+h4.tp-team-title-sm a {
+  color: #fff;
+  padding: 10px 0px 0px !important;
+  display: block;
+}
+span.textline-1 {
+  display: flex;
+  align-items: center;
+}
+.tp-testimonial-arrow-box button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tp-testimonial-arrow-box button {
+  border: 1px solid #000000 !important;
+}
+.tp-footer-3-btn .icon-1 {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+.flipelements span, .tp-award-list-wrap span, .aboutIcon span, .aboutIcon .icon {
+	color: #111;
+}
+.projects-list-captions span {
+	font-size: 6vw !important;
+	white-space: pre;
+}
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;
@@ -1197,6 +1237,18 @@ footer .tp-footer-big-title {
 .tp-service-content p {
   font-size: 14px;
   line-height: 24px;
+}
+.awardsSec .tp-award-area, .awardsSec .tp-blog-area  {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bannerVideo .tp-hero-title .boldHeading {
+  font-size: 4rem;
+  line-height: 3rem;
+}
+.bannerVideo .tp-hero-title {
+  font-size: 24px;
+  line-height: 58px;
 }
 }
 

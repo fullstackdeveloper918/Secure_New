@@ -2491,7 +2491,7 @@ input:focus + .input_label, textarea:focus + .input_label {
 }
 
 input:focus, textarea:focus {
-	color:#000;
+	color:#fff;
 }
 
 .light-content input:focus, .light-content textarea:focus, .dark-section input:focus, .dark-section textarea:focus {
@@ -2536,7 +2536,9 @@ input[type="submit"] {
 	padding-right:50px;
 	height:100%;
 }
-
+.tp-footer-2-contact-item a {
+    color: #fff;
+}
 .light-content input[type="submit"], .dark-section input[type="submit"] {
 	color:#000;
 }
@@ -3644,8 +3646,8 @@ Pinned Lists
 	list-style:none;
 	width: auto;
 	  display: table;
-	font-size: calc(1rem + 4vw);
-	line-height: calc(1rem + 4vw);
+	font-size: calc(1rem + 3vw);
+	line-height: calc(1rem + 3vw);
 	letter-spacing: -0.15vw;
 	font-weight:500;
 	color:#000;
