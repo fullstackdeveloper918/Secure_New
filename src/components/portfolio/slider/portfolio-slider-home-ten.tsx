@@ -96,8 +96,8 @@ const slider_setting_one = {
   slidesToScroll: 1,
   fade: true,
   speed: 1000,
-  nextArrow: "",
-  prevArrow: "",
+  // nextArrow: "",
+  // prevArrow: "",
   // nextArrow: <SlickNextArrow />,
   // prevArrow: <SlickPrevArrow />,
 };
@@ -110,8 +110,8 @@ const slider_setting_two = {
   focusOnSelect: true,
   centerPadding: "0",
   speed: 600,
-  nextArrow: "",
-  prevArrow: "",
+  // nextArrow: "",
+  // prevArrow: "",
   // nextArrow: <SlickNextArrow />,
   // prevArrow: <SlickPrevArrow />,
   responsive: [
@@ -174,7 +174,7 @@ export default function PortfolioSliderHomeTen() {
   return (
     <div className="tp-portfolio-11-area fix">
       <div className="tp-portfolio-11-slider-wrap p-relative">
-        <Slider
+        {/* <Slider
           {...slider_setting_one}
           asNavFor={slider2 as Slider}
           ref={(slider) => {
@@ -208,7 +208,7 @@ export default function PortfolioSliderHomeTen() {
               </div>
             </div>
           ))}
-        </Slider>
+        </Slider> */}
 
         <div className="dddd"></div>
 
