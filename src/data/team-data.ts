@@ -59,8 +59,8 @@ const team_data:ITeamDT[] = [
   {
     id:10,
     image:"/assets/img/home-01/team/team-1-13.png",
-    designation:"Abhay",
-    name:"Web Developer",
+    designation:"Web Developer",
+    name:"Abhay",
   },
   {
     id:11,
@@ -71,8 +71,8 @@ const team_data:ITeamDT[] = [
   {
     id:12,
     image:"/assets/img/home-01/team/team-1-9.png",
-    designation:"Neha",
-    name:"Human Resource",
+    designation:"Human Resource",
+    name:"Neha",
   },
  
   
