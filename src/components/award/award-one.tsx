@@ -90,7 +90,7 @@ const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
   const [activeThumb, setActiveThumb] = React.useState(1);
   return (
     <div className={`tp-award-area ${cls}`}>
-      <div className="container container-1630">
+      <div className="container-1630 mx-auto">
         {/* <div className="row">
           <div className="col-xxl-12 col-xl-12">
             {!abStyle && (

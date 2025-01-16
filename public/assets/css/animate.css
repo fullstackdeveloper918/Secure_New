@@ -1197,6 +1197,9 @@ span.textline-1 {
 	font-size: 6vw !important;
 	white-space: pre;
 }
+.awardsSec .tp-award-list-item {
+  border-bottom: 1px solid #a7a7a7 !important;
+}
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;
@@ -1292,9 +1295,7 @@ footer .tp-footer-big-title {
   height: 40px !important;
   width: 40px !important;
 }
-.awardsSec .tp-award-list-item {
-  border-bottom: 1px solid #a7a7a7 !important;
-}
+
 .tp-team-slider-wrapper .swiper-slide {
   margin-right: 20px !important;
 }
@@ -1314,14 +1315,17 @@ header #header-container {
 .bannerVideo.tp-hero-ptb {
   padding-top: 50px;
 }
-/* .showcase-portfolio .slide-inner .flip-thumb-inner, .flip-move-thumb {
-  min-width: 100px !important;
-  min-height: 60px !important;
-  width: 100px !important;
-  height: 60px !important;
-  max-width: 60px !important;
-  max-height: 60px !important;
-} */
+}
+@media (max-width:1024px){
+  div#header-container ul.flexnav.with-js, div#header-container ul li, div#header-container ul li a {
+    background: transparent;
+  }
+  nav.clapat-nav-wrapper ul li a span {
+    color: #fff;
+}
+.tp-team-area .swiper-wrapper .swiper-slide, .tp-team-area .swiper-wrapper .swiper-slide > div, .tp-team-area .swiper-wrapper .swiper-slide .tp-team-area .tp-hover-btn-item, .tp-team-area .swiper-slide .tp-hover-btn-item img {
+  height: 370px !important;
+}
 }
 @media (max-width:991px){
   .tp-service-right-wrap {
@@ -1343,14 +1347,61 @@ header #header-container {
 .tp-testimonial-area h2, .tp-testimonial-area .h2 {
   line-height: 38px;
 }
-.lotify > div canvas {
-  display: none;
-}
 #clapat-logo img {
   max-width: 160px !important;
 }
 header #header-container {
   padding: 10px 20px;
+}
+.lotify > div canvas {
+  width: 100% !important;
+  transform: unset;
+  position: unset;
+}
+.bannerVideo .container {
+  height: fit-content;
+  gap: 0px;
+  width: 100% !important;
+  max-width: 100% !important;
+  justify-content: space-between;
+  margin: 30px auto 0px;
+}
+.tp-testimonial-item span {
+  color: #111 !important;
+}
+}
+@media (max-width:767px){
+  .bannerVideo .tp-hero-title .boldHeading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.tp-project-textline span {
+  line-height: 100px !important;
+  font-size: 40px !important;
+}
+
+.flip-thumbs-wrapper {
+  display: none !important;
+}
+.flipelements {
+  width: 100%;
+  padding: 0px 20px 0px 10px;
+}
+.bannerVideo.tp-hero-ptb {
+  height: fit-content;
+  padding-bottom: 30px;
+}
+.lotify {
+  display: none;
+}
+.bannerVideo .container {
+  padding: 0px 20px;
+}
+header #header-container {
+  padding: 10px;
+}
+.showcase-portfolio.filp-grid {
+  padding: 0px;
 }
 }
 

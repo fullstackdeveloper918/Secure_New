@@ -158,7 +158,7 @@ export default function Home() {
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Photography</span>
+                                <span>Photogra  phy</span>
                               </div>
                             </div>
                           </div>
@@ -249,7 +249,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project04.html"
                               ></a>
-                              <span>The Invincibles</span>
+                              <span>Artificial Intelligence</span>
                             </li>
                             <li data-centerline="OPEN">
                               <a
@@ -257,7 +257,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project05.html"
                               ></a>
-                              <span>Provenance</span>
+                              <span>Blockchain Solution</span>
                             </li>
                             <li data-centerline="OPEN">
                               <a
@@ -265,7 +265,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project06.html"
                               ></a>
-                              <span>Unbreak</span>
+                              <span>Network Solutions</span>  
                             </li>
                             <li data-centerline="OPEN">
                               <a
@@ -273,7 +273,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project07.html"
                               ></a>
-                              <span>Kouch Dominion</span>
+                              <span>Cybersecurity</span>
                             </li>
                             <li data-centerline="OPEN">
                               <a
@@ -281,7 +281,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project08.html"
                               ></a>
-                              <span>VX Lab</span>
+                              <span>Data & Analytics</span>
                             </li>
                             <li data-centerline="OPEN">
                               <a
@@ -289,7 +289,7 @@ export default function Home() {
                                 data-type="page-transition"
                                 href="project09.html"
                               ></a>
-                              <span>Mimco Blue</span>
+                              <span>SEO & Marketing</span>
                             </li>
                           </ul>
 
@@ -298,7 +298,7 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/04hero.jpg"
+                                    src="images/011hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
@@ -309,7 +309,7 @@ export default function Home() {
                                   </div>
                                 </div>
                                 <img
-                                  src="images/04hero.jpg"
+                                  src="images/011hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -319,13 +319,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/05hero.jpg"
+                                    src="images/012hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/05hero.jpg"
+                                  src="images/012hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -335,13 +335,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/06hero.jpg"
+                                    src="images/013hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/06hero.jpg"
+                                  src="images/013hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -351,13 +351,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/07hero.jpg"
+                                    src="images/014hero.png"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/07hero.jpg"
+                                  src="images/014hero.png"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -367,13 +367,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/08hero.jpg"
+                                    src="images/015hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/08hero.jpg"
+                                  src="images/015hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -383,13 +383,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/09hero.jpg"
+                                    src="images/016hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/09hero.jpg"
+                                  src="images/016hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
