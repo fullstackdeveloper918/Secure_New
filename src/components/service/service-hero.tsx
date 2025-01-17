@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // image
-import ser_hero from "@/assets/img/inner-service/hero/hero-1.jpg";
+import ser_hero from "@/assets/img/inner-service/hero/hero-3.jpg";
 import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
 
 export default function ServiceHero() {
@@ -13,10 +13,12 @@ export default function ServiceHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-                Experience <br /> the best services.
+              Comprehensive IT <span className="blueColor">Solutions</span> <br />
+                 
               </h4>
+              <h3 className="servicesSub tp-char-animation">Tailored for Your Business</h3>
               <p className="tp_fade_bottom">
-                Fulfilled direction use continual set him propriety continued.
+              From security to support, we handle it all—so you don’t have to.
               </p>
             </div>
           </div>

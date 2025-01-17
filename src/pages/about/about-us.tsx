@@ -16,6 +16,8 @@ import TeamOne from "@/components/team/team-one";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
 import AwardOne from "@/components/award/award-one";
+import AnimationHeader from "@/components/animation_header";
+
 // animation
 import {
   charAnimation,
@@ -28,6 +30,8 @@ import AboutThree from "@/components/about/about-three";
 import AboutFour from "@/components/about/about-four";
 import FooterFour from "@/layouts/footers/footer-four";
 import HeaderOne from "@/layouts/headers/header-one";
+import AboutPortfolio from "@/components/portfolio/about-portfolio";
+import AboutWork from "@/components/work/about-work";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -45,7 +49,9 @@ const AboutUsMain = () => {
 
   return (
     <Wrapper>
-      <HeaderEleven transparent={true} />
+      {/* <HeaderEleven transparent={true} /> */}
+      <AnimationHeader />
+      
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
@@ -53,6 +59,7 @@ const AboutUsMain = () => {
 
             <AboutUsArea />
             <AboutFour/>
+            {/* <AboutPortfolio /> */}
             <AboutThree/>
 
             <TeamOne spacing="" />
@@ -61,7 +68,10 @@ const AboutUsMain = () => {
 
             <BrandFive />
 
-            <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} />
+            {/* <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} /> */}
+            <div className="ab-award-style pt-120 pb-120" >
+  <AboutWork />
+            </div>
           </main>
 
           {/* <FooterTwo topCls="" /> */}

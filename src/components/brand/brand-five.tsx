@@ -32,7 +32,7 @@ export default function BrandFive() {
         </div>
         <div className="row">
           <div className="col-xl-12">
-            <div className="ab-brand-wrapper mb-80">
+            <div className="ab-brand-wrapper mb-20">
               <div className="swiper-container ab-brand-slide-active">
                 <Marquee speed={100} loop={0} className="ab-brand-slide-wrap">
                   {brand_images.map((b, i) => (

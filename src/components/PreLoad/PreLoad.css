@@ -22,7 +22,7 @@
     line-height: 3vw;
     color: #fff;
     font-family: "__Onest_492953";
-    font-weight: 600;
+    font-weight: 700;
   }
   /* .word {
     font-size: 24px;
@@ -37,6 +37,7 @@
     opacity: 0;
     /* visibility: hidden; */
     white-space: nowrap; /* Prevent wrapping */
+    font-weight: 700;
   }
   .loadbar-container {
     width: 100%;

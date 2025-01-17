@@ -13,24 +13,22 @@ export default function ServiceDetailsArea() {
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
-            <div className="service-details__title-box mb-40">
+            <div className="service-details__title-box mb-10">
               <span className="service-details__subtitle tp-char-animation">
-                Design Studio
+              Secure, Scalable, and Hassle-Free
               </span>
               <h4 className="sv-hero-title tp-char-animation">
-                Logo and branding
+              Server & <span className="blueColor">Cloud Management</span>
               </h4>
             </div>
           </div>
           <div className="row">
             <div className="offset-xl-4 col-xl-5">
-              <div className="service-details__banner-text mb-80">
+              <div className="service-details__banner-text mb-20">
                 <p className="mb-30 tp_title_anim">
-                  Branding is essential to establish yourself in the market
-                  <br /> in a unique and permanent way. At Riveal, we attach{" "}
-                  <br /> great importance. We seek to understand your business
-                  to better convey your values ​​and your talent <br /> through
-                  your brand image.{" "}
+                Optimize your business’s operations
+                  <br /> with managed server solutions and secure {" "}
+                  <br /> cloud infrastructure.{" "}
                 </p>
                 <p className="tp_title_anim">
                   Explore our achievements and let yourself be <br /> convinced!
@@ -61,19 +59,19 @@ export default function ServiceDetailsArea() {
           <div className="col-xl-7 col-lg-7">
             <div className="service-details__left-wrap">
               <div className="service-details__left-text pb-20">
-                <p className="text-1 tp_title_anim">
-                  Your logo is at the heart of your identity. An impactful
-                  design, tailor-made and in line with your activity will allow
-                  you to differentiate yourself and mark your audience.
-                </p>
+                <h2 className="tp_title_anim">
+                Benefits of Choosing Secure365
+                </h2>
                 <p>
-                  Great user experience design lets users focus on the task they
-                  have to complete and evokes emotion without distracting them.!
+                Choosing Secure365 ensures your data remains protected, your systems stay resilient, and your peace of mind is guaranteed!
                 </p>
               </div>
               <div className="service-details__fea-list">
                 <ul>
-                  <li>Graphic research and production</li>
+                  <li>
+                    <h5>Enhanced Security</h5>
+                    <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                    </li>
                   <li>Presentation of your logo on different media</li>
                   <li>
                     Advice on the graphic orientation of your logo or its

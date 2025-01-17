@@ -9,20 +9,20 @@ import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 const service_data = [
   {
     id: 1,
-    title: "Branding",
-    desc: "Branding is one of the most important ingredients for the success of any business.",
+    title: "Proactive & Preventative",
+    desc: "We don’t just react to issues; we prevent them from happening",
     icon: s_2,
   },
   {
     id: 2,
-    title: "Website design",
-    desc: "The perfect cocktail should still look and taste perfect no matter the size of the glass you serve it in.",
+    title: "End-to-End Solutions",
+    desc: "From assessment to implementation and ongoing support, we cover the entire process",
     icon: s_1,
   },
   {
     id: 3,
-    title: "Marketing",
-    desc: "We take that same approach with the apps & websites we create. you go there because of the overall experience.",
+    title: "Client-Centric",
+    desc: "Your needs come first. We customize our services to fit your business’s unique goals  and challenges",
     icon: s_3,
   },
 ];
