@@ -21,7 +21,7 @@ const HeroBannerOne = () => {
   return (
     <div className="bannersection">
       <div
-        className="tp-hero-area tp-hero-ptb main-slider bannerVideo "
+        className="tp-hero-area main-slider bannerVideo "
         style={{
           background: "url(../assets/img/home-01/hero/section-bg-1.jpg)",
         }}

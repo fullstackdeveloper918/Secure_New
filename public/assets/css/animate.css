@@ -497,6 +497,7 @@ header.tp-header-height .container {
 .bannerVideo .tp-hero-content {
   max-width: 95%;
 }
+
 h4.tp-team-title-sm {
   font-size: 22px;
   font-weight: 600;
@@ -522,7 +523,7 @@ h4.tp-team-title-sm {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  height: 98vh;
+  height: 85vh;
 }
 .bannerVideo .container {
   max-width: 114rem !important;
@@ -1216,6 +1217,13 @@ span.textline-1 {
 
 
 /* about_us */
+.homepage div#header-container {
+  background: #f9f9f9;
+}
+.about_usClass div#header-container {
+  background: #fff;
+  padding-bottom: 8px;
+}
 .ab-inner-hero-area .ab-inner-hero-title {
   font-size: 5rem !important;
   line-height: 6rem !important;

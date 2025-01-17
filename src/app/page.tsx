@@ -21,7 +21,7 @@ export default function Home() {
       {/* <!--/Preloader -->      */}
       <PreLoader />
 
-      <div className="cd-index cd-main-content">
+      <div className="cd-index cd-main-content homepage">
         {/* <!-- Page Content --> */}
         <div
           id="clapat-page-content"

@@ -8,7 +8,10 @@ export const metadata: Metadata = {
 
 const AboutUsPage = () => {
   return (
-    <AboutUsMain/>
+    <div className="about_usClass">
+      <AboutUsMain/>
+    </div>
+    
   );
 };
 
