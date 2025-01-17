@@ -1668,7 +1668,7 @@ i.arrow-icon-up::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffffd1;
+  background: #ffffffd6;
   backdrop-filter: blur(14px);
 }
 

@@ -1236,9 +1236,44 @@ span.textline-1 {
 .service-details__fea-list h5 {
   margin: 0px;
 }
-.indexeddb 
+/* .indexeddb 
  div#header-container {
     background: transparent;
+} */
+.tp-service-4-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.tp-service-4-icon img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.tp-service-4-item {
+  background-color: #1e1e1e0d !important;
+}
+.tp-service-4-content p {
+  color: rgb(0 0 0 / 70%) !important;
+}
+.tp-service-4-content a.tp-service-4-link {
+  color: #111 !important;
+}
+.tp-service-4-link::after {
+  background-color: #000000 !important;
+}
+.tp-service-4-title {
+  font-weight: 600  !important;
+  font-family: '__Onest_492953'  !important;
+}
+.service-details__fea-list ul li::after{
+  background: url(../../images/Approval.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  width: 28px !important;
+  height: 30px !important;
+  left: -16px !important;
+  top: 9px !important;
 }
 /* serives end*/
 

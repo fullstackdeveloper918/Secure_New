@@ -2,7 +2,10 @@ import React from 'react'
 
 const animation_header = () => {
   return (
-    <header className="clapat-header classic-menu invert-header" data-menucolor="#0c0c0c">
+    <header 
+    // className="clapat-header classic-menu invert-header" 
+    className='classic-menu invert-header'
+    data-menucolor="#0c0c0c">
              
     {/* <!-- Graidient --> */}
     <div className="header-gradient"></div>

@@ -11,6 +11,8 @@ import sv_1 from "@/assets/img/home-04/service/sv-icon-1.png";
 import sv_2 from "@/assets/img/home-04/service/sv-icon-2.png";
 import sv_3 from "@/assets/img/home-04/service/sv-icon-3.png";
 import sv_4 from "@/assets/img/home-04/service/sv-icon-4.png";
+import sv_5 from "@/assets/img/home-04/service/sv-icon-5.png";
+import sv_6 from "@/assets/img/home-04/service/sv-icon-6.png";
 
 
 // slider setting
@@ -49,38 +51,38 @@ const service_data = [
   {
     id: 1,
     icon: sv_1,
-    title: "Website design",
-    subtitle: "You’re ready to take your business to higher ground.",
+    title: "Cloud Migration & Setup",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
   {
     id: 2,
     icon: sv_2,
-    title: "Web development",
-    subtitle: "You’re ready to take your business to higher ground.",
+    title: "Server Configuration & Optimization",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
   {
     id: 3,
     icon: sv_3,
-    title: "UI/UX Design",
-    subtitle: "You’re ready to take your business to higher ground.",
+    title: "Data Security & Backup Solutions",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
   {
     id: 4,
     icon: sv_4,
-    title: "Growth",
-    subtitle: "You’re ready to take your business to higher ground.",
+    title: "Hybrid Cloud & On-Premises Solutions",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
   {
     id: 5,
-    icon: sv_2,
-    title: "App development",
-    subtitle: "You’re ready to take your business to higher ground.",
+    icon: sv_5,
+    title: "Performance Monitoring & 24/7 Support",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
   {
     id: 6,
-    icon: sv_4,
-    title: "Marketing",
-    subtitle: "You’re ready to take your business to higher ground.",
+    icon: sv_6,
+    title: "Disaster Recovery Planning",
+    subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
 ];
 export default function ServiceThree() {
@@ -95,10 +97,9 @@ export default function ServiceThree() {
           <div className="row align-items-end">
             <div className="col-xl-9 col-lg-9 col-md-9">
               <div className="tp-service-4-title-box tp_fade_bottom">
-                <h4 className="tp-service-4-title">
-                  We work with select service providers in the disability sector
-                  to develop inclusive products tailored to their needs.
-                </h4>
+                <h2 className="tp-service-4-title">
+                Our Services Include
+                </h2>
               </div>
             </div>
             <div className="col-xl-3 col-lg-3 col-md-3">
@@ -122,9 +123,7 @@ export default function ServiceThree() {
             <SwiperSlide key={item.id}>
               <div
                 className="tp-service-4-item"
-                style={{
-                  backgroundImage: "url(/assets/img/home-04/hero/overly.png)",
-                }}
+                
               >
                 <div className="tp-service-4-icon">
                   <Image src={item.icon} alt="icon" />
