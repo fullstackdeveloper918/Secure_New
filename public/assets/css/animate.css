@@ -1537,6 +1537,10 @@ header #header-container {
 .bannerVideo.tp-hero-ptb {
   padding-top: 50px;
 }
+.tm-hero-area, .cn-contactform-area {
+  max-width: 96%;
+  margin: 0px auto;
+}
 }
 @media (max-width:1024px){
   div#header-container ul.flexnav.with-js, div#header-container ul li, div#header-container ul li a {
@@ -1548,6 +1552,7 @@ header #header-container {
 .tp-team-area .swiper-wrapper .swiper-slide, .tp-team-area .swiper-wrapper .swiper-slide > div, .tp-team-area .swiper-wrapper .swiper-slide .tp-team-area .tp-hover-btn-item, .tp-team-area .swiper-slide .tp-hover-btn-item img {
   height: 370px !important;
 }
+
 }
 @media (max-width:991px){
   .tp-service-right-wrap {

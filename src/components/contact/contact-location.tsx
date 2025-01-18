@@ -35,7 +35,7 @@ const ContactLocation = () => {
                     <div className="cn-contact-thumb">
                       <Image src={item.img} alt="image" style={{ height: "auto" }} />
                     </div>
-                    <div className="cn-contact-left-info md:pr-20 px-10">
+                    <div className="cn-contact-left-info md:pr-20 md:px-10 px-4 pt-10 pb-5">
                       <h4 className="cn-contact-left-title">{item.country}</h4>
                       <span className="pb-10 d-block">
                         {/* <i className="fa-regular fa-clock"></i> */}

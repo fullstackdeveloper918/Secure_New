@@ -45,7 +45,7 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-8">
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
-                  <p className="mb-100">
+                  <p className="mb-100  md:mt-0 pt-10">
                     Drop us a line sed id semper <br />
                     risus in hend rerit.
                   </p>
