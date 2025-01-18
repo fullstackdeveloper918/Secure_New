@@ -22,7 +22,7 @@ export default function FooterFour() {
                       <li><a href="/service">Serivces</a></li>
                       <li><a href="#">Landing</a></li>
                       <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="/contact">Contact</a></li>
                     </ul>
                   </div>
                 </div>

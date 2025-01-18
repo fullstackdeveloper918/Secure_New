@@ -48,7 +48,7 @@ export default function ContactForm({btnCls=''}:IProps) {
       </div>
       <div className="cn-contactform-btn">
         <button className={`tp-btn-black-md ${btnCls} w-100`} type="submit">
-          Send Message
+          Submit
         </button>
       </div>
     </form>
