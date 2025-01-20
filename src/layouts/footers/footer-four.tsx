@@ -20,7 +20,7 @@ export default function FooterFour() {
                       <li><a href="#">Home</a></li>
                       <li><a href="/about-us">About</a></li>
                       <li><a href="/service">Serivces</a></li>
-                      <li><a href="#">Landing</a></li>
+                      <li><a href="/Why-Choose-Us">Why Choose Us</a></li>
                       <li><a href="#">Blog</a></li>
                       <li><a href="/contact">Contact</a></li>
                     </ul>

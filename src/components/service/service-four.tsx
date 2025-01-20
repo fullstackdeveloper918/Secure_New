@@ -7,47 +7,36 @@ import icon from '@/assets/img/home-03/service/sv-icon-1.png';
 const service_data = [
   {
     id: 1,
-    title: "Product design",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Research", "Ui/ UX", "Prototyping"],
+    title: "Unique Blend of Skills",
+    desc: "Our team combines expertise in criminology, cybersecurity, digital strategy, and IT management, allowing us to tackle challenges from multiple angles",
+    category: ["innovative", "user-centric solutions"],
   },
   {
     id: 2,
-    title: "Web/Mobile",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["SEO", "Creative Development", "Varcel"],
+    title: "Flexible & Scalable Solutions",
+    desc: "Whether you’re a small business or a large enterprise, our solutions are designed to scale with your needs and evolve as your business grows",
+    category: ["FlexibleScalable", "SolutionsTailored"],
   },
   {
     id: 3,
-    title: "Consulting",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Creative", "Digital strategy", "MVP"],
+    title: "Unmatched Support",
+    desc: "With 24/7 availability and a dedicated support team, we’re always here when you need us, providing quick resolutions and strategic advice",
+    category: ["dedicated", "customer-focused support"],
   },
 ];
 export default function ServiceFour() {
   
   return (
-    <div className="tp-service-3-area pt-130 pb-130">
+    <div className="tp-service-3-area md:py-20 py-10 tm-herointro">
       <div className="container">
         <div className="row">
           <div className="col-xl-9">
-            <div className="tp-service-3-title-box mb-60 p-relative">
+            <div className="tp-service-3-title-box mb-20 p-relative">
               <div className="tp-service-3-icon">
                 <Image src={icon} alt="icon" />
               </div>
-              <span className="tp-section-subtitle-2 tp_fade_bottom">
-                <span>
-                  <FirstBracket />
-                </span>
-                <span className="tp-subtitle-text tp_text_invert">
-                  Our approach
-                </span>
-                <span>
-                  <FirstBracketTwo />
-                </span>
-              </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                Creative <br /> development studio
+              Our Core Strengths
               </h4>
             </div>
           </div>

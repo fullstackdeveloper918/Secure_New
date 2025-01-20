@@ -1393,6 +1393,38 @@ span.textline-1 {
   max-width: 100%;
 }
 /* conatcPage end */
+
+/* whuchooseUs */
+.tm-herointro {
+  background: #e9e9e9;
+}
+.tp-btn-zikzak-sm .zikzak-content svg {
+  display: block !important;
+}
+.heroIntro p {
+  color: #363636;
+}
+img.rightImage {
+  width: 100%;
+  height: 100%;
+}
+.align-center{
+  align-items: center;
+}
+.tp-service-2-accordion-box{
+  height: fit-content !important;
+}
+.accordion-collapse.collapse.show {
+  visibility: visible;
+}
+.fq-faq-wrapper div#accordionExample {
+  max-width: 70rem;
+  margin: 0px auto;
+}
+.flex-col-reverse{
+  flex-direction: unset !important;
+}
+/* whuchooseUs */
 @media (max-width:1440px){
   .bannerVideo .tp-hero-content p {
     font-size: 16px;
@@ -1605,6 +1637,18 @@ header #header-container {
   .bannerVideo .tp-hero-title .boldHeading {
     font-size: 2.5rem;
     line-height: 2.5rem;
+}
+.tm-herointro h4.tp-service-3-title {
+  font-size: 22px;
+}
+h2.tm-herointro-title.tp-char-animation.text-center, h4.tp-section-title-90.tp_text_invert {
+  font-size: 32px !important;
+}
+.flex-col-reverse{
+  flex-direction: column-reverse !important;
+}
+.tm-hero-ptb {
+  padding-bottom: 10px !important;
 }
 .tp-project-textline span {
   line-height: 100px !important;
