@@ -21,6 +21,7 @@ import bannerDiv2 from "../../../public/assets/img/inner-faq/faq/InnerDiv_1.png"
 import { ServiceItems } from "@/components/service/service-five";
 import { Leaf } from "@/components/svg";
 import ServiceFour from "@/components/service/service-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const FaqMain = () => {
   useScrollSmooth();
@@ -167,7 +168,7 @@ const FaqMain = () => {
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" />
+        <FooterFour />
             {/* footer area */}
           </div>
         </div>
