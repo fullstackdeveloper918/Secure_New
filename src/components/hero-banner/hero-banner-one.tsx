@@ -39,7 +39,7 @@ const HeroBannerOne = () => {
                         transition={{ duration: 0.7, delay: 8 }}
                         className="p-relative "
                       >
-                        Expert<b> Business</b>
+                        {/* Expert<b> Business</b> */}
                         <br />
                         <span className="boldHeading">
                           <b>IT Services</b>
