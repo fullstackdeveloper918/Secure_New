@@ -11,11 +11,38 @@ import TeamOne from "@/components/team/team-one";
 import TestimonialOne from "@/components/testimonial/testimonial-one";
 import BlogOne from "@/components/blog/blog-one";
 import FooterFour from "@/layouts/footers/footer-four";
+import { useEffect } from "react";
 // export const metadata: Metadata = {
 //   title: "Secure365 - Home Page",
 // };
 
 export default function Home() {
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/home",
+          {
+            cache: "no-store",
+          }
+        );
+  
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+  
+        const data = await response.json();
+        console.log(data, "datahome");
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+  
+    fetchData();
+  }, []);
+  
   return (
     <>
       {/* <!--/Preloader -->      */}
