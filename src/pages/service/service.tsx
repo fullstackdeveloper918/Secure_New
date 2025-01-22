@@ -40,8 +40,16 @@ const ServiceMain = () => {
     <Wrapper>
       {/* header area start */}
       {/* <HeaderEleven /> */}
+      <div className="cd-index cd-main-content">
+        
+        {/* <div
+          id="clapat-page-content"
+          className="dark-content"
+          data-bgcolor="#ebebeb">
       <AnimationHeader />
-
+</div> */}
+<AnimationHeader />
+</div>
       {/* header area end */}
 
       <div id="smooth-wrapper">

@@ -27,7 +27,7 @@ const animation_header = () => {
         <nav className="clapat-nav-wrapper"> 
             <div className="nav-height">          
                 <ul data-breakpoint="1025" className="flexnav">
-                    <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="/"><div className="before-span"><span data-hover="Index">Index</span></div></a></li>
+                    {/* <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="/"><div className="before-span"><span data-hover="Index">Index</span></div></a></li> */}
                     <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/about-us"><div className="before-span"><span data-hover="Agency">About Us</span></div></a></li>
                     <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/service"><div className="before-span"><span data-hover="Projects">Service</span></div></a>
                       <ul>

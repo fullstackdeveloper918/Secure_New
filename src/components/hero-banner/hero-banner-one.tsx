@@ -87,7 +87,7 @@ const HeroBannerOne = () => {
                 <div className="btn_sec flex gap-3 flex-wrap">
                   <button className="BtnOne btnWrapper">Get started</button>
                   <button className="BtnTwo btnWrapper">
-                    Book Demo
+                  Let's Connect
                     <span>
                       <svg
                         width="12"

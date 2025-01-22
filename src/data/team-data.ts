@@ -65,7 +65,7 @@ const team_data:ITeamDT[] = [
   {
     id:11,
     image:"/assets/img/home-01/team/team-1-10.png",
-    designation:"CEO",
+    designation:"Chief Operating Officer",
     name:"Pankaj",
   },
   {

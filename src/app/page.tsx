@@ -48,19 +48,17 @@ export default function Home() {
       {/* <!--/Preloader -->      */}
       <PreLoader />
 
-      <div className="cd-index cd-main-content homepage">
+      <div 
+      className="cd-index cd-main-content homepage">
         {/* <!-- Page Content --> */}
         <div
           id="clapat-page-content"
           className="dark-content"
           data-bgcolor="#ebebeb"
         >
-          {/* <!-- Header --> */}
-          {/* <HeaderOne /> */}
+        
           <AnimationHeader />
-          {/* <!--/Header --> */}
-
-          {/* <!-- Content Scroll --> */}
+          
           <div id="content-scroll">
             {/* <!-- Main --> */}
             <div id="main">
@@ -86,30 +84,30 @@ export default function Home() {
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="project01.html"
+                                href="https://techable.com/"
                               ></a>
                               <div className="section-image trigger-item-link">
                                 <img
-                                  src="images/01hero.jpg"
+                                  src="images/techable.png"
                                   className="item-image grid__item-img"
                                   alt=""
                                 />
                               </div>
                               <img
-                                src="images/01hero.jpg"
+                                src="images/techable.png"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Project 01</span>
+                                <span>Techable</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Web3</span>
+                                <span> The Home Of Tech </span>
                               </div>
                             </div>
                           </div>
@@ -124,30 +122,30 @@ export default function Home() {
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="project02.html"
+                                href="https://sellmac.com/"
                               ></a>
                               <div className="section-image  trigger-item-link">
                                 <img
-                                  src="images/02hero.jpg"
+                                  src="images/SellMac.png"
                                   className="item-image grid__item-img"
                                   alt=""
                                 />
                               </div>
                               <img
-                                src="images/02hero.jpg"
+                                src="images/SellMac.png"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Project 02</span>
+                                <span>SellMac</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Web Design</span>
+                                <span>Sell Your Mac with Ease!</span>
                               </div>
                             </div>
                           </div>
@@ -162,30 +160,30 @@ export default function Home() {
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="project03.html"
+                                href="https://safetechwarranty.com/"
                               ></a>
                               <div className="section-image trigger-item-link">
                                 <img
-                                  src="images/03hero.jpg"
+                                  src="images/safeTech.png"
                                   className="item-image grid__item-img"
                                   alt=""
                                 />
                               </div>
                               <img
-                                src="images/03hero.jpg"
+                                src="images/safeTech.png"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Project 03</span>
+                                <span>Safe Tech</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Photogra  phy</span>
+                                <span>Superior Protection for Apple Devices.</span>
                               </div>
                             </div>
                           </div>
