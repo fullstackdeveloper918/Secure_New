@@ -33,7 +33,7 @@ import HeaderOne from "@/layouts/headers/header-one";
 import AboutPortfolio from "@/components/portfolio/about-portfolio";
 import AboutWork from "@/components/work/about-work";
 
-const AboutUsMain = () => {
+const AboutUsMain = ({aboutResponse, bannerResponse}) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -55,7 +55,7 @@ const AboutUsMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <AboutUsHero />
+            <AboutUsHero bannerResponse={bannerResponse} />
 
             <AboutUsArea />
             <AboutFour/>

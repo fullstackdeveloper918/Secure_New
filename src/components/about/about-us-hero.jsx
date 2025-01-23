@@ -2,7 +2,7 @@ import React from "react";
 import { scroller } from "react-scroll";
 import { ScrollDown } from "../svg";
 
-export default function AboutUsHero() {
+export default function AboutUsHero({bannerResponse}) {
   const scrollTo = () => {
     scroller.scrollTo('about-info', {
       duration: 800,
@@ -35,12 +35,12 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <span className="ab-inner-hero-subtitle">
-                Secure <br /> 365 solutions agency
+                {bannerResponse?.pages?.banner_data?.banner_heading} <br /> {bannerResponse?.pages?.banner_data?.banner_heading_second}
               </span>
               <h1 className="ab-inner-hero-title tp-char-animation">
-              Fighting Cybercrime Building
+              {bannerResponse?.pages?.banner_data?.banner_heading_third}
               </h1>
-              <p>Secure experiences with maximum emotional impact</p>
+              <p>{bannerResponse?.pages?.banner_data?.banner_sub_headline}</p>
             </div>
           </div>
         </div>
@@ -52,9 +52,9 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-              We provide expert IT and cybersecurity solutions that protect, support, and empower your business.
+              {bannerResponse?.pages?.banner_data?.banner_heading_all_in}
               </p>
-               <a className="tp-btn-white-sm border-style" href="#">Our Story</a>
+               <a className="tp-btn-white-sm border-style" href="#">{bannerResponse?.pages?.banner_data?.book_demo}</a>
             </div>
           </div>
         </div>
