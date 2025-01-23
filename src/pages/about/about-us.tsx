@@ -12,7 +12,7 @@ import HeaderEleven from "@/layouts/headers/header-eleven";
 import FooterTwo from "@/layouts/footers/footer-two";
 import AboutUsHero from "@/components/about/about-us-hero";
 import AboutUsArea from "@/components/about/about-us-area";
-import TeamOne from "@/components/team/team-one";
+// import TeamOne from "@/components/team/team-one";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
 import AwardOne from "@/components/award/award-one";
@@ -62,7 +62,7 @@ const AboutUsMain = () => {
             {/* <AboutPortfolio /> */}
             <AboutThree/>
 
-            <TeamOne spacing="" />
+            {/* <TeamOne spacing="" data={data}/> */}
 
             <FunFactOne />
 

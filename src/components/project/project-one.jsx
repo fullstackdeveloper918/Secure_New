@@ -12,15 +12,9 @@ import p_4 from "@/assets/img/home-01/project/project-1-4.jpg";
 import p_5 from "@/assets/img/home-01/project/project-1-5.jpg";
 import p_6 from "@/assets/img/home-01/project/project-1-6.jpg";
 
-// type
-type IProject = {
-  id: number;
-  cls: string;
-  cls_2: string;
-  img: StaticImageData;
-};
 
-const project_data: IProject[] = [
+
+const project_data  = [
   {
     id: 1,
     cls: "tp-project-mr",
@@ -59,7 +53,7 @@ const project_data: IProject[] = [
   },
 ];
 
-function ProjectItem({ item }: { item: IProject }) {
+function ProjectItem({ item }) {
   return (
     <div className={`tp-project-item ${item.cls} mb-200`}>
       <div
@@ -79,11 +73,8 @@ function ProjectItem({ item }: { item: IProject }) {
   );
 }
 
-// prop type
-type IProps = {
-  style_2?: boolean;
-};
-const ProjectOne = ({ style_2 = false }: IProps) => {
+
+const ProjectOne = ({ style_2 = false }) => {
   return (
     <>
       <div

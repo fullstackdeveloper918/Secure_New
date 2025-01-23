@@ -22,6 +22,6 @@
       "@/assets/*": ["./public/assets/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/scroll-magic.js", "src/app/page.jsx", "src/app/layout.jsx", "src/components/award/award-one.jsx", "src/components/project/project-text-line.jsx", "src/components/team/team-one.jsx", "src/components/team/team-item.jsx", "src/components/testimonial/testimonial-one.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/utils/scroll-magic.js", "src/app/page.jsx", "src/app/layout.jsx", "src/components/award/award-one.jsx", "src/components/project/project-text-line.jsx", "src/components/team/team-one.jsx", "src/components/team/team-item.jsx", "src/components/testimonial/testimonial-one.jsx", "src/components/project/project-one.jsx", "src/pages/homes/homes-1.jsx"],
   "exclude": ["node_modules"]
 }
