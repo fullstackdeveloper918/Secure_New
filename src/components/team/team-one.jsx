@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
 import { NextIcon, PrevIcon } from "../svg";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper,SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
-import { SwiperOptions } from "swiper/types";
+// import { SwiperOptions } from "swiper/types";
 import { Navigation } from "swiper/modules";
-import team_data from "@/data/team-data";
+// import team_data from "@/data/team-data";
 import TeamItem from "./team-item";
-import { ITeamDT } from "@/types/team-d-t";
+// import { ITeamDT } from "@/types/team-d-t";
 import TeamModal from "../modal/team-modal";
 
-const slider_setting: SwiperOptions = {
+const slider_setting = {
   slidesPerView: 6,
   loop: true,
   autoplay: false,
@@ -41,14 +41,11 @@ const slider_setting: SwiperOptions = {
   },
 };
 
-// prop type
-type IProps = {
-  spacing?: string;
-};
-const TeamOne = ({ spacing = "pt-20" }: IProps) => {
+
+const TeamOne = ({ spacing = "pt-20",data }) => {
   const [showModal, setShowModal] = React.useState(false);
-  const [teamItem, setTeamItem] = React.useState<ITeamDT | null>(null);
-  function handleTeamModal(team: ITeamDT) {
+  const [teamItem, setTeamItem] = React.useState(null);
+  function handleTeamModal(team) {
     setShowModal(!showModal);
     setTeamItem(team);
   }
@@ -76,7 +73,7 @@ const TeamOne = ({ spacing = "pt-20" }: IProps) => {
                   modules={[Autoplay, FreeMode, Navigation]}
                   className="swiper-container tp-team-slider-active"
                 >
-                  {team_data.map((t) => (
+                  {data?.home_page_our_team_data?.map((t) => (
                     <SwiperSlide key={t.id}>
                       <TeamItem item={t} handleTeamModal={handleTeamModal} />
                     </SwiperSlide>

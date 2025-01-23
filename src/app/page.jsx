@@ -1,23 +1,17 @@
 "use client";
-// import { Metadata } from "next";
-import HomeOnePage from "../pages/homes/homes-1";
 import PreLoader from "../components/preLoader";
 import AnimationHeader from "../components/animation_header";
-import HeroSection from "../components/hero_section";
-import HeaderOne from "@/layouts/headers/header-one";
+import HeroSection from "../components/HeroSection";
 import AwardOne from "@/components/award/award-one";
 import ProjectTextLine from "@/components/project/project-text-line";
 import TeamOne from "@/components/team/team-one";
 import TestimonialOne from "@/components/testimonial/testimonial-one";
 import BlogOne from "@/components/blog/blog-one";
 import FooterFour from "@/layouts/footers/footer-four";
-import { useEffect } from "react";
-// export const metadata: Metadata = {
-//   title: "Secure365 - Home Page",
-// };
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
-
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,52 +22,40 @@ export default function Home() {
             cache: "no-store",
           }
         );
-  
+
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-  
+
         const data = await response.json();
-        console.log(data, "datahome");
+        setData(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
-  
+
     fetchData();
   }, []);
-  
+
   return (
     <>
-      {/* <!--/Preloader -->      */}
       <PreLoader />
 
-      <div 
-      className="cd-index cd-main-content homepage">
-        {/* <!-- Page Content --> */}
+      <div className="cd-index cd-main-content homepage">
         <div
           id="clapat-page-content"
           className="dark-content"
           data-bgcolor="#ebebeb"
         >
-        
           <AnimationHeader />
-          
-          <div id="content-scroll">
-            {/* <!-- Main --> */}
-            <div id="main">
-              {/* <!-- Hero Section --> */}
-              <HeroSection />
-              {/* <!--/Hero Section --> */}
 
-              {/* <!-- Main Content --> */}
+          <div id="content-scroll">
+            <div id="main">
+              <HeroSection data={data?.featured_section_heading} />
               <div id="main-content">
-                {/* <!-- Main Page Content --> */}
                 <div id="main-page-content">
-                  {/* <!-- Fit Thumb Screen Effects -->                                                           */}
                   <div id="itemsWrapperLinks">
                     <div id="itemsWrapper" className="webgl-fitthumbs fx-one">
-                      {/* <!-- ClaPat Portfolio --> */}
                       <div className="showcase-portfolio expand-grid filp-grid">
                         <div className="clapat-item not-expanded">
                           <div
@@ -183,46 +165,34 @@ export default function Home() {
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Superior Protection for Apple Devices.</span>
+                                <span>
+                                  Superior Protection for Apple Devices.
+                                </span>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      {/* <!-- ClaPat Portfolio -->  */}
-
-                      {/* <!-- Row --> */}
                       <div
                         className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
                         data-bgcolor="#ebebeb"
                       >
                         <h1 className="text-align-center">
-                          We empower businesses{" "}
-                          <span
+                          {
+                            data && data?.we_empower_businesses_data?.map((item,index) =>  (
+                              <React.Fragment key={index}>
+                                {item?.we_empower_businesses_heading}
+                                <span
                             className="has-scale-image hide-ball"
-                            data-img="images/client-01.png"
+                            data-img={item?.we_empower_businesses_image}
                             data-bgcolor="#000"
-                          ></span>{" "}
-                          to leverage cutting-edge technology and{" "}
-                          <span
-                            className="has-scale-image hide-ball"
-                            data-img="images/client-02.png"
-                            data-bgcolor="#000"
-                          ></span>{" "}
-                          stay ahead in a rapidly evolving digital landscape by
-                          delivering{" "}
-                          <span
-                            className="has-scale-image hide-ball"
-                            data-img="images/client-03.png"
-                            data-bgcolor="#000"
-                          ></span>{" "}
-                          innovative IT solutions.
+                          ></span>
+                              </React.Fragment>
+                            ))
+                          }
                         </h1>
                       </div>
-                      {/* <!--/Row --> */}
 
-                      {/* <!-- Row --> */}
                       <div
                         className="content-row light-section row_padding_bottom "
                         data-bgcolor="#ebebeb"
@@ -232,13 +202,9 @@ export default function Home() {
                         <div className="one_half"></div>
 
                         <div className="one_half last">
-                          <p className="bigger has-shuffle">The Challenge</p>
+                          <p className="bigger has-shuffle">{data?.home_page_challenge_section_challenge}</p>
                           <p className="has-opacity" data-delay="0">
-                            Modern businesses face complex challenges in
-                            integrating advanced IT solutions, often struggling
-                            with outdated systems and evolving technological
-                            demands. Our mission is to bridge this gap with
-                            innovative, scalable, and efficient IT services.
+                            {data?.home_page_challenge_section_paragraph}
                           </p>
 
                           <div className="button-wrap right button-link has-animation">
@@ -259,63 +225,27 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                      {/* <!--/Row --> */}
 
-                      {/* <!-- Row --> */}
                       <div
                         className="content-row full text-align-center dark-section"
                         data-bgcolor="#ebebeb"
                       >
                         <div className="projects-list-wrapper invert-header-color">
                           <ul className="projects-list-captions">
-                            <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project04.html"
-                              ></a>
-                              <span>Artificial Intelligence</span>
-                            </li>
-                            <li data-centerline="OPEN">
+                            {
+                              data && data?.home_page_projects_list_captions_data?.map((item,index) => (
+                                <React.Fragment key={index}>
+                                    <li data-centerline="OPEN">
                               <a
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project05.html"
                               ></a>
-                              <span>Blockchain Solution</span>
+                              <span>{item?.projects_list_captions_title}</span>
                             </li>
-                            <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project06.html"
-                              ></a>
-                              <span>Network Solutions</span>  
-                            </li>
-                            <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project07.html"
-                              ></a>
-                              <span>Cybersecurity</span>
-                            </li>
-                            <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project08.html"
-                              ></a>
-                              <span>Data & Analytics</span>
-                            </li>
-                            <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project09.html"
-                              ></a>
-                              <span>SEO & Marketing</span>
-                            </li>
+                                </React.Fragment>
+                              ))
+                            }
                           </ul>
 
                           <ul className="projects-list-images">
@@ -327,11 +257,7 @@ export default function Home() {
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
-                                  <div className="hero-video-wrapper">
-                                    {/* <video loop muted className="bgvid">
-                                                                   <source src="images/04hero.mp4" type="video/mp4"/>
-                                                               </video> */}
-                                  </div>
+                                  <div className="hero-video-wrapper"></div>
                                 </div>
                                 <img
                                   src="images/011hero.jpg"
@@ -424,82 +350,12 @@ export default function Home() {
                           </ul>
                         </div>
                       </div>
-                      {/* <!--/Row --> */}
-
-                      {/* <!-- Row --> */}
-                      {/* <div
-                        className="content-row small text-align-center light-section"
-                        data-bgcolor="#ebebeb"
-                      >
-                        <hr />
-
-                        <p className="bigger has-shuffle no-margins">
-                          Continue Exploring Our Work
-                        </p>
-
-                        <hr />
-
-                        <div
-                          className="button-box has-animation"
-                          data-delay="100"
-                        >
-                          <div className="clapat-button-wrap parallax-wrap hide-ball">
-                            <div className="clapat-button parallax-element">
-                              <div className="button-border rounded parallax-element-second">
-                                <a
-                                  className="ajax-link"
-                                  data-type="page-transition"
-                                  href="index-portfolio.html"
-                                >
-                                  <span data-hover="All Projects">
-                                    All Projects
-                                  </span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                      {/* <!--/Row --> */}
                     </div>
                   </div>
-                  {/* <!-- Fit Thumb Screen Effects --> */}
                 </div>
-                {/* <!--/Main Page Content --> */}
-
-                {/* <!-- Page Navigation -->  */}
-                {/* <div id="page-nav" className="move-nav-onload">
-                  <div className="page-nav-wrap">
-                    <div className="page-nav-caption nav-full-caption content-full-width text-align-center">
-                      <div className="inner">
-                        <a
-                          className="next-ajax-link-page"
-                          data-type="page-transition"
-                          data-centerline="GO TO"
-                          href="about.html"
-                        >
-                          <div className="next-hero-title caption-timeline">
-                            <span>Creative</span> <span>Design Agency</span>
-                          </div>
-                        </a>
-                        <div className="next-hero-subtitle caption-timeline">
-                          <span>We are passionate about</span>{" "}
-                          <span>creating memorable experience</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-                
-                {/* <!--/Page Navigation --> */}
-
-               
               </div>
-              {/* <!--/Main Content -->  */}
             </div>
-            {/* <!--/Main --> */}
 
-            {/* <!-- Footer --> */}
             <footer className="clapat-footer hidden">
               <div id="footer-container">
                 <div id="backtotop" className="button-wrap left">
@@ -591,37 +447,36 @@ export default function Home() {
                 </div>
               </div>
             </footer>
-            {/* <!--/Footer --> */}
           </div>
-          {/* <!--/Content Scroll --> */}
 
           <div id="app"></div>
         </div>
-        {/* <!--/Page Content --> */}
       </div>
 
-            <div id="smooth-wrapper">
-          <div id="smooth-content">
-            <main>
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <main>
             <div className="awardsSec">
-            <AwardOne />
+              <AwardOne data={data}/>
             </div>
 
             <div className="container-fluid p-0">
               <div className="row g-0">
                 <div className="col-xl-12">
-                  <ProjectTextLine />
+                  <ProjectTextLine data={data}/>
                 </div>
               </div>
             </div>
 
-            <TeamOne />
-            <TestimonialOne />
-            <div className="awardsSec"><BlogOne /></div>
-            </main>
+            <TeamOne data={data} />
+            <TestimonialOne data={data} />
+            <div className="awardsSec">
+              <BlogOne />
+            </div>
+          </main>
           <FooterFour />
-</div>
-</div>
+        </div>
+      </div>
 
       <div className="cd-cover-layer"></div>
       <div id="magic-cursor">

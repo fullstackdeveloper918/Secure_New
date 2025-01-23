@@ -3,7 +3,7 @@ import React from "react";
 import { NextIcon, PrevIcon } from "../svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { SwiperOptions } from "swiper/types";
+
 
 const testimonial_data = [
   {
@@ -20,7 +20,7 @@ const testimonial_data = [
   },
 ];
 
-const slider_setting: SwiperOptions = {
+const slider_setting = {
   slidesPerView: 1,
   loop: true,
   autoplay: true,
@@ -50,14 +50,14 @@ const slider_setting: SwiperOptions = {
     nextEl: ".tp-testimonial-next",
   },
 };
-const TestimonialOne = () => {
+const TestimonialOne = ({data}) => {
   return (
     <div className="tp-testimonial-area pb-120">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-10 tp_fade_bottom">
             <div className="tp-testimonial-slider-wrapper p-relative">
-            <h2 className=" mb-96 text-center">Testimonials from Professionals</h2>
+            <h2 className=" mb-96 text-center">{data?.home_testimonials_from_professionals_heading}</h2>
               <div className="tp-testimonial-arrow-box d-none d-lg-block">
                 <button className="tp-testimonial-prev">
                   <span>
@@ -75,13 +75,13 @@ const TestimonialOne = () => {
                 modules={[Navigation]}
                 className="swiper-container tp-testimonial-slider-active fix"
               >
-                {testimonial_data.map((item) => (
+                {data && data?.home_testimonials_from_professionals_data?.map((item) => (
                   <SwiperSlide key={item.id}>
                     <div className="tp-testimonial-item text-center">
                       
-                      <p>{item.desc}</p>
+                      <p>{item.testimonials_paragraph}</p>
                       <span>
-                        <em>{item.name}</em> - {item.designation}
+                        <em>{item.home_client_name}</em> - {item.client_working}
                       </span>
                     </div>
                   </SwiperSlide>

@@ -2,10 +2,9 @@
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import Image from "next/image";
-import shape from "@/assets/img/home-01/project/project-shape-1-1.png";
 
-const ProjectTextLine = () => {
+
+const ProjectTextLine = ({data}) => {
   useGSAP(() => {
     gsap.set(".tp-project-textline", {
       x: "25%",
@@ -30,7 +29,20 @@ const ProjectTextLine = () => {
       className="tp-project-textline tp-project-effect mb-115"
       data-scrub="0.0001"
     >
-      <span className="textline-1">
+      {
+        Array.from({length: 3}).map((item,index) => (
+          <React.Fragment key={index}>
+            <span className="textline-1">
+        {data?.home_page_project_colest_section_heading_second}
+        <span>
+        </span>
+        {data?.home_page_project_coles_section_heading_third}
+      </span>
+      <span className="textline-2">{data?.home_page_project_colest_section_heading_first}</span>
+          </React.Fragment>
+        ))
+      }
+      {/* <span className="textline-1">
         Co
         <span>
           <Image src={shape} alt="shape" />
@@ -61,7 +73,7 @@ const ProjectTextLine = () => {
         </span>
         lest
       </span>
-      <span className="textline-2">Project</span>
+      <span className="textline-2">Project</span> */}
     </div>
   );
 };

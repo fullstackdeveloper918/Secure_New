@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import {
   Syne,
   Aladin,
@@ -76,16 +76,14 @@ const onEst = Onest({
   variable: "--tp-ff-onest",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Secure 365 - Cybersecurity Solutions & Digital Portfolio",
   description: "Secure 365 is a leading cybersecurity agency specializing in comprehensive digital protection solutions. Our portfolio showcases a diverse range of services designed to safeguard your digital assets and ensure robust security measures. Explore our work to see how we can help you achieve a secure digital environment.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning={true} className={`${onEst.variable}`}>
        <head>
