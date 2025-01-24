@@ -24,7 +24,7 @@ const service_data = [
     category: ["dedicated", "customer-focused support"],
   },
 ];
-export default function ServiceFour() {
+export default function ServiceFour({whyChooseData}) {
   
   return (
     <div className="tp-service-3-area md:py-20 py-10 tm-herointro">
@@ -36,30 +36,30 @@ export default function ServiceFour() {
                 <Image src={icon} alt="icon" />
               </div>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-              Our Core Strengths
+            {whyChooseData?.why_choose_core_strength_main_heading} {whyChooseData?.why_choose_core_strength_main_heading_second}
               </h4>
             </div>
           </div>
         </div>
 
-        {service_data.map((item) => (
+        {whyChooseData && whyChooseData?.why_choose_core_strengths?.map((item) => (
           <div key={item.id} className="tp-service-3-wrap tp_fade_bottom">
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
                   <h4 className="tp-service-3-title">
-                    <Link href="/service">{item.title}</Link>
+                    <Link href="/service">{item?.why_choose_core_strength_heading}</Link>
                   </h4>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-service-3-content">
-                  <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-                  <div className="tp-service-3-category">
+                  <p>{item?.why_choose_core_strength_paragraph}</p>
+                  {/* <div className="tp-service-3-category">
                     {item.category.map((c, i) => (
                       <span key={i}>{c}</span>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2">

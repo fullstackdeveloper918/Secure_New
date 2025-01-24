@@ -4,14 +4,8 @@ import { Search } from "../svg";
 import faq_banner from '@/assets/img/inner-faq/faq/banner-faq.jpg';
 import FaqItem from "./faq-item";
 
-// type 
-type IFaq = {
-  id: number;
-  question: string;
-  answer: string;
-}
-// faq data
-export const faq_data:IFaq[] = [
+
+export const faq_data = [
   {
     id: 1,
     question: "Decades of Real-World Experience",
@@ -44,7 +38,7 @@ export const faq_data:IFaq[] = [
   },
 ];
 
-export default function FaqArea() {
+export default function FaqArea({whyChooseData}) {
   return (
     <div className="fq-faq-area md:pt-20 pt-6">
       <div className="container">
@@ -54,42 +48,17 @@ export default function FaqArea() {
               <div className="tp-service-2-accordion-box">
               <div className="tm-hero-content">
                        <h2 className="tm-herointro-title tp-char-animation text-center">
-                       What Sets Us Apart
+                       {whyChooseData?.why_choose_sets_us_main_heading}
                         </h2>
                       </div>
                 <div className="accordion" id="accordionExample">
-                  {faq_data.map((item) => (
-                    <FaqItem key={item.id} item={item} />
+                  {whyChooseData && whyChooseData?.why_choose_sets_data?.map((item,index) => (
+                    <FaqItem item={item} index={index} />
                   ))}
                 </div>
               </div>
             </div>
           </div>
-          {/* <div className="col-xl-4 col-lg-4">
-            <div className="fq-faq-sidebar">
-              <div className="fq-faq-sidebar-content">
-                <h4 className="fq-faq-sidebar-title">Q&A</h4>
-                <p>
-                  Lorem ipsum dolor sit laud munere dicunt detraxit mel, nisl
-                  evertitu <br /> eu vim.
-                </p>
-              </div>
-              <div className="fq-faq-sidebar-thumb">
-                <Image
-                  className="w-100"
-                  src={faq_banner}
-                  alt="faq-banner"
-                  style={{height:'auto'}}
-                />
-              </div>
-              <div className="fq-faq-sidebar-input p-relative">
-                <input type="text" placeholder="Search product" />
-                <button className="fq-faq-sidebar-search">
-                  <Search />
-                </button>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
