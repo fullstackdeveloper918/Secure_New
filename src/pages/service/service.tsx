@@ -14,7 +14,7 @@ import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
 import { BrandItems } from "@/components/brand/brand-two";
 import LineImgSlider from "@/components/line-text/line-img-slider";
-import BigText from "@/components/big-text";
+// import BigText from "@/components/big-text";
 import { Leaf } from "@/components/svg";
 import FooterTwo from "@/layouts/footers/footer-two";
 import AnimationHeader from "@/components/animation_header";
@@ -103,7 +103,7 @@ const ServiceMain = () => {
             {/* line image slider  */}
 
             {/* big text */}
-            <BigText />
+            {/* <BigText /> */}
             {/* big text */}
           </main>
 
