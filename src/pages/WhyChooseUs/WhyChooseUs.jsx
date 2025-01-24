@@ -22,7 +22,7 @@ import ServiceFour from "@/components/service/service-four";
 import FooterFour from "@/layouts/footers/footer-four";
 
 const FaqMain = ({ whyChooseData }) => {
-  console.log(whyChooseData, 'whyChooseData')
+ 
   useScrollSmooth();
 
   useGSAP(() => {

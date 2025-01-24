@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { faq_data } from "./faq-area";
+import faq_data  from "./faq-area";
 import FaqItem from "./faq-item";
 import shape from '@/assets/img/home-02/service/sv-shape-1.png';
 
@@ -29,11 +29,11 @@ export default function FaqAreaTwo() {
             <div className="tp-price-inner-faq-wrap">
               <div className="fq-faq-wrapper">
                 <div className="tp-service-2-accordion-box">
-                  <div className="accordion" id="accordionExample">
+                  {/* <div className="accordion" id="accordionExample">
                     {faq_data.map((item) => (
                       <FaqItem key={item.id} item={item} />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
