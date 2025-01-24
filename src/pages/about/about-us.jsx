@@ -6,19 +6,16 @@ import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
-// internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import FooterTwo from "@/layouts/footers/footer-two";
 import AboutUsHero from "@/components/about/about-us-hero";
 import AboutUsArea from "@/components/about/about-us-area";
-// import TeamOne from "@/components/team/team-one";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
 import AwardOne from "@/components/award/award-one";
 import AnimationHeader from "@/components/animation_header";
 
-// animation
 import {
   charAnimation,
   fadeAnimation,
@@ -49,7 +46,6 @@ const AboutUsMain = ({aboutResponse, bannerResponse}) => {
 
   return (
     <Wrapper>
-      {/* <HeaderEleven transparent={true} /> */}
       <AnimationHeader />
       
       <div id="smooth-wrapper">
@@ -57,24 +53,17 @@ const AboutUsMain = ({aboutResponse, bannerResponse}) => {
           <main>
             <AboutUsHero bannerResponse={bannerResponse} />
 
-            <AboutUsArea />
-            <AboutFour/>
-            {/* <AboutPortfolio /> */}
-            <AboutThree/>
+            <AboutUsArea aboutResponse={aboutResponse} />
+            <AboutFour aboutResponse={aboutResponse}/>
+            <AboutThree aboutResponse={aboutResponse}/>
 
-            {/* <TeamOne spacing="" data={data}/> */}
-
-            <FunFactOne />
+            <FunFactOne aboutResponse={aboutResponse}/>
 
             <BrandFive />
-
-            {/* <AwardOne cls="ab-award-style pt-120 pb-120" abStyle={true} /> */}
             <div className="ab-award-style pt-120 pb-120" >
   <AboutWork />
             </div>
           </main>
-
-          {/* <FooterTwo topCls="" /> */}
           <FooterFour />
         </div>
       </div>

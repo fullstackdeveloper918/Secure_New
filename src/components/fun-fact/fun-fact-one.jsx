@@ -28,7 +28,7 @@ const counter_data = [
     text: "%",
   },
 ];
-export default function FunFactOne() {
+export default function FunFactOne({aboutResponse}) {
   return (
     <div className="ab-funfact-area pb-40">
       <div className="container container-1480">
@@ -37,10 +37,10 @@ export default function FunFactOne() {
             <div className="ab-funfact-title-box">
               <span className="ab-inner-subtitle mb-25">
                 <Leaf />
-                Fun Facts
+               {aboutResponse?.data?.about_counter_section_fun_fact}
               </span>
               <h4 className="ab-inner-funfact-title tp_title_anim">
-                Agency <br /> Snapshots
+                {aboutResponse?.data?.about_counter_section_fun_agency_heading} <br /> Snapshots
               </h4>
             </div>
           </div>

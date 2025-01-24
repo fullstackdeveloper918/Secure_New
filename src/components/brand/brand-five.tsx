@@ -14,7 +14,7 @@ import b_6 from "@/assets/img/inner-about/brand/brand-2.png";
 // brand images
 const brand_images = [b_1, b_2, b_3, b_4, b_5, b_6];
 
-export default function BrandFive() {
+export default function BrandFive({}) {
   return (
     <div
       className="ab-brand-area pt-120 pb-120 black-bg-2"

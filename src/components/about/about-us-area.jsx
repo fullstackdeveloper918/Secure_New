@@ -8,7 +8,8 @@ import ab_1 from "@/assets/img/inner-about/about/about-1a.png";
 import ab_2 from "@/assets/img/inner-about/about/about-3.png";
 import ab_3 from "@/assets/img/inner-about/about/about-2.png";
 
-export default function AboutUsArea() {
+export default function AboutUsArea({aboutResponse}) {
+  console.log(aboutResponse, 'aboutResponse')
   return (
     <div className="ab-about-area ab-about-mt pb-90 z-index-5">
       <div className="container container-1480">
@@ -51,7 +52,8 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom">
-              Our Core Values
+              {/* Our Core Values */}
+              {aboutResponse?.data?.about_our_core_headning_main}
               </p>
             </div>
           </div>
@@ -62,8 +64,8 @@ export default function AboutUsArea() {
               <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
                   <h4 className="ab-about-category-title">
-                    Something <br />
-                    <span>WHAT I DO</span>
+                    {aboutResponse?.data?.about_our_core_something_section} <br />
+                    <span>{aboutResponse?.data?.about_our_core_what_i_do}</span>
                   </h4>
                   <Image
                     className="ab-about-shape-1 d-none d-md-block"
@@ -77,29 +79,34 @@ export default function AboutUsArea() {
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
-                        <li>
-                          <h5>Customer-First Approach</h5>
-                          <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                        </li>
-                        
-                        <li>
-                          <h5>Integrity & Transparency</h5>
-                          <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                        </li>
+                        {
+                        aboutResponse &&  aboutResponse?.data?.about_page_customer_approach_data?.map((item,index) => (
+                          <React.Fragment key={index}>
 
+                          <li>
+                          <h5>{item?.about_page_customer_first_approach}</h5>
+                          <p>{item?.about_page_customer_integrity_transparency}</p>
+                        </li>
+                          </React.Fragment>
+                        ) )
+                        }
                       </ul>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
-                        <li>
-                        <h5>Security as a Responsibility</h5>
-                        <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
+                      {
+                        aboutResponse &&  aboutResponse?.data?.about_page_security_responsibility_data?.map((item,index) => (
+                          <React.Fragment key={index}>
+
+                          <li>
+                          <h5>{item?.about_page_security_heading}</h5>
+                          <p>{item?.about_page_security_paragraph}</p>
                         </li>
-                        <li><h5>Security as a Responsibility</h5>
-                        <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                        </li>
+                          </React.Fragment>
+                        ) )
+                        }
 
                       </ul>
                     </div>

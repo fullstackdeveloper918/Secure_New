@@ -1,7 +1,7 @@
 import React from "react";
 import { BallRound } from "../svg";
 
-export default function AboutFour() {
+export default function AboutFour({aboutResponse}) {
   return (
     <div className="tp-about-5-area black-bg pt-150 pb-120">
       <div className="container container-1560">
@@ -10,18 +10,18 @@ export default function AboutFour() {
             <div className="tp-about-5-title-box pb-90">
               <h4 className="tp-about-5-title p-relative tp_fade_bottom">
                 <span className="tp-about-5-subtitle tp_fade_left">
-                Our Services
+               {aboutResponse?.data?.about_our_servics_heading}
                 </span>
                 <span className="text-space"></span>
-                We offer expert  <br />solutions  
+                {aboutResponse?.data?.about_we_offer_heading_first} <br />{aboutResponse?.data?.about_we_offer_heading_second}  
                  <span>
                   <BallRound />
                 </span>
-                in web development, digital marketing, branding,
+                {aboutResponse?.data?.about_our_servics_heading_third}
                 <span>
                   <BallRound />
                 </span>
-                and e-commerce to meet your needs.</h4>
+                {aboutResponse?.data?.about_our_servics_heading_fourth}</h4>
             </div>
           </div>
         </div>
@@ -30,19 +30,24 @@ export default function AboutFour() {
         <div className="row">
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-about-5-category">
-            <span className="tp_fade_bottom">Cybersecurity Solutions</span>
-              <span className="tp_fade_bottom">IT Support & Managed Services</span>
-              <span className="tp_fade_bottom">Cloud & Server Management</span>
-              <span className="tp_fade_bottom">Innovation & Growth</span>
+              {
+               aboutResponse && aboutResponse?.data?.about_our_service_cybersecurity_data?.map((item,index) => (
+                <React.Fragment key={index}>
+
+                  <span className="tp_fade_bottom">{item?.about_our_service_cybersecurity_loop}</span>
+                </React.Fragment>
+               ))
+              }
+             
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-6">
             <div className="tp-about-5-text">
               <p className="mb-30 tp_fade_bottom">
-              Despite meticulously documenting each incident and providing evidence to the authorities, he was met with a disappointing lack of support—cases were dismissed as either too complex or too low-priority to pursue. 
+              {aboutResponse?.data?.about_our_service_cybersecurity_paragraph_first}
               </p>
               <p className="mb-30 tp_fade_bottom">
-              This frustration drove him to seek solutions that went beyond just preventing crime, focusing on supporting victims and helping them recover.
+              {aboutResponse?.data?.about_our_service_cybersecurity_paragraph_second}
               </p>
             </div>
           </div>
