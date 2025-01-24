@@ -11,7 +11,7 @@ import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import ServiceDetailsArea from "@/components/service/service-details-area";
 import LineImgSlider from "@/components/line-text/line-img-slider";
-import BigText from "@/components/big-text";
+// import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 import { Leaf } from "@/components/svg";
 // animation
@@ -58,7 +58,7 @@ const ServiceDetailsMain = () => {
             {/* service area */}
 
             {/* big text */}
-            <BigText />
+            {/* <BigText /> */}
             {/* big text */}
           </main>
 
