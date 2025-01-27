@@ -121,7 +121,7 @@ export default function Home() {
                           </div>
                         </div>
 
-                        {/* <div className="clapat-item expanded">
+                        <div className="clapat-item expanded">
                           <div
                             className="slide-inner trigger-item"
                             data-centerline="OPEN"
@@ -157,9 +157,9 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                        </div> */}
+                        </div>
 
-                        {/* <div className="clapat-item not-expanded">
+                        <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
                             data-centerline="OPEN"
@@ -197,7 +197,7 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                        </div> */}
+                        </div>
                       </div>
                       <div
                         className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
