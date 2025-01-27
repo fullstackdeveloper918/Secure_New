@@ -10,6 +10,19 @@ import BlogOne from "@/components/blog/blog-one";
 import FooterFour from "@/layouts/footers/footer-four";
 import React, { useEffect, useState } from "react";
 
+const businessesData = [
+  {
+    text: "We help businesses",
+    image:
+      "https://sellmac.cybersify.tech/secure365/wp-content/uploads/2025/01/client-01-1.png",
+  },
+  {
+    text: "to innovate and",
+    image:
+      "https://sellmac.cybersify.tech/secure365/wp-content/uploads/2025/01/client-01-1.png",
+  },
+];
+
 export default function Home() {
   const [data, setData] = useState([]);
 
@@ -48,7 +61,6 @@ export default function Home() {
           data-bgcolor="#ebebeb"
         >
           <AnimationHeader />
-
           <div id="content-scroll">
             <div id="main">
               <HeroSection data={data?.featured_section_heading} />
@@ -57,18 +69,24 @@ export default function Home() {
                   <div id="itemsWrapperLinks">
                     <div id="itemsWrapper" className="webgl-fitthumbs fx-one">
                       <div className="showcase-portfolio expand-grid filp-grid">
-                        <div className="clapat-item not-expanded">
+                        <div 
+                        className="clapat-item not-expanded"
+                        >
                           <div
                             className="slide-inner trigger-item"
                             data-centerline="OPEN"
                           >
-                            <div className="img-mask pixels-cover">
+                            <div 
+                            className="img-mask pixels-cover"
+                            >
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
                                 href="https://techable.com/"
                               ></a>
-                              <div className="section-image trigger-item-link">
+                              <div 
+                              className="section-image trigger-item-link"
+                              >
                                 <img
                                   src="images/techable.png"
                                   className="item-image grid__item-img"
@@ -81,21 +99,29 @@ export default function Home() {
                                 alt=""
                               />
                             </div>
-                            <div className="slide-caption trigger-item-link-secondary">
-                              <div className="slide-title">
+                            <div 
+                            className="slide-caption trigger-item-link-secondary"
+                            >
+                              <div 
+                              className="slide-title"
+                              >
                                 <span>Techable</span>
                               </div>
-                              <div className="slide-date">
+                              <div 
+                              className="slide-date"
+                              >
                                 <span>2024</span>
                               </div>
-                              <div className="slide-cat">
+                              <div 
+                              className="slide-cat"
+                              >
                                 <span> The Home Of Tech </span>
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        <div className="clapat-item expanded">
+                        {/* <div className="clapat-item expanded">
                           <div
                             className="slide-inner trigger-item"
                             data-centerline="OPEN"
@@ -131,9 +157,9 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
 
-                        <div className="clapat-item not-expanded">
+                        {/* <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
                             data-centerline="OPEN"
@@ -171,25 +197,35 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                       <div
                         className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
                         data-bgcolor="#ebebeb"
                       >
                         <h1 className="text-align-center">
-                          {
-                            data && data?.we_empower_businesses_data?.map((item,index) =>  (
+                          {data?.we_empower_businesses_data?.map(
+                            (item, index) => (
                               <React.Fragment key={index}>
-                                {item?.we_empower_businesses_heading}
-                                <span
-                            className="has-scale-image hide-ball"
-                            data-img={item?.we_empower_businesses_image}
-                            data-bgcolor="#000"
-                          ></span>
+                                {item.we_empower_businesses_heading}{" "}
+                                {item.we_empower_businesses_image && (
+                                  <span
+                                    className="has-scale-image hide-ball"
+                                    data-img={item.we_empower_businesses_image}
+                                    data-bgcolor="#000"
+                                  >
+                                    <div
+                                      class="hidden-image"
+                                      style={{
+                                        backgroundImage: `url(${item.we_empower_businesses_image})`,
+                                        backgroundColor: "rgb(0, 0, 0)",
+                                      }}
+                                    ></div>
+                                  </span>
+                                )}
                               </React.Fragment>
-                            ))
-                          }
+                            )
+                          )}
                         </h1>
                       </div>
 
@@ -202,7 +238,9 @@ export default function Home() {
                         <div className="one_half"></div>
 
                         <div className="one_half last">
-                          <p className="bigger has-shuffle">{data?.home_page_challenge_section_challenge}</p>
+                          <p className="bigger has-shuffle">
+                            {data?.home_page_challenge_section_challenge}
+                          </p>
                           <p className="has-opacity" data-delay="0">
                             {data?.home_page_challenge_section_paragraph}
                           </p>
@@ -232,20 +270,23 @@ export default function Home() {
                       >
                         <div className="projects-list-wrapper invert-header-color">
                           <ul className="projects-list-captions">
-                            {
-                              data && data?.home_page_projects_list_captions_data?.map((item,index) => (
-                                <React.Fragment key={index}>
+                            {data &&
+                              data?.home_page_projects_list_captions_data?.map(
+                                (item, index) => (
+                                  <React.Fragment key={index}>
                                     <li data-centerline="OPEN">
-                              <a
-                                className="list-link"
-                                data-type="page-transition"
-                                href="project05.html"
-                              ></a>
-                              <span>{item?.projects_list_captions_title}</span>
-                            </li>
-                                </React.Fragment>
-                              ))
-                            }
+                                      <a
+                                        className="list-link"
+                                        data-type="page-transition"
+                                        href="project05.html"
+                                      ></a>
+                                      <span>
+                                        {item?.projects_list_captions_title}
+                                      </span>
+                                    </li>
+                                  </React.Fragment>
+                                )
+                              )}
                           </ul>
 
                           <ul className="projects-list-images">
@@ -253,7 +294,7 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/011hero.jpg"
+                                    src="/images/011hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
@@ -302,13 +343,13 @@ export default function Home() {
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
                                   <img
-                                    src="images/014hero.png"
+                                    src="images/014hero.jpg"
                                     className="item-image grid__item-img"
                                     alt=""
                                   />
                                 </div>
                                 <img
-                                  src="images/014hero.png"
+                                  src="images/014hero.jpg"
                                   className="grid__item-img grid__item-img--large"
                                   alt=""
                                 />
@@ -457,13 +498,13 @@ export default function Home() {
         <div id="smooth-content">
           <main>
             <div className="awardsSec">
-              <AwardOne data={data}/>
+              <AwardOne data={data} />
             </div>
 
             <div className="container-fluid p-0">
               <div className="row g-0">
                 <div className="col-xl-12">
-                  <ProjectTextLine data={data}/>
+                  <ProjectTextLine data={data} />
                 </div>
               </div>
             </div>

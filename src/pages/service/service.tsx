@@ -38,28 +38,17 @@ const ServiceMain = () => {
 
   return (
     <Wrapper>
-      {/* header area start */}
-      {/* <HeaderEleven /> */}
       <div className="cd-index cd-main-content">
-        
-        {/* <div
-          id="clapat-page-content"
-          className="dark-content"
-          data-bgcolor="#ebebeb">
-      <AnimationHeader />
-</div> */}
-<AnimationHeader />
-</div>
-      {/* header area end */}
-
+     
+        <AnimationHeader />
+      </div>
+      
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* service hero */}
+       
             <ServiceHero />
-            {/* service hero */}
-
-            {/* service area */}
+         
             <div className="tp-service-5-area sv-service-style pb-70">
               <div className="container container-1530">
                 <div className="row">
@@ -70,8 +59,7 @@ const ServiceMain = () => {
                         Why Choose <span className="blueColor">Secure365?</span>
                       </span>
                       <h4 className="tp-service-5-title">
-                      With us, you’re not just getting IT services;  {" "}
-                        <br />
+                        With us, you’re not just getting IT services; <br />
                         you’re gaining a trusted partner.
                       </h4>
                     </div>
@@ -82,13 +70,9 @@ const ServiceMain = () => {
                 </div>
               </div>
             </div>
-            {/* service area */}
-
-            {/* service area */}
+        
             <ServiceSix />
-            {/* service area */}
-
-            {/* brand area */}
+   
             <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
                 <div className="row gx-0">
@@ -96,21 +80,8 @@ const ServiceMain = () => {
                 </div>
               </div>
             </div>
-            {/* brand area */}
-
-            {/* line image slider  */}
-            {/* <LineImgSlider /> */}
-            {/* line image slider  */}
-
-            {/* big text */}
-            {/* <BigText /> */}
-            {/* big text */}
           </main>
-
-          {/* footer area */}
           <FooterFour />
-          {/* <FooterTwo topCls="" /> */}
-          {/* footer area */}
         </div>
       </div>
     </Wrapper>

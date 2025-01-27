@@ -2241,7 +2241,7 @@ jQuery(function ($) {
             //Load Page From Menu
     
             $('.clapat-nav-wrapper .ajax-link').on('click', function() {
-                $(this).parents('.menu-timeline').addClass('hover');
+                // $(this).parents('.menu-timeline').addClass('hover');
                 $(this).parents('.item-with-ul').addClass('hover');
                 gsap.set($(this).find('span'),{yPercent:0});	
                 $('.clapat-header').removeClass('white-header');
@@ -2287,7 +2287,7 @@ jQuery(function ($) {
                         gsap.to('.clapat-nav-wrapper', {duration: 0.3, opacity:0, delay:0.6, ease:Power2.easeInOut});
                             
                         //Fade Out Navigation Lists						
-                        gsap.to($(".menu-timeline .before-span"), {duration: 0.5, y:-200, opacity:1, delay:0, stagger:0.05, ease:Power2.easeIn});
+                        // gsap.to($(".menu-timeline .before-span"), {duration: 0.5, y:-200, opacity:1, delay:0, stagger:0.05, ease:Power2.easeIn});
                         gsap.to($(".clapat-nav-wrapper ul ul li"), {duration: 0.5, y:-120, opacity:0, delay:0, stagger:0.03, ease:Power2.easeIn});
                         
                         if (!$('#page-content').hasClass("light-content")) {	

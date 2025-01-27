@@ -7,13 +7,10 @@ import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import FooterTwo from "@/layouts/footers/footer-two";
 import AboutUsHero from "@/components/about/about-us-hero";
 import AboutUsArea from "@/components/about/about-us-area";
 import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
-import AwardOne from "@/components/award/award-one";
 import AnimationHeader from "@/components/animation_header";
 
 import {
@@ -26,11 +23,9 @@ import { teamMarqueAnim } from "@/utils/scroll-marque";
 import AboutThree from "@/components/about/about-three";
 import AboutFour from "@/components/about/about-four";
 import FooterFour from "@/layouts/footers/footer-four";
-import HeaderOne from "@/layouts/headers/header-one";
-import AboutPortfolio from "@/components/portfolio/about-portfolio";
 import AboutWork from "@/components/work/about-work";
 
-const AboutUsMain = ({aboutResponse, bannerResponse}) => {
+const AboutUsMain = ({ aboutResponse, bannerResponse }) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -46,22 +41,24 @@ const AboutUsMain = ({aboutResponse, bannerResponse}) => {
 
   return (
     <Wrapper>
-      <AnimationHeader />
-      
+      <div id="clapat-page-content">
+        <AnimationHeader />
+      </div>
+
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <AboutUsHero bannerResponse={bannerResponse} />
 
             <AboutUsArea aboutResponse={aboutResponse} />
-            <AboutFour aboutResponse={aboutResponse}/>
-            <AboutThree aboutResponse={aboutResponse}/>
+            <AboutFour aboutResponse={aboutResponse} />
+            <AboutThree aboutResponse={aboutResponse} />
 
-            <FunFactOne aboutResponse={aboutResponse}/>
+            <FunFactOne aboutResponse={aboutResponse} />
 
             <BrandFive />
-            <div className="ab-award-style pt-120 pb-120" >
-  <AboutWork />
+            <div className="ab-award-style pt-120 pb-120">
+              <AboutWork />
             </div>
           </main>
           <FooterFour />

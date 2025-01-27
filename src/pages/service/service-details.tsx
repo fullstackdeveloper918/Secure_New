@@ -45,26 +45,11 @@ const ServiceDetailsMain = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* service details area */}
-            <ServiceDetailsArea />
-            {/* service details area */}
-
-            {/* line image slider  */}
-            {/* <LineImgSlider /> */}
-            {/* line image slider  */}
-
-                {/* service area */}
+           
+            <ServiceDetailsArea />       
                 <ServiceThree />
-            {/* service area */}
-
-            {/* big text */}
-            {/* <BigText /> */}
-            {/* big text */}
           </main>
-
-          {/* footer area */}
            <FooterFour />
-          {/* footer area */}
         </div>
       </div>
     </Wrapper>

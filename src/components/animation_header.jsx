@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const animation_header = () => {
@@ -15,10 +16,10 @@ const animation_header = () => {
       
         {/* <!-- Logo --> */}
         <div id="clapat-logo" className="hide-ball">
-            <a className="ajax-link" data-type="page-transition" href="/">
+            <Link className="ajax-link" data-type="page-transition" href="/">
                 <img className="black-logo" src="images/logo.png" alt="Secure Logo"/>
                 <img className="white-logo" src="images/logo-white.png" alt="secure Logo"/>
-            </a>
+            </Link>
         </div>
         {/* <!--/Logo --> */}
                     
@@ -28,23 +29,23 @@ const animation_header = () => {
             <div className="nav-height">          
                 <ul data-breakpoint="1025" className="flexnav">
                     {/* <li className="menu-timeline link"><a className="ajax-link active" data-type="page-transition" href="/"><div className="before-span"><span data-hover="Index">Index</span></div></a></li> */}
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/about-us"><div className="before-span"><span data-hover="Agency">About Us</span></div></a></li>
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/service"><div className="before-span"><span data-hover="Projects">Service</span></div></a>
+                    <li className="menu-timeline link"><Link className="ajax-link" data-type="page-transition" href="/about-us"><div className="before-span"><span data-hover="Agency">About Us</span></div></Link></li>
+                    <li className="menu-timeline link"><Link className="ajax-link" data-type="page-transition" href="/service"><div className="before-span"><span data-hover="Projects">Service</span></div></Link>
                       <ul>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Server Management & Cloud Solutions</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">IT Support & Managed Services</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Cybersecurity Solutions</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Business SEO & Digital Visibility</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Content Creation & Marketing Services</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Inventory Management Solutions</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">UX/UI Design & Website Development</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">Secure Payments & Fraud Detection</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">E-commerce Solutions & Transaction Protection</a></li>
-                            <li><a className="ajax-link" href="/service-details" data-type="page-transition">IT Detective Services & Scam Recovery</a></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Server Management & Cloud Solutions</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">IT Support & Managed Services</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Cybersecurity Solutions</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Business SEO & Digital Visibility</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Content Creation & Marketing Services</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Inventory Management Solutions</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">UX/UI Design & Website Development</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">Secure Payments & Fraud Detection</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">E-commerce Solutions & Transaction Protection</Link></li>
+                            <li><Link className="ajax-link" href="/service-details" data-type="page-transition">IT Detective Services & Scam Recovery</Link></li>
                         </ul>
                     </li>
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/Why-Choose-Us"><div className="before-span"><span data-hover="Agency">Why Choose Us</span></div></a></li>
-                    <li className="menu-timeline link"><a className="ajax-link" data-type="page-transition" href="/contact"><div className="before-span"><span data-hover="Resources">Contact</span></div></a></li>
+                    <li className="menu-timeline link"><Link className="ajax-link" data-type="page-transition" href="/Why-Choose-Us"><div className="before-span"><span data-hover="Agency">Why Choose Us</span></div></Link></li>
+                    <li className="menu-timeline link"><Link className="ajax-link" data-type="page-transition" href="/contact"><div className="before-span"><span data-hover="Resources">Contact</span></div></Link></li>
                 </ul>
             </div>          
         </nav>

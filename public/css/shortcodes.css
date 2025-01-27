@@ -1312,11 +1312,16 @@ h1 > span.has-scale-image {
 	border-radius:6px;
 	cursor:pointer;
 	overflow:hidden;
-	opacity:0;
+	opacity:1;
 	transform:scale(0.5);
-	-webkit-transform:scale(0.5);		
+	-webkit-transform:scale(0.5);
+	transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;		
 }
-
+h1 > span.has-scale-image:hover {
+    transform: scale(2.4);
+    border-radius: 4px;
+}
 .hidden-image {
 	position:absolute;
 	width:100%;
