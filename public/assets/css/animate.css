@@ -1340,7 +1340,8 @@ span.textline-1 {
   padding-left: 0px !important;
 }
 .cn-contact-left-title {
-  margin-bottom: 50px !important;
+  /* margin-bottom: 50px !important; */
+  margin-bottom: 20px !important;
 }
 .contactInfosec {
   display: flex;
@@ -1393,6 +1394,67 @@ span.textline-1 {
   width: 100%;
   max-width: 100%;
 }
+
+
+.cn-contact-2-title{
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 20px !important;
+}
+.cn-contact-2-thumb{
+  margin-bottom: 20px !important;
+}
+.cn-contact-2-content:hover{
+  box-shadow: 0px 0px 30px 0px rgb(0 174 239/9%);
+}
+.cn-contact-thumb{
+  height: 350px;
+}
+.cn-contact-thumb img{
+  object-fit: cover;
+}
+.cn-contact-left-wrap,
+.cn-contact-right-wrap{
+  padding-inline: 50px;
+  padding-block: 30px;
+  border-radius: 10px;
+  background-color: #fff
+}
+.cn-contact-info-item{
+  background-color: #f5f5f5;
+  padding-top: 0 !important;
+  padding-bottom:0 !important;
+}
+.cn-contact-right-info a{
+  margin-bottom: 24px !important;
+}
+.cn-contact-left-info span{
+  text-transform: lowercase !important;
+}
+.ab-about-category-title-box h5{
+  color: #fff
+}
+.innerDivConatct p{
+  color: #fff;
+}
+.cn-contactform-input input, 
+.cn-contactform-input textarea{
+  border-bottom: 1px solid #fff !important;
+  color: #fff !important;
+}
+.cn-contactform-input label{
+  color: #fff !important;
+}
+cn-contactform-input ::placeholder{
+  color: #fff !important;
+}
+.tp-btn-black-md:hover{
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
 /* conatcPage end */
 
 /* whuchooseUs */
@@ -1633,6 +1695,12 @@ header #header-container {
 .tp-testimonial-item span {
   color: #111 !important;
 }
+.cn-contact-2-content{
+  margin-top: 0 !important;
+}
+.cn-contact-2-info-area{
+  padding-block: 40px !important;
+}
 }
 @media (max-width:767px){
   .bannerVideo .tp-hero-title .boldHeading {
@@ -1678,6 +1746,9 @@ header #header-container {
 }
 .showcase-portfolio.filp-grid {
   padding: 0px;
+}
+.cn-contact-left-info {
+  grid-template-columns: auto !important;
 }
 }
 

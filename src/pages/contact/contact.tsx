@@ -17,6 +17,7 @@ import AnimationHeader from "@/components/animation_header";
 // animation
 import { charAnimation } from "@/utils/title-animation";
 import FooterFour from "@/layouts/footers/footer-four";
+import ContactLocationTwo from "@/components/contact/contact-location-2";
 
 const ContactMain = () => {
   useScrollSmooth();
@@ -67,9 +68,11 @@ const ContactMain = () => {
               {/* contact area */}
               <ContactTwo/>
               {/* contact area */}
-
+              <ContactLocationTwo /> 
+            
               {/* contact location */}
-              <ContactLocation/>  
+              <ContactLocation />
+              
               {/* contact location */}
             </main>
 

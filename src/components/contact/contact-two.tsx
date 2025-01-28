@@ -9,7 +9,7 @@ import timing from "../../../public/images/timing.svg";
 
 export default function ContactTwo() {
   return (
-    <div className="cn-contactform-area cn-contactform-style p-relative pb-100">
+    <div className="cn-contactform-area cn-contactform-style p-relative pt-50 pb-100 bg-black">
       <div className="ab-2-hero-social-wrap d-none d-xxl-block">
         <div className="ab-2-hero-social">
           <Social />

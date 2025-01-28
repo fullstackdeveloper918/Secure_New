@@ -28,23 +28,24 @@ const ContactLocation = () => {
       <div className="">
         <div className="textColorwhite">
           {location_data.map((item) => (
-            <div key={item.id} className="cn-contact-info-item bgblue">
+            <div key={item.id} className="cn-contact-info-item">
               <div className="row">
                 <div className="col-xl-12">
-                  <div className="cn-contact-left grid flex-wrap align-items-center md:grid-cols-2 grid-cols-1 gap-16">
-                    <div className="cn-contact-thumb">
-                      <Image src={item.img} alt="image" style={{ height: "auto" }} />
-                    </div>
-                    <div className="cn-contact-left-info md:pr-20 md:px-10 px-4 pt-10 pb-5">
+                  <div className="cn-contact-left grid flex-wrap align-items-center grid-cols-1 gap-14">
+                    
+                    <div className="container container-1530">
+                    <div className="cn-contact-left-info grid grid-cols-2 gap-4 justify-content-center md:pr-20 md:px-10 px-4 pt-20 pb-0">
+                      <div className="cn-contact-left-wrap">
                       <h4 className="cn-contact-left-title">{item.country}</h4>
                       <span className="pb-10 d-block">
                         {/* <i className="fa-regular fa-clock"></i> */}
                         {item.time}
                       </span>
+                      </div>
                       <div className="cn-contact-right-wrap d-flex align-items-start justify-content-between flex-wrap flex-col text-left">
                     <div className="cn-contact-right">
                       <h4>Headquarters</h4>
-                      <div className="cn-contact-location sm:mb-12 :mb-5">
+                      <div className="cn-contact-location sm:mb-6 :mb-5">
                         <span className="cn-contact-location-title">
                           {item.location_title}
                         </span>
@@ -63,6 +64,11 @@ const ContactLocation = () => {
                       <a href="mailto:Hello@contact.com">{item.email}</a>
                     </div>
                   </div>
+                    </div>
+                    </div>
+
+                    <div className="cn-contact-thumb">
+                      <Image src={item.img} alt="image" style={{ height: "auto" }} />
                     </div>
                   </div>
 
@@ -95,7 +101,7 @@ const ContactLocation = () => {
           ))}
         </div>
         
-        <div className="contactInfosec">
+        {/* <div className="contactInfosec">
           <div className="infoDiv">
           <span><Image src={expertGuide} alt="image" style={{ height: "auto" }} /></span>
           <h5>Expert Guidance</h5>
@@ -113,7 +119,7 @@ const ContactLocation = () => {
           <h5>Tailored Solutions</h5>
           <p>To create a world where every challenge is met with personalized support and every business has access to tailored solutions and expertise to achieve their unique goals.</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

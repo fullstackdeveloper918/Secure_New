@@ -108,6 +108,7 @@ const ContactTwoMain = () => {
 
               {/* contact location */}
               <ContactLocationTwo/>
+              <ContactLocation/>
               {/* contact location */}
             </main>
 
