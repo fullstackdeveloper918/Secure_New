@@ -445,7 +445,8 @@ footer .tp-footer-big-title {
 }
 .tp-team-area .tp-hover-btn-item, .tp-team-area .tp-hover-btn-item>img {
   /* background: #dea647; */
-  background: #9E9E9E;
+  /* background: #9E9E9E; */
+  background-color: #009dd6 ;
 }
 .tp-footer-menu ul li a .tp-menu-text {
   font-family: '__Onest_492953' !important;
