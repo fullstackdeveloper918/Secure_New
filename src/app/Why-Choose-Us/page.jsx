@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import WhyChooseUs from "@/pages/WhyChooseUs/WhyChooseUs";
 
 export const metadata = {
-  title: "Liko - Faq page",
+  title: "Secure 365 - Faq page",
 };
 
 const FaqPage = async () => {

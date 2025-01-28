@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import AboutUsMain from "@/pages/about/about-us";
 
 export const metadata = {
-  title: "Liko - About us page",
+  title: "Secure 365 - About us page",
 };
 
 const  AboutUsPage = async() => {

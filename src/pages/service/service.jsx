@@ -8,15 +8,11 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
 import { ServiceItems } from "@/components/service/service-five";
 import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
-import { BrandItems } from "@/components/brand/brand-two";
-import LineImgSlider from "@/components/line-text/line-img-slider";
-// import BigText from "@/components/big-text";
+import {BrandItems} from '@/components/brand/brand-two'
 import { Leaf } from "@/components/svg";
-import FooterTwo from "@/layouts/footers/footer-two";
 import AnimationHeader from "@/components/animation_header";
 
 // animation
@@ -24,7 +20,7 @@ import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
 import FooterFour from "@/layouts/footers/footer-four";
 
-const ServiceMain = () => {
+const ServiceMain = ({serviceData,serviceBannerData}) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -47,7 +43,7 @@ const ServiceMain = () => {
         <div id="smooth-content">
           <main>
        
-            <ServiceHero />
+            <ServiceHero serviceBannerData={serviceBannerData} />
          
             <div className="tp-service-5-area sv-service-style pb-70">
               <div className="container container-1530">
@@ -56,27 +52,28 @@ const ServiceMain = () => {
                     <div className="tp-service-5-title-box mb-90">
                       <span className="ab-inner-subtitle mb-20">
                         <Leaf />
-                        Why Choose <span className="blueColor">Secure365?</span>
+                        {serviceData?.data?.service_why_choose_section_heading} <span className="blueColor">{serviceData?.data?.service_why_choose_section_heading_second}</span>
                       </span>
                       <h4 className="tp-service-5-title">
-                        With us, you’re not just getting IT services; <br />
-                        you’re gaining a trusted partner.
+                        {/* With us, you’re not just getting IT services; <br /> */}
+                        {/* you’re gaining a trusted partner. */}
+                        {serviceData?.data?.service_why_choose_section_paragraph}
                       </h4>
                     </div>
                   </div>
                 </div>
                 <div className="tp-service-5-wrap">
-                  <ServiceItems />
+                  <ServiceItems  serviceData={serviceData}/>
                 </div>
               </div>
             </div>
         
-            <ServiceSix />
+            <ServiceSix serviceData={serviceData}/>
    
             <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
                 <div className="row gx-0">
-                  <BrandItems />
+                  <BrandItems serviceData={serviceData} />
                 </div>
               </div>
             </div>
