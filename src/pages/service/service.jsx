@@ -11,7 +11,7 @@ import Wrapper from "@/layouts/wrapper";
 import { ServiceItems } from "@/components/service/service-five";
 import ServiceHero from "@/components/service/service-hero";
 import ServiceSix from "@/components/service/service-six";
-import { BrandItems } from "@/components/brand/brand-two";
+import {BrandItems} from '@/components/brand/brand-two'
 import { Leaf } from "@/components/svg";
 import AnimationHeader from "@/components/animation_header";
 
@@ -86,20 +86,3 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
 };
 
 export default ServiceMain;
-
-
-
-
-
-// {serviceData && serviceData?.data?.service_logo_slider_data?.map((item,index) => (
-//         <div key={index} className="col-xl-3 col-lg-3 col-md-6">
-//           <div className="tp-brand-4-item p-relative">
-//            {item?.service_logo_slider_image && <Image src={item.brand} alt="brand" style={{ height: "auto" }} />}
-//             <div className="tp-brand-4-line-text d-flex align-items-center">
-//               {item.texts.map((text, index) => (
-//                 <span key={index}>{text}</span>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       ))}
