@@ -1,48 +1,23 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// images
-import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
-import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
-import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 
-const service_data = [
-  {
-    id: 1,
-    title: "Proactive & Preventative",
-    desc: "We don’t just react to issues; we prevent them from happening",
-    icon: s_2,
-  },
-  {
-    id: 2,
-    title: "End-to-End Solutions",
-    desc: "From assessment to implementation and ongoing support, we cover the entire process",
-    icon: s_1,
-  },
-  {
-    id: 3,
-    title: "Client-Centric",
-    desc: "Your needs come first. We customize our services to fit your business’s unique goals  and challenges",
-    icon: s_3,
-  },
-];
 
-// service items
-export function ServiceItems() {
+export function ServiceItems({serviceData}) {
   return (
     <div className="row">
       <div className="col-xxl-3"></div>
-      {service_data.map((item) => (
-        <div key={item.id} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+      {serviceData && serviceData?.data?.service_why_choose_proactive_data?.map((item,index) => (
+        <div key={index} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
           <div className="tp-service-5-item tp_fade_bottom space-1">
             <div className="tp-service-4-icon">
-              <Image src={item.icon} alt="icon" />
+             <Image src={item.service_proactive_loop_image} alt="icon" width={60} height={60}/> 
             </div>
             <div className="tp-service-4-content">
               <h4 className="tp-service-4-title-sm tp-text-black">
-                <Link href="/service">{item.title}</Link>
+                <Link href="/service">{item.service_proactive_loop_image_heading}</Link>
               </h4>
-              <p>{item.desc}</p>
+              <p>{item.service_proactive_loop_paragraph}</p>
             </div>
           </div>
         </div>

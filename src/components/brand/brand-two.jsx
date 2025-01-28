@@ -120,7 +120,7 @@ const brand_data = [
 ];
 
 // brand items
-export function BrandItems() {
+export function BrandItems({serviceData}) {
   return (
     <>
       {brand_data.map((item) => (

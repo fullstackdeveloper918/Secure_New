@@ -5,7 +5,7 @@ import Image from "next/image";
 import ser_hero from "@/assets/img/inner-service/hero/hero-3.jpg";
 import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
 
-export default function ServiceHero() {
+export default function ServiceHero({serviceBannerData}) {
   return (
     <div className="sv-hero-area sv-hero-ptb">
       <div className="container container-1530">
@@ -13,12 +13,12 @@ export default function ServiceHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-              Comprehensive IT <span className="blueColor">Solutions</span> <br />
+              {serviceBannerData?.pages?.banner_data?.banner_heading} <span className="blueColor">{serviceBannerData?.pages?.banner_data?.banner_heading_second}</span> <br />
                  
               </h4>
-              <h3 className="servicesSub tp-char-animation">Tailored for Your Business</h3>
+              <h3 className="servicesSub tp-char-animation">{serviceBannerData?.pages?.banner_data?.banner_heading_third}</h3>
               <p className="tp_fade_bottom">
-              From security to support, we handle it all—so you don’t have to.
+              {serviceBannerData?.pages?.banner_data?.banner_sub_headline}
               </p>
             </div>
           </div>
