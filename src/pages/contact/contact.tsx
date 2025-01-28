@@ -55,31 +55,28 @@ const ContactMain = () => {
                       <div className="tm-hero-content">
                         <span className="tm-hero-subtitle">Secure 365</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
-                        How to Reach Us
+                          How to Reach Us
                         </h4>
-                        <p>We make it easy for you to get in touch, whether you prefer a quick phone call, a detailed email, or scheduling a consultation at a time that works for you.</p>
+                        <p>
+                          We make it easy for you to get in touch, whether you
+                          prefer a quick phone call, a detailed email, or
+                          scheduling a consultation at a time that works for
+                          you.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* hero area end */}
 
-              {/* contact area */}
-              <ContactTwo/>
-              {/* contact area */}
-              <ContactLocationTwo /> 
-            
-              {/* contact location */}
+              <ContactTwo />
+
+              <ContactLocationTwo />
+
               <ContactLocation />
-              
-              {/* contact location */}
             </main>
 
-            {/* footer area */}
-            {/* <FooterTwo topCls="" whiteFooter={true} /> */}
-                      <FooterFour />
-            {/* footer area */}
+            <FooterFour />
           </div>
         </div>
       </div>
