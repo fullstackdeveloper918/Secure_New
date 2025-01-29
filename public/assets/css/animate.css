@@ -217,6 +217,11 @@
     transform: translateY(-35%);
     opacity: .3;
   }
+  video.play-video {
+    height: 100%;
+    object-fit: cover;
+}
+
   .black_theme video {
     width: 100vw;
     /* position: fixed; */

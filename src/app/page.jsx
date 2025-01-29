@@ -88,13 +88,13 @@ export default function Home() {
                               className="section-image trigger-item-link"
                               >
                                 <img
-                                  src="images/techable.png"
+                                  src="images/01hero1.jpg"
                                   className="item-image grid__item-img"
                                   alt=""
                                 />
                               </div>
                               <img
-                                src="images/techable.png"
+                                src="images/01hero1.jpg"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               />
@@ -105,7 +105,7 @@ export default function Home() {
                               <div 
                               className="slide-title"
                               >
-                                <span>Techable</span>
+                                <span>Esakle</span>
                               </div>
                               <div 
                               className="slide-date"
@@ -115,7 +115,7 @@ export default function Home() {
                               <div 
                               className="slide-cat"
                               >
-                                <span> The Home Of Tech </span>
+                                <span> The Sport Wear </span>
                               </div>
                             </div>
                           </div>
@@ -133,27 +133,40 @@ export default function Home() {
                                 href="https://sellmac.com/"
                               ></a>
                               <div className="section-image  trigger-item-link">
-                                <img
-                                  src="images/SellMac.png"
+                                {/* <img
+                                  src="images/02hero.jpg"
                                   className="item-image grid__item-img"
                                   alt=""
-                                />
+                                /> */}
+                             <video
+                    className="play-video"
+                    loop={true}
+                    muted={true}
+                    autoPlay={true}
+                    playsInline={true}
+                  >
+                    <source
+                      src="images/55620776.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                               </div>
-                              <img
-                                src="images/SellMac.png"
+                              {/* <img
+                                src="images/02hero.jpg"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
-                              />
+                              /> */}
+                         
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>SellMac</span>
+                                <span>Work Showcase</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>Sell Your Mac with Ease!</span>
+                                <span>Templates</span>
                               </div>
                             </div>
                           </div>
@@ -172,27 +185,27 @@ export default function Home() {
                               ></a>
                               <div className="section-image trigger-item-link">
                                 <img
-                                  src="images/safeTech.png"
+                                  src="images/03hero.png"
                                   className="item-image grid__item-img"
                                   alt=""
                                 />
                               </div>
                               <img
-                                src="images/safeTech.png"
+                                src="images/03hero.png"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Safe Tech</span>
+                                <span>Earcandy</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
                                 <span>
-                                  Superior Protection for Apple Devices.
+                                  The Healthcare project
                                 </span>
                               </div>
                             </div>
@@ -264,7 +277,7 @@ export default function Home() {
                         </div>
                       </div>
 
-                      <div
+                      {/* <div
                         className="content-row full text-align-center dark-section"
                         data-bgcolor="#ebebeb"
                       >
@@ -390,7 +403,186 @@ export default function Home() {
                             <li className="pixels-cover"></li>
                           </ul>
                         </div>
+                      </div> */}
+
+                            {/* <!-- Row --> */}
+                            <div
+                        className="content-row full text-align-center dark-section"
+                        data-bgcolor="#ebebeb"
+                      >
+                        <div className="projects-list-wrapper invert-header-color">
+                          <ul className="projects-list-captions">
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project04.html"
+                              ></a>
+                              <span>Artificial Intelligence</span>
+                            </li>
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project05.html"
+                              ></a>
+                              <span>Blockchain Solution</span>
+                            </li>
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project06.html"
+                              ></a>
+                              <span>Network Solutions</span>
+                            </li>
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project07.html"
+                              ></a>
+                              <span>Cybersecurity</span>
+                            </li>
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project08.html"
+                              ></a>
+                              <span>Data & Analytics</span>
+                            </li>
+                            <li data-centerline="OPEN">
+                              <a
+                                className="list-link"
+                                data-type="page-transition"
+                                href="project09.html"
+                              ></a>
+                              <span>SEO & Marketing</span>
+                            </li>
+                          </ul>
+
+                          <ul 
+                          className="projects-list-images"
+                          >
+                            <li 
+                            className="trigger-item"
+                            >
+                              <div 
+                              className="img-mask"
+                              >
+                                <div 
+                                className="section-image trigger-item-link"
+                                >
+                                  <img
+                                    src="images/011hero.jpg"
+                                    
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                  <div 
+                                  className="hero-video-wrapper"
+                                  >
+                                  
+                                  </div>
+                                </div>
+                                <img
+                                  src="images/011hero.jpg"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="trigger-item">
+                              <div 
+                              className="img-mask"
+                              >
+                                <div 
+                                className="section-image trigger-item-link"
+                                >
+                                  <img
+                                    src="images/012hero.jpg"
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                </div>
+                                <img
+                                  src="images/012hero.jpg"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="trigger-item">
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
+                                  <img
+                                    src="images/013hero.jpg"
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                </div>
+                                <img
+                                  src="images/013hero.jpg"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="trigger-item">
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
+                                  <img
+                                    src="images/014hero.png"
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                </div>
+                                <img
+                                  src="images/014hero.png"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="trigger-item">
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
+                                  <img
+                                    src="images/015hero.jpg"
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                </div>
+                                <img
+                                  src="images/015hero.jpg"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="trigger-item">
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
+                                  <img
+                                    src="images/016hero.jpg"
+                                    className="item-image grid__item-img"
+                                    alt=""
+                                  />
+                                </div>
+                                <img
+                                  src="images/016hero.jpg"
+                                  className="grid__item-img grid__item-img--large"
+                                  alt=""
+                                />
+                              </div>
+                            </li>
+                            <li className="pixels-cover"></li>
+                          </ul>
+                        </div>
                       </div>
+                      {/* <!--/Row --> */}
+
                     </div>
                   </div>
                 </div>
