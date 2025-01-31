@@ -146,7 +146,7 @@ export default function Home() {
                     playsInline={true}
                   >
                     <source
-                      src="images/55620776.mp4"
+                      src="images/Untitled design.mp4"
                       type="video/mp4"
                     />
                   </video>
