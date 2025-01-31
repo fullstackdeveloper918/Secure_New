@@ -198,14 +198,14 @@ export default function Home() {
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
-                                <span>Earcandy</span>
+                                <span>B2B</span>
                               </div>
                               <div className="slide-date">
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
                                 <span>
-                                  The Healthcare project
+                                  The AI For B2B Growth
                                 </span>
                               </div>
                             </div>
