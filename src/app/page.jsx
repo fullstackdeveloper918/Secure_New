@@ -74,7 +74,7 @@ export default function Home() {
                         >
                           <div
                             className="slide-inner trigger-item"
-                            data-centerline="OPEN"
+                            // data-centerline="OPEN"
                           >
                             <div 
                             className="img-mask pixels-cover"
@@ -82,7 +82,7 @@ export default function Home() {
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="https://techable.com/"
+                                href="/project"
                               ></a>
                               <div 
                               className="section-image trigger-item-link"
@@ -124,13 +124,13 @@ export default function Home() {
                         <div className="clapat-item expanded">
                           <div
                             className="slide-inner trigger-item"
-                            data-centerline="OPEN"
+                            // data-centerline="OPEN"
                           >
                             <div className="img-mask pixels-cover">
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="https://sellmac.com/"
+                                href="/project"
                               ></a>
                               <div className="section-image  trigger-item-link">
                                 {/* <img
@@ -175,13 +175,13 @@ export default function Home() {
                         <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
-                            data-centerline="OPEN"
+                            // data-centerline="OPEN"
                           >
                             <div className="img-mask pixels-cover">
                               <a
                                 className="slide-link"
                                 data-type="page-transition"
-                                href="https://safetechwarranty.com/"
+                                href="/project"
                               ></a>
                               <div className="section-image trigger-item-link">
                                 <img

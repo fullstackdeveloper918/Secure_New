@@ -368,7 +368,7 @@ figure.has-parallax {
 
 .full figure.has-parallax {		
   overflow:hidden;
-  height:100vh;
+  height:150vh;
 }
 
 figure img {

@@ -4,11 +4,13 @@ import { useRef } from "react";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./slide.module.css";
-
+import Image1 from "../../../public/images/just-for.png"
+import Image2 from "../../../public/images/just-for.png"
+import Image3 from "../../../public/images/just-for.png"
 const images = [
-  "/images/projects/bobs03.jpg",
-  "/images/projects/bobs04.jpg",
-  "/images/projects/bobs05.jpg",
+  Image1,
+  Image2,
+  Image3,
 ];
 
 const ClapatSlider = () => {

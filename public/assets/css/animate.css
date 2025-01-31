@@ -1764,6 +1764,18 @@ header #header-container {
   }
 }
 
-
-
-
+.bg-liner, .bg-liner #main-page-content {
+  background: linear-gradient(0deg, #474747 0%, #111111) 100% !important;
+}
+.bg-liner #main-page-content .light-section-wrapper {
+  background: transparent !important;
+}
+.marginTBo{
+  margin:50px auto;
+}
+.width90{
+  width: 97%;
+}
+p.bigger.has-opacity{
+  color:#fff;
+}
