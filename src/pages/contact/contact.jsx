@@ -19,7 +19,9 @@ import { charAnimation } from "@/utils/title-animation";
 import FooterFour from "@/layouts/footers/footer-four";
 import ContactLocationTwo from "@/components/contact/contact-location-2";
 
-const ContactMain = () => {
+const ContactMain = ({contactData}) => {
+
+  console.log(contactData, 'contactData')
   useScrollSmooth();
 
   useGSAP(() => {
@@ -55,13 +57,10 @@ const ContactMain = () => {
                       <div className="tm-hero-content">
                         <span className="tm-hero-subtitle">Secure 365</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
-                          How to Reach Us
+                         {contactData?.reach_contact_section_heading}
                         </h4>
                         <p>
-                          We make it easy for you to get in touch, whether you
-                          prefer a quick phone call, a detailed email, or
-                          scheduling a consultation at a time that works for
-                          you.
+                         {contactData?.reach_contact_section_paragraph}
                         </p>
                       </div>
                     </div>
@@ -71,9 +70,9 @@ const ContactMain = () => {
 
               <ContactTwo />
 
-              <ContactLocationTwo />
+              <ContactLocationTwo contactData={contactData} />
 
-              <ContactLocation />
+              <ContactLocation contactData={contactData} />
             </main>
 
             <FooterFour />

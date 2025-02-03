@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 };
 
 const ContactTwoPage = () => {
+
+
+
+  
   return (
     <ContactTwoMain/>
   );

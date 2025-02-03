@@ -22,13 +22,13 @@ const location_data = [
   },
 ];
 
-const ContactLocation = () => {
+const ContactLocation = ({contactData}) => {
   return (
     <div className="cn-contact-info-area">
       <div className="">
         <div className="textColorwhite">
-          {location_data.map((item) => (
-            <div key={item.id} className="cn-contact-info-item">
+
+            <div  className="cn-contact-info-item">
               <div className="row">
                 <div className="col-xl-12">
                   <div className="cn-contact-left grid flex-wrap align-items-center grid-cols-1 gap-14">
@@ -36,39 +36,41 @@ const ContactLocation = () => {
                     <div className="container container-1530">
                     <div className="cn-contact-left-info grid grid-cols-2 gap-4 justify-content-center md:pr-20 md:px-10 px-4 pt-20 pb-0">
                       <div className="cn-contact-left-wrap">
-                      <h4 className="cn-contact-left-title">{item.country}</h4>
+                      <h4 className="cn-contact-left-title">{contactData?.contact_our_location_heading}</h4>
                       <span className="pb-10 d-block">
                         {/* <i className="fa-regular fa-clock"></i> */}
-                        {item.time}
+                        {/* {item.time} */}
+                        {contactData?.contact_our_location_heading_paragraph}
                       </span>
                       </div>
                       <div className="cn-contact-right-wrap d-flex align-items-start justify-content-between flex-wrap flex-col text-left">
                     <div className="cn-contact-right">
-                      <h4>Headquarters</h4>
+                      <h4>{contactData?.contact_map_location}</h4>
                       <div className="cn-contact-location sm:mb-6 :mb-5">
                         <span className="cn-contact-location-title">
-                          {item.location_title}
+                          {/* {item.location_title} */}
+                          {contactData?.contact_map_loction_details}
                         </span>
                         <a
                           href="https://www.google.com/maps"
                           target="_blank"
-                          dangerouslySetInnerHTML={{ __html: item.address }}
+                          // dangerouslySetInnerHTML={{ __html: item.address }}
                         ></a>
                       </div>
                       {/* <div className="cn-contact-map mb-10 xl:mb-0">
                         <a href="#">Google Maps</a>
                       </div> */}
                     </div>
-                    <div className="cn-contact-right-info md:text-start text-left md:text-md-end">
-                      <a href="tel:(+91)76001726">{item.phone}</a> <br />
-                      <a href="mailto:Hello@contact.com">{item.email}</a>
-                    </div>
+                    {/* <div className="cn-contact-right-info md:text-start text-left md:text-md-end">
+                      <a href="tel:(+91)76001726">phon</a> <br />
+                      <a href="mailto:Hello@contact.com">email</a>
+                    </div> */}
                   </div>
                     </div>
                     </div>
 
                     <div className="cn-contact-thumb">
-                      <Image src={item.img} alt="image" style={{ height: "auto" }} />
+                      {/* <Image src={item.img} alt="image" style={{ height: "auto" }} /> */}
                     </div>
                   </div>
 
@@ -98,7 +100,7 @@ const ContactLocation = () => {
                 </div> */}
               </div>
             </div>
-          ))}
+       
         </div>
         
         {/* <div className="contactInfosec">

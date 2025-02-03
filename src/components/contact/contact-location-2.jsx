@@ -43,32 +43,34 @@ const location_data = [
     content: "To create a world where every challenge is met with personalized support and every business has access to tailored solutions and expertise to achieve their unique goals.",
   },
 ];
-const ContactLocationTwo = () => {
+const ContactLocationTwo = ({contactData}) => {
   return (
     <div className="cn-contact-2-info-area pb-90 pt-90">
       <div className="container container-1530">
         <div className="row">
-          {location_data.map((item) => (
-            <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 mb-30">
-              <div className={`cn-contact-2-content ${item.id === 2 ? "mt-20" : ""} text-center`}>
+          {contactData && contactData?.contact_secure_loop.map((item,index) => (
+            <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div className={`cn-contact-2-content ${index+1  == 2 ? "mt-20" : ""} text-center`}>
               <div className="cn-contact-2-thumb d-flex justify-content-center">
                <Image
-                  src={item.img_1}
+                  src={item?.contact_secure_image}
                   alt="contact-img"
+                  width={100}
+                  height={100}
                   style={{ height: "auto" }}
                 />
                 </div>
-                <h4 className="cn-contact-2-title">{item.title}</h4>
+                <h4 className="cn-contact-2-title">{item?.contact_secure_heading}</h4>
                 <div className="cn-contact-2-info-details">
                   <p>
-                    {item.content}
+                    {item?.contact_secure_paragraph}
                   </p>
                   {/* <a className="pb-15" href={item.map} target="_blank">
                     {item.address}
                   </a>
                   <a href={`mailto:${item.email}`}>{item.email}</a>
                   {item.phone && <a href={`tel:${item.phone}`}>{item.phone}</a>} */}
-                  {item.note && <span>{item.note}</span>}
+                  {/* {item.note && <span>{item.note}</span>} */}
                 </div>
               </div>
             </div>
