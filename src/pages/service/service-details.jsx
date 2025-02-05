@@ -8,23 +8,17 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
 import ServiceDetailsArea from "@/components/service/service-details-area";
-import LineImgSlider from "@/components/line-text/line-img-slider";
-// import BigText from "@/components/big-text";
-import FooterTwo from "@/layouts/footers/footer-two";
-import { Leaf } from "@/components/svg";
+
 // animation
 import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-animation";
 import AnimationHeader from "@/components/animation_header";
-import { ServiceItems } from "@/components/service/service-five";
-import ServiceFour from "@/components/service/service-four";
 import ServiceThree from "@/components/service/service-three";
 import FooterFour from "@/layouts/footers/footer-four";
 import { servicePanel } from "@/utils/panel-animation";
 
 
-const ServiceDetailsMain = () => {
+const ServiceDetailsMain = ({serviceBannerData}) => {
   useScrollSmooth();
 
   useGSAP(() => {
@@ -46,8 +40,8 @@ const ServiceDetailsMain = () => {
         <div id="smooth-content">
           <main>
            
-            <ServiceDetailsArea />       
-                <ServiceThree />
+            <ServiceDetailsArea serviceBannerData={serviceBannerData} />       
+                <ServiceThree  serviceBannerData={serviceBannerData}/>
           </main>
            <FooterFour />
         </div>

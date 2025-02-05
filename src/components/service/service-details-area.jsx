@@ -7,7 +7,8 @@ import sv_1 from "@/assets/img/inner-service/sercive-details/sv-details-1.jpg";
 import sv_2 from "@/assets/img/inner-service/sercive-details/sv-details-1.png";
 import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-2.png";
 
-export default function ServiceDetailsArea() {
+export default function ServiceDetailsArea({ serviceBannerData }) {
+  console.log(serviceBannerData, "serviceBannerData");
   return (
     <div className="service-details__area service-details__space pt-200">
       <div className="container">
@@ -15,10 +16,10 @@ export default function ServiceDetailsArea() {
           <div className="col-xl-12">
             <div className="service-details__title-box mb-10">
               <span className="service-details__subtitle tp-char-animation">
-              Secure, Scalable, and Hassle-Free
+                Secure, Scalable, and Hassle-Free
               </span>
               <h4 className="sv-hero-title tp-char-animation">
-              Server & <span className="blueColor">Cloud Management</span>
+                Server & <span className="blueColor">Cloud Management</span>
               </h4>
             </div>
           </div>
@@ -26,9 +27,9 @@ export default function ServiceDetailsArea() {
             <div className="offset-xl-4 col-xl-5">
               <div className="service-details__banner-text mb-20">
                 <p className="mb-30 tp_title_anim">
-                Optimize your business’s operations
-                  <br /> with managed server solutions and secure {" "}
-                  <br /> cloud infrastructure.{" "}
+                  Optimize your business’s operations
+                  <br /> with managed server solutions and secure <br /> cloud
+                  infrastructure.{" "}
                 </p>
                 <p className="tp_title_anim">
                   Explore our achievements and let yourself be <br /> convinced!
@@ -60,29 +61,27 @@ export default function ServiceDetailsArea() {
             <div className="service-details__left-wrap">
               <div className="service-details__left-text pb-10">
                 <h2 className="tp_title_anim">
-                Benefits of Choosing Secure365
+                  Benefits of Choosing Secure365
                 </h2>
                 <p>
-                Choosing Secure365 ensures your data remains protected, your systems stay resilient, and your peace of mind is guaranteed!
+                  Choosing Secure365 ensures your data remains protected, your
+                  systems stay resilient, and your peace of mind is guaranteed!
                 </p>
               </div>
               <div className="service-details__fea-list">
                 <ul>
-                  <li>
-                    <h5>Enhanced Security</h5>
-                    <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                    </li>
-                  <li> <h5>Scalability & Flexibility</h5>
-                  <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                  </li>
-                  <li>
-                  <h5>Improved Performance</h5>
-                  <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                  </li>
-                  <li>
-                  <h5>Reduced Costs</h5>
-                  <p>Our clients come first. We strive to understand their unique needs and exceed expectations in everything we do.</p>
-                  </li>
+                  {serviceBannerData &&
+                    serviceBannerData?.service_inner_benefits_of_choosing_section_data?.map(
+                      (item, index) => (
+                        <React.Fragment key={index}>
+                          {console.log(item, "item")}
+                          <li>
+                            <h5>{item?.heading}</h5>
+                            <p>{item?.paragraph}</p>
+                          </li>
+                        </React.Fragment>
+                      )
+                    )}
                 </ul>
               </div>
               <div className="service-details__sm-thumb-wrap mb-10">
@@ -120,31 +119,31 @@ export default function ServiceDetailsArea() {
           <div className="col-xl-5 col-lg-5">
             <div className="service-details__right-wrap fix p-relative">
               <div className="service-details__rotate-text">
-                <span>Full list of services</span>
+                <span>{serviceBannerData?.full_list_of_services_heading}</span>
               </div>
               <div className="service-details__right-category">
-                <a href="#">Cloud Migration & Setup</a>
-                <a  href="#">
-                Server Configuration & Optimization
-                </a>
+                {
+                  serviceBannerData?.management_full_list_right_section_services?.map((item,index) => (
+                    <React.Fragment key={index}>
+                      <Link href="#">{item?.full_list_of_services_loop}</Link>
+                    </React.Fragment>
+                  ))
+                }
+                {/* <a href="#">Server Configuration & Optimization</a>
                 <a href="#">Data Security & Backup Solutions</a>
-                <a href="#">Hybrid Cloud & 
-                On-Premises Solutions</a>
+                <a href="#">Hybrid Cloud & On-Premises Solutions</a>
                 <a href="#">Performance Monitoring & 24/7 Support</a>
-                <a href="#">Disaster Recovery Planning</a>
+                <a href="#">Disaster Recovery Planning</a> */}
               </div>
               <div className="service-details__right-text-box">
                 <h4>
-                Why Choose Secure365 <br /> for Server & Cloud Management?
+                  Why Choose Secure365 <br /> for Server & Cloud Management?
                 </h4>
                 <p className="mb-20">
-                Managing servers and cloud environments can be overwhelming and time-consuming. That’s where Secure365 steps in. Our certified professionals handle every aspect of your server and cloud strategy,
+                  {serviceBannerData?.service_details_right_why_choose_section_heading_paragraph}
                 </p>
-                <Link
-                  className="tp-btn-white background-black"
-                  href="/contact"
-                >
-                  Let’s Talk
+                <Link className="tp-btn-white background-black" href="/contact">
+                  {serviceBannerData?.service_details_right_why_choose_section_button}
                 </Link>
               </div>
             </div>

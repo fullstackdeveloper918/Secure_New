@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { SwiperOptions } from "swiper/types";
+import { Swiper, SwiperSlide } from "swiper/react"
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,7 +15,7 @@ import sv_6 from "@/assets/img/home-04/service/sv-icon-6.png";
 
 
 // slider setting
-const slider_setting: SwiperOptions = {
+const slider_setting = {
   slidesPerView: 4,
   loop: true,
   autoplay: false,
@@ -85,7 +84,7 @@ const service_data = [
     subtitle: "Secure365 is built on years of battling cybercrime, managing e-commerce platforms, and developing technology strategies that work in real-world scenarios.",
   },
 ];
-export default function ServiceThree() {
+export default function ServiceThree({serviceBannerData}) {
   return (
     <div
       className="tp-service-4-area pt-120 pb-170 fix"
@@ -119,22 +118,22 @@ export default function ServiceThree() {
           {...slider_setting}
           className="swiper-container tp-service-4-slider-active"
         >
-          {service_data.map((item) => (
-            <SwiperSlide key={item.id}>
+          {serviceBannerData && serviceBannerData?.server_cloud_service_include_loop_data?.map((item,index) => (
+            <SwiperSlide key={index}>
               <div
                 className="tp-service-4-item"
                 
               >
                 <div className="tp-service-4-icon">
-                  <Image src={item.icon} alt="icon" />
+                  <Image src={item?.image} alt="icon" width={100} height={100} />
                 </div>
                 <div className="tp-service-4-content">
                   <h4 className="tp-service-4-title-sm">
-                    <Link href="/service">{item.title}</Link>
+                    <Link href="/service">{item?.heading}</Link>
                   </h4>
-                  <p>{item.subtitle}</p>
+                  <p>{item?.paragraph}</p>
                   <Link className="tp-service-4-link" href="/service">
-                    Read more
+                  {item?.button}
                   </Link>
                 </div>
               </div>

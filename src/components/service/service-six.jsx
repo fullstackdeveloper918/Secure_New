@@ -54,7 +54,7 @@ export default function ServiceSix({serviceData}) {
                       <div className="sv-service-btn">
                         <Link
                           className="tp-btn-zikzak zikzak-inner p-relative"
-                          href="/service-details"
+                          href={`/service/`}
                         >
                           <span className="zikzak-content">
                             {/* See <br /> Details */}
