@@ -19,6 +19,8 @@ const ContactPage = async() => {
   const response = await data.json();
   const contactData = response?.data;
 
+  // contact check
+
 
   return (
     <ContactMain contactData={contactData}/>
