@@ -1,15 +1,9 @@
-import React from "react";
-import { Metadata } from "next";
-import ServiceDetailsMain from "@/pages/service/service-details";
+import React from 'react'
 
-export const metadata: Metadata = {
-  title: "Liko - Service Details page",
-};
-
-const ServiceDetailsPage = () => {
+const page = () => {
   return (
-    <ServiceDetailsMain/>
-  );
-};
+    <div>page</div>
+  )
+}
 
-export default ServiceDetailsPage;
+export default page
