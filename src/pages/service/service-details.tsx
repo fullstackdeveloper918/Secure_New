@@ -39,7 +39,7 @@ const ServiceDetailsMain = () => {
 
   return (
     <Wrapper>
-      <AnimationHeader />
+      {/* <AnimationHeader /> */}
 
 
       <div id="smooth-wrapper">

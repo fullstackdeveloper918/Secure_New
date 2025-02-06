@@ -23,7 +23,6 @@ const  AboutUsPage = async() => {
   const aboutResponse = await data.json();
   const bannerResponse = await bannerData.json();
 
-  console.log(bannerResponse, 'bannerResponse')
   return (
     <div className="about_usClass">
       <AboutUsMain aboutResponse={aboutResponse} bannerResponse={bannerResponse}/>

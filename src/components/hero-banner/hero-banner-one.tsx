@@ -6,6 +6,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { motion } from "framer-motion";
 import { useGSAP } from "@gsap/react";
 import { fadeAnimation } from "@/utils/title-animation";
+import Link from "next/link";
 
 const HeroBannerOne = () => {
   useGSAP(() => {
@@ -85,8 +86,13 @@ const HeroBannerOne = () => {
                 </p>
 
                 <div className="btn_sec flex gap-3 flex-wrap">
-                  <button className="BtnOne btnWrapper">Get started</button>
-                  <button className="BtnTwo btnWrapper">
+                  {/* <button className="BtnOne btnWrapper"> */}
+                    <Link href="/contact" className="BtnOne btnWrapper">
+                    Get started
+                    </Link>
+                    {/* </button> */}
+                  {/* <button > */}
+                  <Link href="/contact" className="BtnTwo btnWrapper">
                   Let's Connect
                     <span>
                       <svg
@@ -102,7 +108,8 @@ const HeroBannerOne = () => {
                         />
                       </svg>
                     </span>
-                  </button>
+                    </Link>
+                  {/* </button> */}
                 </div>
               </motion.div>
             </div>
@@ -141,13 +148,13 @@ const HeroBannerOne = () => {
 
       <div className="flip-thumbs-wrapper">
         <div className="flip-move-thumb show-counter">
-           <img src="/assets/img/home-01/project/project-1-1.jpg" className="grid__item-img grid__item-img--large" alt="" />
+           <img src="/assets/img/home-01/project/project-1-1.jpg" className="grid__item-img grid__item-img--large" alt="project-1-1" />
         </div>
         <div className="flip-move-thumb show-counter">
-          <img src="/assets/img/home-01/project/project-1-2.jpg" className="grid__item-img grid__item-img--large" alt="" /> 
+          <img src="/assets/img/home-01/project/project-1-2.jpg" className="grid__item-img grid__item-img--large" alt="project-1-2" /> 
         </div>
         <div className="flip-move-thumb show-counter">
-        <img src="/assets/img/home-01/project/project-1-3.jpg" className="grid__item-img grid__item-img--large" alt="" />
+        <img src="/assets/img/home-01/project/project-1-3.jpg" className="grid__item-img grid__item-img--large" alt="project-1-3" />
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { scroller } from "react-scroll";
 import { ScrollDown } from "../svg";
+import Link from "next/link";
 
 export default function AboutUsHero({bannerResponse}) {
   const scrollTo = () => {
@@ -16,7 +17,7 @@ export default function AboutUsHero({bannerResponse}) {
       style={{backgroundImage: "url(/assets/img/inner-about/hero/hero-1.png)"}}
     >
       <div className="breadcurmb-site d-none">
-        <h6>About Us</h6>
+        <span>About Us</span>
       </div>
       <div className="ab-inner-hero-scroll smooth">
         <a className="pointer" onClick={scrollTo}>
@@ -54,7 +55,7 @@ export default function AboutUsHero({bannerResponse}) {
               <p>
               {bannerResponse?.pages?.banner_data?.banner_heading_all_in}
               </p>
-               <a className="tp-btn-white-sm border-style" href="#">{bannerResponse?.pages?.banner_data?.book_demo}</a>
+               <Link className="tp-btn-white-sm border-style" href="#">{bannerResponse?.pages?.banner_data?.book_demo}</Link>
             </div>
           </div>
         </div>

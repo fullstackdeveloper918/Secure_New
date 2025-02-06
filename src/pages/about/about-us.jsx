@@ -42,7 +42,7 @@ const AboutUsMain = ({ aboutResponse, bannerResponse }) => {
   return (
     <Wrapper>
       <div id="clapat-page-content">
-        <AnimationHeader />
+        {/* <AnimationHeader /> */}
       </div>
 
       <div id="smooth-wrapper">

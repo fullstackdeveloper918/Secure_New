@@ -588,32 +588,38 @@ h1, h2, h3, h4, h5, h6 {
   line-height: calc(1rem + 3vw);
 }	
 
-h1{
+h1,
+.h1-title{
   font-size: calc(1rem + 3vw);
   line-height: calc(1rem + 3vw);
 }
 
-h2{
+h2,
+.h2-title{
   font-size: calc(1rem + 2vw);
   line-height: calc(1rem + 2.5vw);
 }
 
-h3{
+h3,
+.h3-title{
   font-size: calc(1rem + 2vw);
   line-height: calc(1rem + 2.5vw);
 }
 
-h4{
+h4,
+.h4-title{
   font-size: calc(1rem + 1vw);
   line-height: calc(1rem + 1.6vw);
 }
 
-h5{
+h5,
+.h5-title{
   font-size: calc(1rem + 0.6vw);
   line-height: calc(1rem + 1.5vw);
 }
 
-h6 {
+h6,
+.h6-title {
   font-size:18px;
   line-height: 36px;
 }

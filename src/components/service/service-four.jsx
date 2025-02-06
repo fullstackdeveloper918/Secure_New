@@ -33,11 +33,16 @@ export default function ServiceFour({whyChooseData}) {
           <div className="col-xl-9">
             <div className="tp-service-3-title-box mb-20 p-relative">
               <div className="tp-service-3-icon">
-                <Image src={icon} alt="icon" />
+                <Image 
+                src={icon} 
+                alt="icon"
+                width={100}
+                height={100}
+                />
               </div>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
+              <h2 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
             {whyChooseData?.why_choose_core_strength_main_heading} {whyChooseData?.why_choose_core_strength_main_heading_second}
-              </h4>
+              </h2>
             </div>
           </div>
         </div>
@@ -47,9 +52,9 @@ export default function ServiceFour({whyChooseData}) {
             <div className="row align-items-start">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
-                  <h4 className="tp-service-3-title">
+                  <h3 className="tp-service-3-title">
                     <Link href="/service">{item?.why_choose_core_strength_heading}</Link>
-                  </h4>
+                  </h3>
                 </div>
               </div>
               <div className="col-xl-7 col-lg-7">

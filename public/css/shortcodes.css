@@ -1302,7 +1302,7 @@ span.has-hover-image.vertical .hover-reveal {
 	height: 400px;
 }
 
-h1 > span.has-scale-image {
+h2 > span.has-scale-image {
 	position: relative;
 	display: inline-block;
 	background-color: currentColor;
@@ -1318,7 +1318,7 @@ h1 > span.has-scale-image {
 	transition: all 0.4s ease-out;
     -webkit-transition: all 0.4s ease-out;		
 }
-h1 > span.has-scale-image:hover {
+h2 > span.has-scale-image:hover {
     transform: scale(2.4);
     border-radius: 4px;
 }
@@ -1332,7 +1332,7 @@ h1 > span.has-scale-image:hover {
 	-webkit-transition: all 0.4s ease-out;
 }
 
-h1 > span.has-scale-image:hover .hidden-image {
+h2 > span.has-scale-image:hover .hidden-image {
 	opacity:1;
 }
 

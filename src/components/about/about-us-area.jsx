@@ -63,10 +63,10 @@ export default function AboutUsArea({aboutResponse}) {
             <div className="row">
               <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
-                  <h4 className="ab-about-category-title">
+                  <h2 className="ab-about-category-title">
                     {aboutResponse?.data?.about_our_core_something_section} <br />
                     <span>{aboutResponse?.data?.about_our_core_what_i_do}</span>
-                  </h4>
+                  </h2>
                   <Image
                     className="ab-about-shape-1 d-none d-md-block"
                     src={shape}
@@ -84,7 +84,7 @@ export default function AboutUsArea({aboutResponse}) {
                           <React.Fragment key={index}>
 
                           <li>
-                          <h5>{item?.about_page_customer_first_approach}</h5>
+                          <h3 className="h5-title">{item?.about_page_customer_first_approach}</h3>
                           <p>{item?.about_page_customer_integrity_transparency}</p>
                         </li>
                           </React.Fragment>
@@ -101,7 +101,7 @@ export default function AboutUsArea({aboutResponse}) {
                           <React.Fragment key={index}>
 
                           <li>
-                          <h5>{item?.about_page_security_heading}</h5>
+                          <h3 className="h5-title">{item?.about_page_security_heading}</h3>
                           <p>{item?.about_page_security_paragraph}</p>
                         </li>
                           </React.Fragment>

@@ -486,7 +486,8 @@
     }
 }
 .breadcurmb-site{
-    & h6{
+    & span{
+        display: inline-block;
         color: var(--tp-common-white);
         transform: rotate(-90deg);
         position: absolute;

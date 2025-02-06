@@ -24,13 +24,13 @@ export default function AboutThree({aboutResponse}) {
                   <FirstBracketTwo />
                 </span>
               </span>
-              <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
+              <h2 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
              {aboutResponse?.data?.about_our_story_section_experienced_heading}
                 <span>
                  
                   <br />{aboutResponse?.data?.about_our_story_experienced_heading_second}
                 </span>
-              </h4>
+              </h2>
             </div>
           </div>
         </div>

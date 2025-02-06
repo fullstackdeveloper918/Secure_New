@@ -23,7 +23,7 @@ export default function FooterSix() {
                   <div className="tp-footer-6-talk">
                     <span>Got Questions? Call us</span>
                     <h4>
-                      <a href="tel:+67041390762">+670 413 90 762</a>
+                      <Link href="tel:+67041390762">+670 413 90 762</Link>
                     </h4>
                   </div>
                   <div className="tp-footer-6-contact">
@@ -34,7 +34,7 @@ export default function FooterSix() {
                         </span>
                       </div>
                       <div className="tp-footer-6-contact-content">
-                        <a href="mailto:liko@gmail.com">liko@gmail.com</a>
+                        <Link href="mailto:liko@gmail.com">liko@gmail.com</Link>
                       </div>
                     </div>
                     <div className="tp-footer-6-contact-item d-flex align-items-start">
@@ -44,11 +44,11 @@ export default function FooterSix() {
                         </span>
                       </div>
                       <div className="tp-footer-6-contact-content">
-                        <a href="https://www.google.com/maps" target="_blank">
+                        <Link href="https://www.google.com/maps" target="_blank">
                           79 Sleepy Hollow St.
                           <br />
                           Jamaica, New York 1432
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -59,12 +59,12 @@ export default function FooterSix() {
                   <h4 className="tp-footer-6-widget-title">Category</h4>
                   <div className="tp-footer-6-list">
                     <ul>
-                      <li><a href="#">Our Story</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Terms & Conditions</a></li>
-                      <li><a href="#">Latest News</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><Link href="#">Our Story</Link></li>
+                      <li><Link href="#">Careers</Link></li>
+                      <li><Link href="#">Privacy Policy</Link></li>
+                      <li><Link href="#">Terms & Conditions</Link></li>
+                      <li><Link href="#">Latest News</Link></li>
+                      <li><Link href="#">Contact Us</Link></li>
                     </ul>
                   </div>
                 </div>

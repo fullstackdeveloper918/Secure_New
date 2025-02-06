@@ -39,9 +39,9 @@ export default function FunFactOne({aboutResponse}) {
                 <Leaf />
                {aboutResponse?.data?.about_counter_section_fun_fact}
               </span>
-              <h4 className="ab-inner-funfact-title tp_title_anim">
+              <h2 className="ab-inner-funfact-title tp_title_anim">
                 {aboutResponse?.data?.about_counter_section_fun_agency_heading} <br /> Snapshots
-              </h4>
+              </h2>
             </div>
           </div>
           <div className="col-xl-8">

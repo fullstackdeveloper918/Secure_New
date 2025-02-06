@@ -23,11 +23,12 @@ const ServicePage = async() => {
       cache: "no-store",
     }
   );
+  
+  
   const serviceData = await data.json();
   const serviceBannerData = await bannerData.json();
 
-  console.log(serviceData, 'serviceData')
-  console.log(serviceBannerData, 'serviceBannerData')
+ 
 
 
   return (

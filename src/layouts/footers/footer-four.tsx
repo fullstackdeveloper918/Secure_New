@@ -14,7 +14,7 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-8">
               <div className="tp-footer-3-widget-wrapper footer-col-3-1">
                 <div className="tp-footer-3-widget">
-                  <h4 className="tp-footer-3-title">Website map</h4>
+                  <h2 className="tp-footer-3-title">Website map</h2>
                   <div className="tp-footer-3-menu">
                     <ul>
                       <li><Link href="#">Home</Link></li>
@@ -27,7 +27,7 @@ export default function FooterFour() {
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">
-                  <h4 className="tp-footer-3-title">Newsletter</h4>
+                  <h2 className="tp-footer-3-title">Newsletter</h2>
                   <div className="tp-footer-3-input-box d-flex align-items-center">
                     <input type="text" placeholder="Enter Address..." />
                     <button className="tp-footer-3-btn p-relative">
@@ -61,25 +61,25 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-8">
               <div className="tp-footer-3-widget-wrapper footer-col-3-3">
                 <div className="tp-footer-3-widget mb-30">
-                  <h4 className="tp-footer-3-title">Contact</h4>
+                  <h2 className="tp-footer-3-title">Contact</h2>
                   <div className="tp-footer-2-contact-item">
                     <span>
-                      <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</a>
+                      <Link href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
+                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</Link>
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
-                    <span>P: <a href="tel:+725214456">+6 314 678 886</a></span>
-                    <span>E: <a href="mailto:contact@liko.com">secure@gmail.com</a></span>
+                    <span>P: <Link href="tel:+725214456">+6 314 678 886</Link></span>
+                    <span>E: <Link href="mailto:contact@liko.com">secure@gmail.com</Link></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">
-                  <h4 className="tp-footer-3-title">Follow</h4>
+                  <h2 className="tp-footer-3-title">Follow</h2>
                   <div className="tp-footer-3-social">
-                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <Link href="#"><i className="fa-brands fa-twitter"></i></Link>
+                    <Link href="#"><i className="fa-brands fa-facebook-f"></i></Link>
+                    <Link href="#"><i className="fa-brands fa-instagram"></i></Link>
+                    <Link href="#"><i className="fa-brands fa-linkedin-in"></i></Link>
                   </div>
                 </div>
               </div>

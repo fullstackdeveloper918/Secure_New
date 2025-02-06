@@ -36,7 +36,7 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
     <Wrapper>
       <div className="cd-index cd-main-content">
      
-        <AnimationHeader />
+        {/* <AnimationHeader /> */}
       </div>
       
       <div id="smooth-wrapper">

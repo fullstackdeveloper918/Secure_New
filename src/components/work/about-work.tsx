@@ -35,9 +35,9 @@ export default function AboutWork() {
         <div className="row">
           <div className="col-xl-12 col-lg-5">
             <div className="ab-2-work-title-box p-relative text-left w-full">
-              <h4 className="ab-2-work-title tp_title_anim text-left">
+              <h2 className="ab-2-work-title tp_title_anim text-left">
               Why Choose <span className="blueColor">Secure365?</span>
-              </h4>
+              </h2>
               {/* <span className="ab-2-work-subtitle tp_title_anim">
                 About My Biography
               </span> */}

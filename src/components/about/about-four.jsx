@@ -8,7 +8,7 @@ export default function AboutFour({aboutResponse}) {
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-about-5-title-box pb-90">
-              <h4 className="tp-about-5-title p-relative tp_fade_bottom">
+              <h2 className="tp-about-5-title p-relative tp_fade_bottom">
                 <span className="tp-about-5-subtitle tp_fade_left">
                {aboutResponse?.data?.about_our_servics_heading}
                 </span>
@@ -21,7 +21,7 @@ export default function AboutFour({aboutResponse}) {
                 <span>
                   <BallRound />
                 </span>
-                {aboutResponse?.data?.about_our_servics_heading_fourth}</h4>
+                {aboutResponse?.data?.about_our_servics_heading_fourth}</h2>
             </div>
           </div>
         </div>

@@ -33,7 +33,7 @@ export default function ServiceSix({serviceData}) {
                         <i>{index < 9 ? "0" + (index+1) : index+1}</i>
                         {item?.service_page_all_sub_heading}
                       </span>
-                      <h4 className="sv-service-title">{item?.service_page_all_heading}</h4>
+                      <h3 className="sv-service-title">{item?.service_page_all_heading}</h3>
                     </div>
                     <div className="sv-service-space-wrap">
                       <div className="sv-service-text">

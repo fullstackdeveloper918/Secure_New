@@ -9,6 +9,9 @@ import TestimonialOne from "@/components/testimonial/testimonial-one";
 import BlogOne from "@/components/blog/blog-one";
 import FooterFour from "@/layouts/footers/footer-four";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Libre_Franklin } from "next/font/google";
 
 const businessesData = [
   {
@@ -54,13 +57,13 @@ export default function Home() {
     <>
       <PreLoader />
 
-      <div className="cd-index cd-main-content homepage">
+      <div className="cd-index cd-main-content homepage mt-20">
         <div
           id="clapat-page-content"
           className="dark-content"
           data-bgcolor="#ebebeb"
         >
-          <AnimationHeader />
+          {/* <AnimationHeader /> */}
           <div id="content-scroll">
             <div id="main">
               <HeroSection data={data?.featured_section_heading} />
@@ -79,24 +82,28 @@ export default function Home() {
                             <div 
                             className="img-mask pixels-cover"
                             >
-                              <a
+                              <Link
                                 className="slide-link"
                                 data-type="page-transition"
                                 href="/project"
-                              ></a>
+                              ></Link>
                               <div 
                               className="section-image trigger-item-link"
                               >
-                                <img
-                                  src="images/01hero1.jpg"
+                                <Image
+                                  src="/images/01hero1.jpg"
                                   className="item-image grid__item-img"
-                                  alt=""
+                                  alt="hero-1"
+                                  width={214}
+                                  height={345}
                                 />
                               </div>
-                              <img
-                                src="images/01hero1.jpg"
+                              <Image
+                                src="/images/01hero1.jpg"
                                 className="grid__item-img grid__item-img--large"
-                                alt=""
+                                alt="01hero01"
+                                width={214}
+                                height={345}
                               />
                             </div>
                             <div 
@@ -127,17 +134,14 @@ export default function Home() {
                             // data-centerline="OPEN"
                           >
                             <div className="img-mask pixels-cover">
-                              <a
+                              <Link
                                 className="slide-link"
                                 data-type="page-transition"
                                 href="/project"
-                              ></a>
+                              ></Link>
                               <div className="section-image  trigger-item-link">
-                                {/* <img
-                                  src="images/02hero.jpg"
-                                  className="item-image grid__item-img"
-                                  alt=""
-                                /> */}
+                                <div className="video_hoverlay">
+                                  <h4>See Our Work Showcase</h4></div>
                              <video
                     className="play-video"
                     loop={true}
@@ -178,22 +182,26 @@ export default function Home() {
                             // data-centerline="OPEN"
                           >
                             <div className="img-mask pixels-cover">
-                              <a
+                              <Link
                                 className="slide-link"
                                 data-type="page-transition"
                                 href="/project"
-                              ></a>
+                              ></Link>
                               <div className="section-image trigger-item-link">
-                                <img
-                                  src="images/03hero.png"
+                                <Image
+                                  src="/images/03hero.png"
                                   className="item-image grid__item-img"
-                                  alt=""
+                                  alt="03hero"
+                                  width={500}
+                                  height={500}
                                 />
                               </div>
-                              <img
-                                src="images/03hero.png"
+                              <Image
+                                src="/images/03hero.png"
                                 className="grid__item-img grid__item-img--large"
-                                alt=""
+                                alt="hero-03"
+                                width={500}
+                                height={500}
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
@@ -216,7 +224,7 @@ export default function Home() {
                         className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
                         data-bgcolor="#ebebeb"
                       >
-                        <h1 className="text-align-center">
+                        <h2 className="text-align-center h1-title">
                           {data?.we_empower_businesses_data?.map(
                             (item, index) => (
                               <React.Fragment key={index}>
@@ -239,7 +247,7 @@ export default function Home() {
                               </React.Fragment>
                             )
                           )}
-                        </h1>
+                        </h2>
                       </div>
 
                       <div
@@ -264,7 +272,7 @@ export default function Home() {
                                 <i className="fa-solid fa-arrow-right"></i>
                               </div>
                             </div>
-                            <a
+                            <Link
                               className="ajax-link"
                               data-type="page-transition"
                               href="about.html"
@@ -272,7 +280,7 @@ export default function Home() {
                               <div className="button-text sticky right">
                                 <span data-hover="About Us">About Us</span>
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -413,51 +421,51 @@ export default function Home() {
                         <div className="projects-list-wrapper invert-header-color">
                           <ul className="projects-list-captions">
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project04.html"
-                              ></a>
+                              ></Link>
                               <span>Artificial Intelligence</span>
                             </li>
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project05.html"
-                              ></a>
+                              ></Link>
                               <span>Blockchain Solution</span>
                             </li>
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project06.html"
-                              ></a>
+                              ></Link>
                               <span>Network Solutions</span>
                             </li>
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project07.html"
-                              ></a>
+                              ></Link>
                               <span>Cybersecurity</span>
                             </li>
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project08.html"
-                              ></a>
+                              ></Link>
                               <span>Data & Analytics</span>
                             </li>
                             <li data-centerline="OPEN">
-                              <a
+                              <Link
                                 className="list-link"
                                 data-type="page-transition"
                                 href="project09.html"
-                              ></a>
+                              ></Link>
                               <span>SEO & Marketing</span>
                             </li>
                           </ul>
@@ -474,11 +482,13 @@ export default function Home() {
                                 <div 
                                 className="section-image trigger-item-link"
                                 >
-                                  <img
-                                    src="images/011hero.jpg"
+                                  <Image
+                                    src="/images/011hero.jpg"
                                     
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="011hero"
+                                    width={1920}
+                                    height={587}
                                   />
                                   <div 
                                   className="hero-video-wrapper"
@@ -486,10 +496,12 @@ export default function Home() {
                                   
                                   </div>
                                 </div>
-                                <img
-                                  src="images/011hero.jpg"
+                                <Image
+                                  src="/images/011hero.jpg"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="011hero"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
@@ -500,80 +512,100 @@ export default function Home() {
                                 <div 
                                 className="section-image trigger-item-link"
                                 >
-                                  <img
-                                    src="images/012hero.jpg"
+                                  <Image
+                                    src="/images/012hero.jpg"
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="012hero"
+                                    width={1920}
+                                    height={587}
                                   />
                                 </div>
-                                <img
-                                  src="images/012hero.jpg"
+                                <Image
+                                  src="/images/012hero.jpg"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="012hero"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
                             <li className="trigger-item">
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/013hero.jpg"
+                                  <Image
+                                    src="/images/013hero.jpg"
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="013hero"
+                                    width={1920}
+                                    height={587}
                                   />
                                 </div>
-                                <img
-                                  src="images/013hero.jpg"
+                                <Image
+                                  src="/images/013hero.jpg"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="013hero"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
                             <li className="trigger-item">
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/014hero.png"
+                                  <Image
+                                    src="/images/014hero.png"
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="014image"
+                                    width={1920}
+                                    height={587}
                                   />
                                 </div>
-                                <img
-                                  src="images/014hero.png"
+                                <Image
+                                  src="/images/014hero.png"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="014image"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
                             <li className="trigger-item">
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/015hero.jpg"
+                                  <Image
+                                    src="/images/015hero.jpg"
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="015hero"
+                                    width={1920}
+                                    height={587}
                                   />
                                 </div>
-                                <img
-                                  src="images/015hero.jpg"
+                                <Image
+                                  src="/images/015hero.jpg"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="015hero"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
                             <li className="trigger-item">
                               <div className="img-mask">
                                 <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/016hero.jpg"
+                                  <Image
+                                    src="/images/016hero.jpg"
                                     className="item-image grid__item-img"
-                                    alt=""
+                                    alt="016hero"
+                                    width={1920}
+                                    height={587}
                                   />
                                 </div>
-                                <img
-                                  src="images/016hero.jpg"
+                                <Image
+                                  src="/images/016hero.jpg"
                                   className="grid__item-img grid__item-img--large"
-                                  alt=""
+                                  alt="016hero"
+                                  width={1920}
+                                  height={587}
                                 />
                               </div>
                             </li>
@@ -605,13 +637,13 @@ export default function Home() {
                 <div className="footer-middle">
                   <div className="copyright">
                     2024 ©{" "}
-                    <a
+                    <Link
                       className="link"
                       target="_blank"
                       href="https://www.clapat.com/"
                     >
                       ClaPat
-                    </a>
+                    </Link>
                     . All rights reserved.
                   </div>
                 </div>
@@ -624,56 +656,56 @@ export default function Home() {
                   <ul className="socials">
                     <li>
                       <span className="parallax-wrap">
-                        <a
+                        <Link
                           className="parallax-element"
                           href="https://www.dribbble.com/clapat"
                           target="_blank"
                         >
                           Db
-                        </a>
+                        </Link>
                       </span>
                     </li>
                     <li>
                       <span className="parallax-wrap">
-                        <a
+                        <Link
                           className="parallax-element"
                           href="https://www.twitter.com/clapatdesign"
                           target="_blank"
                         >
                           Tx
-                        </a>
+                        </Link>
                       </span>
                     </li>
                     <li>
                       <span className="parallax-wrap">
-                        <a
+                        <Link
                           className="parallax-element"
                           href="https://www.behance.com/clapat"
                           target="_blank"
                         >
                           Be
-                        </a>
+                        </Link>
                       </span>
                     </li>
                     <li>
                       <span className="parallax-wrap">
-                        <a
+                        <Link
                           className="parallax-element"
                           href="https://www.facebook.com/clapat.ro"
                           target="_blank"
                         >
                           Fb
-                        </a>
+                        </Link>
                       </span>
                     </li>
                     <li>
                       <span className="parallax-wrap">
-                        <a
+                        <Link
                           className="parallax-element"
                           href="https://www.instagram.com/clapat.themes/"
                         >
                           In
-                        </a>
+                        </Link>
                       </span>
                     </li>
                   </ul>
