@@ -54,11 +54,11 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
                         <Leaf />
                         {serviceData?.data?.service_why_choose_section_heading} <span className="blueColor">{serviceData?.data?.service_why_choose_section_heading_second}</span>
                       </span>
-                      <h4 className="tp-service-5-title">
+                      <h2 className="tp-service-5-title">
                         {/* With us, you’re not just getting IT services; <br /> */}
                         {/* you’re gaining a trusted partner. */}
                         {serviceData?.data?.service_why_choose_section_paragraph}
-                      </h4>
+                      </h2>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,7 @@
 // "use client"
+import Link from "next/link";
 import React from "react";
+import Image from 'next/image';
 
 const AnimationHeader = () => {
  return(
@@ -20,25 +22,29 @@ const AnimationHeader = () => {
 
             <div id="header-container">
               <div id="clapat-logo" className="hide-ball">
-                <a className="ajax-link" data-type="page-transition" href="/">
-                  <img
+                <Link className="ajax-link" data-type="page-transition" href="/">
+                  <Image
                     className="black-logo"
                     src="/images/logo.png"
                     alt="ClaPat Logo"
+                    width= {210}
+                    height= {21}
                   />
-                  <img
+                  <Image
                     className="white-logo"
                     src="/images/logo-white.png"
                     alt="ClaPat Logo"
+                    width= {210}
+                    height= {21}
                   />
-                </a>
+                </Link>
               </div>
 
               <nav className="clapat-nav-wrapper">
                 <div className="nav-height">
                   <ul data-breakpoint="1025" className="flexnav">
                     <li className="menu-timeline link">
-                      <a
+                      <Link
                         className="ajax-link"
                         data-type="page-transition"
                         href="/about-us"
@@ -47,11 +53,11 @@ const AnimationHeader = () => {
                         
                           <span data-hover="About Us" data-text="About Us">About Us</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                    
                     <li className="menu-timeline link">
-                      <a
+                      <Link
                         className="ajax-link"
                         data-type="page-transition"
                         href="/service"
@@ -59,75 +65,75 @@ const AnimationHeader = () => {
                         <div className="before-span">
                           <span data-hover="Service" data-text="Service">Service</span>
                         </div>
-                      </a>
+                      </Link>
                       <ul>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
-                            href="/service-details"
+                            href="/service/"
                             data-type="page-transition"
                           >
                             Server Management & Cloud Solutions
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="/service-details"
                             data-type="page-transition"
                           >
                             IT Support & Managed Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="/service-details"
                             data-type="page-transition"
                           >
                             Cybersecurity Solutions
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="/service-details"
                             data-type="page-transition"
                           >
                             Business SEO & Digital Visibility
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="/service-details"
                             data-type="page-transition"
                           >
                             Content Creation & Marketing Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="index-portfolio.html"
                             data-type="page-transition"
                           >
                             Portfolio
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
+                          <Link
                             className="ajax-link"
                             href="index-playground.html"
                             data-type="page-transition"
                           >
                             Playground
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="menu-timeline link">
-                      <a
+                      <Link
                         className="ajax-link"
                         data-type="page-transition"
                         href="/Why-Choose-Us"
@@ -135,10 +141,10 @@ const AnimationHeader = () => {
                         <div className="before-span">
                           <span data-hover="Why Choose Us" data-text="Why Choose Us">Why-Choose-Us</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li className="menu-timeline link">
-                      <a
+                      <Link
                         className="ajax-link"
                         data-type="page-transition"
                         href="/contact"
@@ -146,14 +152,14 @@ const AnimationHeader = () => {
                         <div className="before-span">
                           <span data-hover="Contact" data-text="Contact">Contact</span>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     
                   </ul>
                 </div>
               </nav>
 
-              <a
+              <Link
                 className="header-button ajax-link"
                 data-type="page-transition"
                 href="contact.html"
@@ -170,7 +176,7 @@ const AnimationHeader = () => {
                     <span data-hover="Let's Talk">Let's Talk</span>
                   </div>
                 </div>
-              </a>
+              </Link>
 
               <div className="button-wrap right menu burger-lines">
                 <div className="icon-wrap parallax-wrap">

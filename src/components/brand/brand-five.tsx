@@ -27,7 +27,7 @@ export default function BrandFive({}) {
         <div className="row">
           <div className="col-xl-12">
             <div className="ab-brand-title-box mb-100">
-              <h4 className="ab-brand-title">Our clients</h4>
+              <h2 className="ab-brand-title">Our clients</h2>
             </div>
           </div>
         </div>

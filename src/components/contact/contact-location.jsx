@@ -36,7 +36,7 @@ const ContactLocation = ({contactData}) => {
                     <div className="container container-1530">
                     <div className="cn-contact-left-info grid grid-cols-2 gap-4 justify-content-center md:pr-20 md:px-10 px-4 pt-20 pb-0">
                       <div className="cn-contact-left-wrap">
-                      <h4 className="cn-contact-left-title">{contactData?.contact_our_location_heading}</h4>
+                      <h2 className="cn-contact-left-title">{contactData?.contact_our_location_heading}</h2>
                       <span className="pb-10 d-block">
                         {/* <i className="fa-regular fa-clock"></i> */}
                         {/* {item.time} */}
@@ -45,7 +45,7 @@ const ContactLocation = ({contactData}) => {
                       </div>
                       <div className="cn-contact-right-wrap d-flex align-items-start justify-content-between flex-wrap flex-col text-left">
                     <div className="cn-contact-right">
-                      <h4>{contactData?.contact_map_location}</h4>
+                      <h2>{contactData?.contact_map_location}</h2>
                       <div className="cn-contact-location sm:mb-6 :mb-5">
                         <span className="cn-contact-location-title">
                           {/* {item.location_title} */}

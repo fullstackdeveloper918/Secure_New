@@ -12,9 +12,9 @@ export default function BigText({cls="", whyChooseData}) {
           <span>{whyChooseData?.get_in_touch_secure}</span>
         </div>
         <div className="sv-big-text-box">
-          <h4 className="sv-big-text tp-char-animation">
+          <h2 className="sv-big-text tp-char-animation">
             <Link href="#">{whyChooseData?.get_in_touch_heading}</Link>
-          </h4>
+          </h2>
         </div>
       </div>
     </div>

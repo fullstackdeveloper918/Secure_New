@@ -14,9 +14,9 @@ export function ServiceItems({serviceData}) {
              <Image src={item.service_proactive_loop_image} alt="icon" width={60} height={60}/> 
             </div>
             <div className="tp-service-4-content">
-              <h4 className="tp-service-4-title-sm tp-text-black">
+              <h2 className="tp-service-4-title-sm tp-text-black">
                 <Link href="/service">{item.service_proactive_loop_image_heading}</Link>
-              </h4>
+              </h2>
               <p>{item.service_proactive_loop_paragraph}</p>
             </div>
           </div>

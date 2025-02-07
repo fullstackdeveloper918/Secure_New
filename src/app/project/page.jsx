@@ -2,6 +2,8 @@
 // import ClapatSlider from '@/components/sliderProject/sliderProject';
 import React, { useEffect } from 'react';
 import Justfor from "../../../public/images/just-for.png"
+import Link from 'next/link';
+import Image from 'next/image';
 const page = () => {
   useEffect(() => {
     // Example DOM manipulation (ensure elements exist before accessing them)
@@ -38,29 +40,33 @@ const page = () => {
 
               <div id="header-container">
                 <div id="clapat-logo" className="hide-ball">
-                  <a
+                  <Link
                     className="ajax-link"
                     data-type="page-transition"
                     href="index.html"
                   >
-                    <img
+                    <Image
                       className="black-logo"
                       src="/images/logo.png"
                       alt="ClaPat Logo"
+                      width={210}
+                      height={21}
                     />
-                    <img
+                    <Image
                       className="white-logo"
                       src="/images/logo-white.png"
                       alt="ClaPat Logo"
+                      width={210}
+                      height={21}
                     />
-                  </a>
+                  </Link>
                 </div>
 
                 <nav className="clapat-nav-wrapper">
                   <div className="nav-height">
                     <ul data-breakpoint="1025" className="flexnav">
                       <li className="menu-timeline link">
-                        <a
+                        <Link
                           className="ajax-link"
                           data-type="page-transition"
                           href="index.html"
@@ -68,10 +74,10 @@ const page = () => {
                           <div className="before-span">
                             <span data-hover="Index">Index</span>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-timeline link">
-                        <a
+                        <Link
                           className="ajax-link active"
                           data-type="page-transition"
                           href="#"
@@ -79,39 +85,39 @@ const page = () => {
                           <div className="before-span">
                             <span data-hover="Projects">Projects</span>
                           </div>
-                        </a>
+                        </Link>
                         <ul>
                           <li>
-                            <a
+                            <Link
                               className="ajax-link"
                               href="index-highlights.html"
                               data-type="page-transition"
                             >
                               Highlights
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="ajax-link"
                               href="index-portfolio.html"
                               data-type="page-transition"
                             >
                               Portfolio
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
+                            <Link
                               className="ajax-link"
                               href="index-playground.html"
                               data-type="page-transition"
                             >
                               Playground
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className="menu-timeline link">
-                        <a
+                        <Link
                           className="ajax-link"
                           data-type="page-transition"
                           href="about.html"
@@ -119,10 +125,10 @@ const page = () => {
                           <div className="before-span">
                             <span data-hover="Agency">Agency</span>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                       <li className="menu-timeline link">
-                        <a
+                        <Link
                           className="ajax-link"
                           data-type="page-transition"
                           href="resources.html"
@@ -130,13 +136,13 @@ const page = () => {
                           <div className="before-span">
                             <span data-hover="Resources">Resources</span>
                           </div>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </nav>
 
-                <a
+                <Link
                   className="header-button ajax-link"
                   data-type="page-transition"
                   href="contact.html"
@@ -153,7 +159,7 @@ const page = () => {
                       <span data-hover="Let's Talk">Let's Talk</span>
                     </div>
                   </div>
-                </a>
+                </Link>
 
                 <div className="button-wrap right menu burger-lines">
                   <div className="icon-wrap parallax-wrap">
@@ -238,12 +244,14 @@ const page = () => {
                       // data-bgcolor="#ebebeb"
                     >
                       <figure>
-                        <a href="/images/just-for.png" className="image-link">
+                        <Link href="/images/just-for.png" className="image-link">
                           <img
                             src={Justfor.src}
                             alt="Image Title"
+                            width={100}
+                            height={100}
                           />
-                        </a>
+                        </Link>
                         <figcaption>Caption</figcaption>
                       </figure>
                     </div>
@@ -262,7 +270,7 @@ const page = () => {
                     </div>
                     <div className="content-row full light-section disable-header-gradient change-header-color" data-bgcolor="#ebebeb">
           <figure className="has-parallax">
-            <img 
+            <Image 
               src="/images/our-process.png" 
               alt="Image Title" 
               width={1920} // Adjust width based on your image

@@ -7,7 +7,7 @@ export default function FaqItem({ item,index }) {
     <React.Fragment key={index}>
 
     <div className="accordion-items">
-      <h2 className="accordion-header">
+      <h3 className="accordion-header h2-title">
         <button
           className="accordion-buttons collapsed"
           type="button"
@@ -19,7 +19,7 @@ export default function FaqItem({ item,index }) {
           {item.why_choose_us_decades_world_heading}
           <span className="accordion-icon"></span>
         </button>
-      </h2>
+      </h3>
       <div
         id={`collapse-${index+1}`}
         className="accordion-collapse collapse"

@@ -60,7 +60,7 @@ const ContactLocationTwo = ({contactData}) => {
                   style={{ height: "auto" }}
                 />
                 </div>
-                <h4 className="cn-contact-2-title">{item?.contact_secure_heading}</h4>
+                <h2 className="cn-contact-2-title">{item?.contact_secure_heading}</h2>
                 <div className="cn-contact-2-info-details">
                   <p>
                     {item?.contact_secure_paragraph}

@@ -40,7 +40,7 @@ export default function ContactTwo() {
                 alt="shape"
               /></span>
                     <div className="Inndericon">
-                      <h5>+(800) 311-5990</h5>
+                      <h2 className="h5-title">+(800) 311-5990</h2>
                       <p>Call Now and Get a FREE Consultation</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ export default function ContactTwo() {
                 alt="shape"
               /></span>
                     <div className="Inndericon">
-                      <h5>info@secure365.com</h5>
+                      <h2 className="h5-title">info@secure365.com</h2>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@ export default function ContactTwo() {
                 alt="shape"
               /></span>
                     <div className="Inndericon">
-                      <h5>Monday - Friday, 9:00 AM - 5:00 PM CST</h5>
+                      <h2 className="h5-title">Monday - Friday, 9:00 AM - 5:00 PM CST</h2>
                     </div>
                 </div>
               </div>

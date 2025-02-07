@@ -57,7 +57,7 @@ export default function AboutWork() {
                       <i>{item.id < 9 ? "0" + item.id : item.id}</i>
                       {/* {item.subtitle} */}
                     </span>
-                    <h4 className="sv-service-title">{item.title}</h4>
+                    <h2 className="sv-service-title">{item.title}</h2>
                   </div>
                   <div className="sv-service-space-wrap">
                     <div className="sv-service-text">

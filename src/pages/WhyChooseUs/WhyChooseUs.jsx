@@ -53,10 +53,10 @@ const FaqMain = ({ whyChooseData }) => {
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
                         <span className="tm-hero-subtitle">Secure 365</span>
-                        <h4 className="tm-hero-title tp-char-animation">
+                        <h2 className="tm-hero-title tp-char-animation">
                          {whyChooseData?.title}{""}
                           <span className="blueColor">{whyChooseData?.why_choose_right_partner_heading_secure}?</span>
-                        </h4>
+                        </h2>
                       </div>
                       <div className="tm-hero-text tp_title_anim">
                         <p>
@@ -101,6 +101,8 @@ const FaqMain = ({ whyChooseData }) => {
                         className="rightImage"
                         src={bannerDiv}
                         alt="shape"
+                        width={1920}
+                        height={500}
                       />
                     </div>
                   </div>
@@ -114,6 +116,8 @@ const FaqMain = ({ whyChooseData }) => {
                         className="rightImage"
                         src={bannerDiv2}
                         alt="shape"
+                        width={1920}
+                        height={500}
                       />
                     </div>
                     <div className="col-xl-6 col-md-6 col-sm-12  max-w-full md:max-w-2xl">
