@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-const AwardOne = ({cls="pt-125 pb-125",abStyle=false, data}) => {
+const AwardOne = ({cls="pt-md-125 pb-md-125 pt-50 pb-50",abStyle=false, data}) => {
   const [activeThumb, setActiveThumb] = React.useState(1);
   return (
     <div className={`tp-award-area ${cls}`}>

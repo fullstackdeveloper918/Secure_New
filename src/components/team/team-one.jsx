@@ -42,7 +42,7 @@ const slider_setting = {
 };
 
 
-const TeamOne = ({ spacing = "pt-20",data }) => {
+const TeamOne = ({ spacing = "pt-10 md:pt-20",data }) => {
   const [showModal, setShowModal] = React.useState(false);
   const [teamItem, setTeamItem] = React.useState(null);
   function handleTeamModal(team) {
@@ -51,7 +51,7 @@ const TeamOne = ({ spacing = "pt-20",data }) => {
   }
   return (
     <>
-      <div className={`tp-team-area ${spacing} pb-120 fix`}>
+      <div className={`tp-team-area ${spacing} md:pb-120 pb-20 fix`}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-12">

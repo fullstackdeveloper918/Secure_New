@@ -4,6 +4,7 @@ import Link from "next/link";
 
 
 export function ServiceItems({serviceData}) {
+  
   return (
     <div className="row">
       <div className="col-xxl-3"></div>

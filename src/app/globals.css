@@ -3653,6 +3653,12 @@ p .link-text {
 
 }
 
+@media only screen (max-width: 991px){
+  .light-section-wrapper, 
+  .dark-section-wrapper {
+    width: 100% !important;
+  }
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -4076,4 +4082,7 @@ hr {
 #rotate-device {
   display:block;
 }
+}
+.sv-service-btn svg{
+  display: inline-block !important;
 }

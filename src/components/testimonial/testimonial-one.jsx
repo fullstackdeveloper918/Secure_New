@@ -58,7 +58,7 @@ const TestimonialOne = ({data}) => {
           <div className="col-xl-10 tp_fade_bottom">
             <div className="tp-testimonial-slider-wrapper p-relative">
             <h2 className=" mb-96 text-center">{data?.home_testimonials_from_professionals_heading}</h2>
-              <div className="tp-testimonial-arrow-box d-none d-lg-block">
+              <div className="tp-testimonial-arrow-box d-block d-lg-block">
                 <button className="tp-testimonial-prev">
                   <span>
                     <PrevIcon />

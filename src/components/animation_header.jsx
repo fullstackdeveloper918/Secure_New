@@ -1,12 +1,29 @@
-// "use client"
+
 import Link from "next/link";
 import React from "react";
 import Image from 'next/image';
 
-const AnimationHeader = () => {
- return(
+const AnimationHeader = async () => {
+
+
+  const data = await fetch(
+    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/navbar",
+    {
+      cache: "no-store",
+    }
+  );
+
+
+  const response = await data.json();
+  const headerData = response;
+
+
+  console.log(headerData, 'check')
+
+
+  return (
     <>
-    
+
       <div className="word"></div>
       <div className="cd-index cd-main-content">
         <div
@@ -27,15 +44,15 @@ const AnimationHeader = () => {
                     className="black-logo"
                     src="/images/logo.png"
                     alt="ClaPat Logo"
-                    width= {210}
-                    height= {21}
+                    width={210}
+                    height={21}
                   />
                   <Image
                     className="white-logo"
                     src="/images/logo-white.png"
                     alt="ClaPat Logo"
-                    width= {210}
-                    height= {21}
+                    width={210}
+                    height={21}
                   />
                 </Link>
               </div>
@@ -43,20 +60,46 @@ const AnimationHeader = () => {
               <nav className="clapat-nav-wrapper">
                 <div className="nav-height">
                   <ul data-breakpoint="1025" className="flexnav">
-                    <li className="menu-timeline link">
-                      <Link
-                        className="ajax-link"
-                        data-type="page-transition"
-                        href="/about-us"
-                      >
-                        <div className="before-span">
-                        
-                          <span data-hover="About Us" data-text="About Us">About Us</span>
-                        </div>
-                      </Link>
-                    </li>
-                   
-                    <li className="menu-timeline link">
+
+                    {
+                      headerData && headerData?.menu_items?.map((item, index) => (
+                        <React.Fragment key={index}>
+                          <li className="menu-timeline link">
+                            <Link
+                              className="ajax-link"
+                              data-type="page-transition"
+                              href={`/${item?.slug}`}
+                            >
+                              <div className="before-span">
+
+                                <span data-hover="About Us" data-text="About Us">{item?.title}</span>
+                              </div>
+                            </Link>
+                            {/* {
+                              item?.children?.length > 0 && item?.children?.map((child, childIndex) => (
+                                <React.Fragment key={childIndex}>
+                                  <ul>
+                                    <li>
+                                      <Link
+                                        className="ajax-link"
+                                        href={`/service/${child?.slug}`}
+                                        data-type="page-transition"
+                                      >
+                                        {child?.title}
+                                      </Link>
+                                    </li>
+                                  </ul>
+                                </React.Fragment>
+                              ))
+                            } */}
+                          </li>
+                        </React.Fragment>
+                      ))
+                    }
+
+
+
+                    {/* <li className="menu-timeline link">
                       <Link
                         className="ajax-link"
                         data-type="page-transition"
@@ -131,8 +174,8 @@ const AnimationHeader = () => {
                           </Link>
                         </li>
                       </ul>
-                    </li>
-                    <li className="menu-timeline link">
+                    </li> */}
+                    {/* <li className="menu-timeline link">
                       <Link
                         className="ajax-link"
                         data-type="page-transition"
@@ -142,8 +185,8 @@ const AnimationHeader = () => {
                           <span data-hover="Why Choose Us" data-text="Why Choose Us">Why-Choose-Us</span>
                         </div>
                       </Link>
-                    </li>
-                    <li className="menu-timeline link">
+                    </li> */}
+                    {/* <li className="menu-timeline link">
                       <Link
                         className="ajax-link"
                         data-type="page-transition"
@@ -153,8 +196,8 @@ const AnimationHeader = () => {
                           <span data-hover="Contact" data-text="Contact">Contact</span>
                         </div>
                       </Link>
-                    </li>
-                    
+                    </li> */}
+
                   </ul>
                 </div>
               </nav>
