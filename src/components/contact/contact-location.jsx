@@ -68,7 +68,7 @@ const ContactLocation = ({contactData}) => {
                   </div>
                     </div>
                     </div>
-
+{/* new cdide */}
                     <div className="cn-contact-thumb">
                       {/* <Image src={item.img} alt="image" style={{ height: "auto" }} /> */}
                     </div>
