@@ -1800,6 +1800,9 @@ header #header-container {
 .sv-hero-title{
   font-size: 40px !important;
 }
+.sv-hero-title div{
+  padding-inline: 2px;
+}
 .ab-inner-hero-area .ab-inner-hero-title{
   font-size: 3rem !important;
   line-height: 3rem !important;
