@@ -49,7 +49,7 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
               <div className="container container-1530">
                 <div className="row">
                   <div className="col-xl-12">
-                    <div className="tp-service-5-title-box mb-90">
+                    <div className="tp-service-5-title-box md:mb-30 mb-90">
                       <span className="ab-inner-subtitle mb-20">
                         <Leaf />
                         {serviceData?.data?.service_why_choose_section_heading} <span className="blueColor">{serviceData?.data?.service_why_choose_section_heading_second}</span>

@@ -12,11 +12,11 @@ export default function ServiceHero({serviceBannerData}) {
         <div className="row">
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
-              <h2 className="sv-hero-title tp-char-animation">
+              <h1 className="sv-hero-title tp-char-animation">
               {serviceBannerData?.pages?.banner_data?.banner_heading} <span className="blueColor">{serviceBannerData?.pages?.banner_data?.banner_heading_second}</span> <br />
                  
-              </h2>
-              <h3 className="servicesSub tp-char-animation">{serviceBannerData?.pages?.banner_data?.banner_heading_third}</h3>
+              </h1>
+              <h2 className="servicesSub tp-char-animation">{serviceBannerData?.pages?.banner_data?.banner_heading_third}</h2>
               <p className="tp_fade_bottom">
               {serviceBannerData?.pages?.banner_data?.banner_sub_headline}
               </p>

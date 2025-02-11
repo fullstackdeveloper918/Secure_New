@@ -21,7 +21,7 @@ export default function ServiceSix({serviceData}) {
                     width={2000}
                     height={2000}
                     alt="service-img"
-                    style={{ height: "auto" }}
+                    style={{ height: "100%" }}
                   />
                 </div>
               </div>

@@ -18,14 +18,14 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
               <span className="service-details__subtitle tp-char-animation">
                 Secure, Scalable, and Hassle-Free
               </span>
-              <h4 className="sv-hero-title tp-char-animation">
+              <h2 className="sv-hero-title tp-char-animation">
                 Server & <span className="blueColor">Cloud Management</span>
-              </h4>
+              </h2>
             </div>
           </div>
           <div className="row">
             <div className="offset-xl-4 col-xl-5">
-              <div className="service-details__banner-text mb-20">
+              <div className="service-details__banner-text md:mb-20 mb-8">
                 <p className="mb-30 tp_title_anim">
                   Optimize your business’s operations
                   <br /> with managed server solutions and secure <br /> cloud
@@ -76,7 +76,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                         <React.Fragment key={index}>
                           {console.log(item, "item")}
                           <li>
-                            <h5>{item?.heading}</h5>
+                            <h3 class="h5-title">{item?.heading}</h3>
                             <p>{item?.paragraph}</p>
                           </li>
                         </React.Fragment>
@@ -84,9 +84,9 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                     )}
                 </ul>
               </div>
-              <div className="service-details__sm-thumb-wrap mb-10">
+              <div className="service-details__sm-thumb-wrap md:mb-10 mb-4">
                 <div className="row">
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-20">
+                  <div className="col-xl-6 col-lg-6 col-md-6 md:mb-20 mb-10">
                     <div className="service-details__sm-thumb">
                       <Image
                         src={sv_2}
@@ -95,7 +95,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                       />
                     </div>
                   </div>
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-20">
+                  <div className="col-xl-6 col-lg-6 col-md-6 md:mb-20 mb-10">
                     <div className="service-details__sm-thumb">
                       <Image
                         src={sv_3}
@@ -136,10 +136,10 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                 <a href="#">Disaster Recovery Planning</a> */}
               </div>
               <div className="service-details__right-text-box">
-                <h4>
+                <h2>
                   Why Choose Secure365 <br /> for Server & Cloud Management?
-                </h4>
-                <p className="mb-20">
+                </h2>
+                <p className="md:mb-20 mb-10">
                   {serviceBannerData?.service_details_right_why_choose_section_heading_paragraph}
                 </p>
                 <Link className="tp-btn-white background-black" href="/contact">

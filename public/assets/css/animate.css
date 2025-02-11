@@ -1274,7 +1274,7 @@ span.textline-1 {
   font-weight: 600;
   color: #1e1e1e;
 }
-.service-details__fea-list h5 {
+.service-details__fea-list h3 {
   margin: 0px;
 }
 /* .indexeddb 
@@ -1829,6 +1829,9 @@ header #header-container {
 }
 .cn-contact-left-info {
   grid-template-columns: auto !important;
+}
+.tp-brand-4-item{
+  padding: 40px 30px;
 }
 }
 

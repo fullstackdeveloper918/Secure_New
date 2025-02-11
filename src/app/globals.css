@@ -3837,8 +3837,8 @@ hr {
 }
 
 .flexnav > li > a {
-  font-size: calc(1rem + 5vw);
-  line-height: calc(1rem + 6vw);
+  font-size: calc(1rem + 3vw);
+  line-height: calc(1rem + 3vw);
 }
 
 .flexnav li a span {
@@ -4085,4 +4085,10 @@ hr {
 }
 .sv-service-btn svg{
   display: inline-block !important;
+}
+
+@media only screen and (max-width: 767px){
+  .sv-hero-thumb-box img{
+    margin-top: -100px;
+  }
 }

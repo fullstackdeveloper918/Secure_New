@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function FooterFour() {
   return (
     <footer>
-      <div className="tp-footer-3-area dark-bg pt-120 pb-30">
+      <div className="tp-footer-3-area dark-bg md:pt-120 pt-50 pb-30">
         <div className="container">
           <div className="row">
             {/* fsdfsdf */}
@@ -45,7 +45,7 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-8">
               <div className="tp-footer-3-widget text-md-center footer-col-3-2">
                 <div className="tp-footer-3-logo-box">
-                  <p className="mb-100  md:mt-0 pt-10">
+                  <p className="md:mb-100 mb-50 md:mt-0 pt-10">
                     Drop us a line sed id semper <br />
                     risus in hend rerit.
                   </p>

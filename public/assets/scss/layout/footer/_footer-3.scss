@@ -169,3 +169,15 @@
 	overflow: hidden;
     padding-bottom: 18px;
 }
+
+@media (max-width: 767px){
+    .tp-footer-3-logo{
+        margin-bottom: 50px;
+    }
+    .tp-footer-3-logo-box p{
+        margin-bottom: 30px;
+    }
+    .tp-footer-3-title{
+        font-size: 24px;
+    }
+}

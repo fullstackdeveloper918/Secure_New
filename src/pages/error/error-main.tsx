@@ -31,12 +31,12 @@ const ErrorMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tp-error-wrapper text-center">
-                      <h4 className="tp-error-title">Oops!</h4>
+                      <h1 className="tp-error-title">Oops!</h1>
                       <Image src={error} alt="error-img" style={{ height: 'auto' }} />
                       <div className="tp-error-content">
-                        <h4 className="tp-error-title-sm">
+                        <h2 className="tp-error-title-sm">
                           Something went Wrong...
-                        </h4>
+                        </h2>
                         <p>Sorry, we {"couldn't"} find your page.</p>
                         <Link className="tp-btn-black-2" href="/">
                           Back to Home
