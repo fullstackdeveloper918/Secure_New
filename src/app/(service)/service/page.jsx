@@ -3,6 +3,7 @@ import { Metadata } from "next";
 // import ServiceMain from "@/pages/service/service";
 
 import ServiceMain from "@/pages/service/service";
+import { config } from "../../../../config";
 
 export const metadata = {
   title: "Secure 365 - Service page",
@@ -11,14 +12,14 @@ export const metadata = {
 const ServicePage = async() => {
 
   const data = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/service",
+    `${config.APP_URL}/wp-json/secure-plugin/v1/service`,
     {
       cache: "no-store",
     }
   );
 
   const bannerData = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/banner/service",
+    `${config.APP_URL}/wp-json/secure-plugin/v1/banner/service`,
     {
       cache: "no-store",
     }

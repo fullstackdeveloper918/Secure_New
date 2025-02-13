@@ -1,13 +1,14 @@
 
 import Link from "next/link";
 import React from "react";
+import {config} from '../../config'
 import Image from 'next/image';
 
 const AnimationHeader = async () => {
 
 
   const data = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/navbar",
+    `${config.APP_URL}/secure-plugin/v1/navbar`,
     {
       cache: "no-store",
     }
@@ -18,7 +19,6 @@ const AnimationHeader = async () => {
   const headerData = response;
 
 
-  console.log(headerData, 'check')
 
 
   return (
@@ -64,7 +64,7 @@ const AnimationHeader = async () => {
                     {
                       headerData && headerData?.menu_items?.map((item, index) => (
                         <React.Fragment key={index}>
-                          <li className="menu-timeline link">
+                          <li className="menu-timeline link header-link">
                             <Link
                               className="ajax-link"
                               data-type="page-transition"
@@ -75,129 +75,32 @@ const AnimationHeader = async () => {
                                 <span data-hover="About Us" data-text="About Us">{item?.title}</span>
                               </div>
                             </Link>
-                            {/* {
-                              item?.children?.length > 0 && item?.children?.map((child, childIndex) => (
+                            <div className="sub-menu">
+
+                            {
+                              item?.children?.map((child, childIndex) => (
                                 <React.Fragment key={childIndex}>
-                                  <ul>
+                                  
+                                  {/* <ul>
                                     <li>
-                                      <Link
-                                        className="ajax-link"
-                                        href={`/service/${child?.slug}`}
-                                        data-type="page-transition"
-                                      >
-                                        {child?.title}
-                                      </Link>
+                                    <Link
+                                    className="ajax-link"
+                                    href={`/service/${child?.slug}`}
+                                    data-type="page-transition"
+                                    >
+                                    {child?.title}
+                                    </Link>
                                     </li>
-                                  </ul>
+                                    </ul> */}
+                                  <Link href={`/service/${child?.slug}`}>{child?.title}</Link>
                                 </React.Fragment>
                               ))
-                            } */}
+                            }
+                            </div>
                           </li>
                         </React.Fragment>
                       ))
                     }
-
-
-
-                    {/* <li className="menu-timeline link">
-                      <Link
-                        className="ajax-link"
-                        data-type="page-transition"
-                        href="/service"
-                      >
-                        <div className="before-span">
-                          <span data-hover="Service" data-text="Service">Service</span>
-                        </div>
-                      </Link>
-                      <ul>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="/service/"
-                            data-type="page-transition"
-                          >
-                            Server Management & Cloud Solutions
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="/service-details"
-                            data-type="page-transition"
-                          >
-                            IT Support & Managed Services
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="/service-details"
-                            data-type="page-transition"
-                          >
-                            Cybersecurity Solutions
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="/service-details"
-                            data-type="page-transition"
-                          >
-                            Business SEO & Digital Visibility
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="/service-details"
-                            data-type="page-transition"
-                          >
-                            Content Creation & Marketing Services
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="index-portfolio.html"
-                            data-type="page-transition"
-                          >
-                            Portfolio
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="ajax-link"
-                            href="index-playground.html"
-                            data-type="page-transition"
-                          >
-                            Playground
-                          </Link>
-                        </li>
-                      </ul>
-                    </li> */}
-                    {/* <li className="menu-timeline link">
-                      <Link
-                        className="ajax-link"
-                        data-type="page-transition"
-                        href="/Why-Choose-Us"
-                      >
-                        <div className="before-span">
-                          <span data-hover="Why Choose Us" data-text="Why Choose Us">Why-Choose-Us</span>
-                        </div>
-                      </Link>
-                    </li> */}
-                    {/* <li className="menu-timeline link">
-                      <Link
-                        className="ajax-link"
-                        data-type="page-transition"
-                        href="/contact"
-                      >
-                        <div className="before-span">
-                          <span data-hover="Contact" data-text="Contact">Contact</span>
-                        </div>
-                      </Link>
-                    </li> */}
-
                   </ul>
                 </div>
               </nav>

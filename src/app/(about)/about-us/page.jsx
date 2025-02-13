@@ -1,5 +1,5 @@
 import React from "react";
-import { Metadata } from "next";
+import { config } from "../../../../config";
 import AboutUsMain from "@/pages/about/about-us";
 
 export const metadata = {
@@ -8,14 +8,14 @@ export const metadata = {
 
 const  AboutUsPage = async() => {
   const data = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/about",
+    `${config.APP_URL}/wp-json/secure-plugin/v1/about`,
     {
       cache: "no-store",
     }
   );
 
   const bannerData = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/banner/about-us",
+    `${config.APP_URL}/wp-json/secure-plugin/v1/banner/about-us`,
     {
       cache: "no-store",
     }

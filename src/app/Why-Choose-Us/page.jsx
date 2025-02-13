@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 // import FaqMain from "@/pages/faq/faq-main";
 import WhyChooseUs from "@/pages/WhyChooseUs/WhyChooseUs";
+import { config } from "../../../config";
 
 export const metadata = {
   title: "Secure 365 - Faq page",
@@ -9,7 +10,7 @@ export const metadata = {
 
 const FaqPage = async () => {
   const response = await fetch(
-    "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/choose",
+    `${config.APP_URL}/wp-json/secure-plugin/v1/choose`,
     {
       cache: "no-store",
     }

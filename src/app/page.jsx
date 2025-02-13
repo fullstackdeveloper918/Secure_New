@@ -12,6 +12,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Libre_Franklin } from "next/font/google";
+import { config } from "../../config";
 
 const businessesData = [
   {
@@ -33,7 +34,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://sellmac.cybersify.tech/secure365/wp-json/secure-plugin/v1/home",
+          `${config.APP_URL}/wp-json/secure-plugin/v1/home`,
           {
             cache: "no-store",
           }
