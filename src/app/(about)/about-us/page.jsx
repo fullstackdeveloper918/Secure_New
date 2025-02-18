@@ -8,7 +8,7 @@ export const metadata = {
 
 const  AboutUsPage = async() => {
   const data = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/about`,
+    `${config.APP_URL}/secure-plugin/v1/about`,
     {
       cache: "no-store",
     }

@@ -12,14 +12,14 @@ export const metadata = {
 const ServicePage = async() => {
 
   const data = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/service`,
+    `${config.APP_URL}/secure-plugin/v1/service`,
     {
       cache: "no-store",
     }
   );
 
   const bannerData = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/banner/service`,
+    `${config.APP_URL}/secure-plugin/v1/banner/service`,
     {
       cache: "no-store",
     }

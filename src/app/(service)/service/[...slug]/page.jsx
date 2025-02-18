@@ -11,7 +11,7 @@ const ServiceDetailsPage = async({params}) => {
 
    
     const bannerData = await fetch(
-        `${config.APP_URL}/wp-json/secure-plugin/v1/service/${params?.slug}`,
+        `${config.APP_URL}/secure-plugin/v1/service/${params?.slug}`,
         {
           cache: "no-store",
         }

@@ -34,7 +34,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `${config.APP_URL}/wp-json/secure-plugin/v1/home`,
+          `${config.APP_URL}/secure-plugin/v1/home`,
           {
             cache: "no-store",
           }
@@ -73,24 +73,18 @@ export default function Home() {
                   <div id="itemsWrapperLinks">
                     <div id="itemsWrapper" className="webgl-fitthumbs fx-one">
                       <div className="showcase-portfolio expand-grid filp-grid">
-                        <div 
-                        className="clapat-item not-expanded"
-                        >
+                        <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
                             // data-centerline="OPEN"
                           >
-                            <div 
-                            className="img-mask pixels-cover"
-                            >
+                            <div className="img-mask pixels-cover">
                               <Link
                                 className="slide-link"
                                 data-type="page-transition"
                                 href="/project"
                               ></Link>
-                              <div 
-                              className="section-image trigger-item-link"
-                              >
+                              <div className="section-image trigger-item-link">
                                 <Image
                                   src="/images/01hero1.jpg"
                                   className="item-image grid__item-img"
@@ -107,22 +101,14 @@ export default function Home() {
                                 height={345}
                               />
                             </div>
-                            <div 
-                            className="slide-caption trigger-item-link-secondary"
-                            >
-                              <div 
-                              className="slide-title"
-                              >
+                            <div className="slide-caption trigger-item-link-secondary">
+                              <div className="slide-title">
                                 <span>Esakle</span>
                               </div>
-                              <div 
-                              className="slide-date"
-                              >
+                              <div className="slide-date">
                                 <span>2024</span>
                               </div>
-                              <div 
-                              className="slide-cat"
-                              >
+                              <div className="slide-cat">
                                 <span> The Sport Wear </span>
                               </div>
                             </div>
@@ -142,26 +128,26 @@ export default function Home() {
                               ></Link>
                               <div className="section-image  trigger-item-link">
                                 <div className="video_hoverlay">
-                                  <h4>See Our Work Showcase</h4></div>
-                             <video
-                    className="play-video"
-                    loop={true}
-                    muted={true}
-                    autoPlay={true}
-                    playsInline={true}
-                  >
-                    <source
-                      src="images/Untitled design.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
+                                  <h4>See Our Work Showcase</h4>
+                                </div>
+                                <video
+                                  className="play-video"
+                                  loop={true}
+                                  muted={true}
+                                  autoPlay={true}
+                                  playsInline={true}
+                                >
+                                  <source
+                                    src="images/Untitled design.mp4"
+                                    type="video/mp4"
+                                  />
+                                </video>
                               </div>
                               {/* <img
                                 src="images/02hero.jpg"
                                 className="grid__item-img grid__item-img--large"
                                 alt=""
                               /> */}
-                         
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
@@ -213,9 +199,7 @@ export default function Home() {
                                 <span>2024</span>
                               </div>
                               <div className="slide-cat">
-                                <span>
-                                  The AI For B2B Growth
-                                </span>
+                                <span>The AI For B2B Growth</span>
                               </div>
                             </div>
                           </div>
@@ -414,8 +398,8 @@ export default function Home() {
                         </div>
                       </div> */}
 
-                            {/* <!-- Row --> */}
-                            <div
+                      {/* <!-- Row --> */}
+                      <div
                         className="content-row full text-align-center dark-section"
                         data-bgcolor="#ebebeb"
                       >
@@ -471,31 +455,18 @@ export default function Home() {
                             </li>
                           </ul>
 
-                          <ul 
-                          className="projects-list-images"
-                          >
-                            <li 
-                            className="trigger-item"
-                            >
-                              <div 
-                              className="img-mask"
-                              >
-                                <div 
-                                className="section-image trigger-item-link"
-                                >
+                          <ul className="projects-list-images">
+                            <li className="trigger-item">
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
                                   <Image
                                     src="/images/011hero.jpg"
-                                    
                                     className="item-image grid__item-img"
                                     alt="011hero"
                                     width={1920}
                                     height={587}
                                   />
-                                  <div 
-                                  className="hero-video-wrapper"
-                                  >
-                                  
-                                  </div>
+                                  <div className="hero-video-wrapper"></div>
                                 </div>
                                 <Image
                                   src="/images/011hero.jpg"
@@ -507,12 +478,8 @@ export default function Home() {
                               </div>
                             </li>
                             <li className="trigger-item">
-                              <div 
-                              className="img-mask"
-                              >
-                                <div 
-                                className="section-image trigger-item-link"
-                                >
+                              <div className="img-mask">
+                                <div className="section-image trigger-item-link">
                                   <Image
                                     src="/images/012hero.jpg"
                                     className="item-image grid__item-img"
@@ -615,7 +582,6 @@ export default function Home() {
                         </div>
                       </div>
                       {/* <!--/Row --> */}
-
                     </div>
                   </div>
                 </div>

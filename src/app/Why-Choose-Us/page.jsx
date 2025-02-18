@@ -10,7 +10,7 @@ export const metadata = {
 
 const FaqPage = async () => {
   const response = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/choose`,
+    `${config.APP_URL}/secure-plugin/v1/choose`,
     {
       cache: "no-store",
     }

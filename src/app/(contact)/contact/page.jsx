@@ -10,7 +10,7 @@ const ContactPage = async() => {
 
 
   const data = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/contact`,
+    `${config.APP_URL}/secure-plugin/v1/contact`,
     {
       cache: "no-store",
     }
