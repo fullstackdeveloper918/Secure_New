@@ -279,7 +279,7 @@ export default function Home() {
                             <Link
                               className="ajax-link"
                               data-type="page-transition"
-                              href="about.html"
+                              href="/about-us"
                             >
                               <div className="button-text sticky right">
                                 <span data-hover="About Us">About Us</span>
