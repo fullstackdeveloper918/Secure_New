@@ -8,7 +8,7 @@ const HeroSection = ({data}) => {
     <div id="hero">
     <div id="hero-styles">
     <HeroBannerOne />
-        <div id="hero-footer" className="has-border">
+        {/* <div id="hero-footer" className="has-border">
           <div className="hero-footer-left">
               <div className="button-wrap left scroll-down">
                     <div className="icon-wrap parallax-wrap">
@@ -22,7 +22,9 @@ const HeroSection = ({data}) => {
             <div className="hero-footer-right">
         <span>{data}</span>
             </div>
-        </div>                                                              
+        </div>    */}
+
+                                                              
     </div>
 </div> 
   )

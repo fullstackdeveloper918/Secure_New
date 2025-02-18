@@ -114,13 +114,25 @@ const HeroBannerOne = () => {
               </motion.div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-              <div className="lotify">
+              {/* <div className="lotify">
                 <DotLottieReact
                   src="https://lottie.host/689453fd-ff31-4b30-a7a0-c19fef568787/1ayzmshZ9X.lottie"
                   loop
                   autoplay
                 />
-              </div>
+              </div> */}
+              <div className="videoSec">
+                <video
+                      muted={true}
+                      autoPlay={true}
+                      playsInline={true}
+                      loop={true}
+                      width={700}
+                      height={700}
+                    >
+                      <source src="/assets/video/bannerVideo.mp4" type="video/mp4" />
+                    </video>
+                    </div>
             </div>
           </div>
           {/* <div className="row">
@@ -136,7 +148,7 @@ const HeroBannerOne = () => {
           </div> */}
         </div>
       </div>
-
+{/* 
       <div className="flipelements">
         <div className="fleiptag">
           <div className="button-text sticky left">
@@ -161,7 +173,7 @@ const HeroBannerOne = () => {
       <div className="projects">
 <span>Featured Projects</span>
         </div>
-    </div>
+    </div> */}
 
     </div>
   );

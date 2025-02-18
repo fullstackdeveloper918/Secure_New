@@ -15,7 +15,7 @@ const  AboutUsPage = async() => {
   );
 
   const bannerData = await fetch(
-    `${config.APP_URL}/wp-json/secure-plugin/v1/banner/about-us`,
+    `${config.APP_URL}/secure-plugin/v1/banner/about-us`,
     {
       cache: "no-store",
     }

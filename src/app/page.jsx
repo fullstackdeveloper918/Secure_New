@@ -13,6 +13,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Libre_Franklin } from "next/font/google";
 import { config } from "../../config";
+import BrandOne from "@/components/brand/brand-one";
+
 
 const businessesData = [
   {
@@ -29,6 +31,7 @@ const businessesData = [
 
 export default function Home() {
   const [data, setData] = useState([]);
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,14 +54,31 @@ export default function Home() {
       }
     };
 
+
+
     fetchData();
   }, []);
+
+  // useEffect(() => {
+  //   // Add class to body only if it's the homepage
+  //   console.log(router , 'hence')
+  //   if (router.pathname === '/') {
+  //     document.body.classList.add('homepage-class');
+  //   } else {
+  //     document.body.classList.remove('homepage-class');
+  //   }
+
+  //   // Clean up the class when the component unmounts or the route changes
+  //   return () => {
+  //     document.body.classList.remove('homepage-class');
+  //   };
+  // }, [router.pathname]);
 
   return (
     <>
       <PreLoader />
 
-      <div className="cd-index cd-main-content homepage mt-20">
+      <div className="cd-index cd-main-content homepage">
         <div
           id="clapat-page-content"
           className="dark-content"
@@ -68,15 +88,18 @@ export default function Home() {
           <div id="content-scroll">
             <div id="main">
               <HeroSection data={data?.featured_section_heading} />
+
+              <BrandOne />
+
               <div id="main-content">
                 <div id="main-page-content">
                   <div id="itemsWrapperLinks">
                     <div id="itemsWrapper" className="webgl-fitthumbs fx-one">
-                      <div className="showcase-portfolio expand-grid filp-grid">
+                      {/* <div className="showcase-portfolio expand-grid filp-grid">
                         <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
-                            // data-centerline="OPEN"
+                           
                           >
                             <div className="img-mask pixels-cover">
                               <Link
@@ -97,8 +120,8 @@ export default function Home() {
                                 src="/images/01hero1.jpg"
                                 className="grid__item-img grid__item-img--large"
                                 alt="01hero01"
-                                width={214}
-                                height={345}
+                                width={1000}
+                                height={1000}
                               />
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
@@ -118,7 +141,7 @@ export default function Home() {
                         <div className="clapat-item expanded">
                           <div
                             className="slide-inner trigger-item"
-                            // data-centerline="OPEN"
+                           
                           >
                             <div className="img-mask pixels-cover">
                               <Link
@@ -143,11 +166,7 @@ export default function Home() {
                                   />
                                 </video>
                               </div>
-                              {/* <img
-                                src="images/02hero.jpg"
-                                className="grid__item-img grid__item-img--large"
-                                alt=""
-                              /> */}
+                             
                             </div>
                             <div className="slide-caption trigger-item-link-secondary">
                               <div className="slide-title">
@@ -166,7 +185,7 @@ export default function Home() {
                         <div className="clapat-item not-expanded">
                           <div
                             className="slide-inner trigger-item"
-                            // data-centerline="OPEN"
+                        
                           >
                             <div className="img-mask pixels-cover">
                               <Link
@@ -204,9 +223,9 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div
-                        className="content-row full row_padding_top row_padding_left row_padding_right light-section fadeout-element"
+                        className="content-row full row_padding_left row_padding_right light-section fadeout-element pt-10"
                         data-bgcolor="#ebebeb"
                       >
                         <h2 className="text-align-center h1-title">
