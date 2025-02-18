@@ -1602,6 +1602,9 @@ footer .tp-footer-big-title {
   margin: 0px;
   padding-top: 0px;
 }
+.classic-menu .flexnav li a span {
+  height: fit-content !important;
+}
 }
 
 @media (max-width:1280px){
