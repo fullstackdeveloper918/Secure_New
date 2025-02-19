@@ -130,7 +130,7 @@ const HeroBannerOne = () => {
                       width={700}
                       height={700}
                     >
-                      <source src="/assets/video/bannerVideo.mp4" type="video/mp4" />
+                      <source src="/assets/video/secure-bann.mp4" type="video/mp4" />
                     </video>
                     </div>
             </div>
