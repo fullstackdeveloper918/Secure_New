@@ -42,14 +42,14 @@ const AnimationHeader = async () => {
                 <Link className="ajax-link" data-type="page-transition" href="/">
                   <Image
                     className="black-logo"
-                    src="/images/logo.png"
+                    src="/images/secure365-logo-black.png"
                     alt="ClaPat Logo"
                     width={210}
                     height={21}
                   />
                   <Image
                     className="white-logo"
-                    src="/images/logo-white.png"
+                    src="/images/secure365-logo.png"
                     alt="ClaPat Logo"
                     width={210}
                     height={21}

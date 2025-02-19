@@ -1642,6 +1642,7 @@ i.arrow-icon-up::after {
   line-height: calc(1rem + 2vw);
   position:absolute;
   font-weight: 500;
+  width: 100%;
 }
 
 /*--------------------------------------------------
@@ -1737,7 +1738,7 @@ i.arrow-icon-up::after {
 }
 
 #clapat-logo img.black-logo {
-  opacity:1;
+  opacity:1 !important;
 }
 
 .light-content #clapat-logo img.black-logo {
@@ -1748,7 +1749,7 @@ i.arrow-icon-up::after {
   position:absolute;
   top:0;
   left:0;
-  opacity:0;
+  opacity:0 !important;
 }
 
 .light-content #clapat-logo img.white-logo {
@@ -1835,7 +1836,7 @@ i.arrow-icon-up::after {
     height: 40px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     margin: auto;
   }
   
@@ -1883,7 +1884,7 @@ i.arrow-icon-up::after {
     padding: 0;
     position:relative;
     border-left: medium none;
-    color:#000;
+    color: #000 !important;
     line-height:46px;
     display:block;
     overflow:hidden;
@@ -2476,22 +2477,22 @@ i.arrow-icon-up::after {
   border-radius: 44px;		
   position: relative;
   cursor:pointer;
-  color:#000;
-  border:2px solid currentColor;
+  color:#000 !important;
+  border:2px solid currentColor !important;
   box-sizing:border-box;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.3) !important;
 }
 
-.light-content .button-icon-link {
+/* .light-content .button-icon-link {
   color:#fff;
   border:2px solid currentColor;
   box-shadow: inset 0 0 15px rgba(255,255,255,0.5);
-}
+} */
 
-.light-content  .white-header .button-icon-link { 
+/* .light-content  .white-header .button-icon-link { 
   border:2px solid #000;
   box-shadow: inset 0 0 15px rgba(0,0,0,0.3);
-}
+} */
 
 .white-header .button-icon-link {
   color: #fff; 
@@ -3307,7 +3308,11 @@ p .link-text {
 07. Responsive
 ---------------------------------------------------*/			
 
-    
+@media (max-width:1536px){
+  #header-container {
+    padding: 20px 30px;
+}
+}   
 @media only screen and (max-width: 1466px) {
 
 .row_padding_all {
@@ -3811,10 +3816,12 @@ hr {
     bottom: 30px;
 }
 
-.clapat-header {
-  height:80px;
+.clapat-header, #header-container {
+  height:60px;
 }
-
+.bannerVideo {
+	padding: 60px 0px 20px;
+}
 #header-container {
     padding: 0;
   margin: 0 auto;
@@ -3846,9 +3853,9 @@ hr {
   display: none;
 }
 
-.flexnav > li > a {
-  font-size: calc(1rem + 3vw);
-  line-height: calc(1rem + 3vw);
+.classic-menu .flexnav > li > a {
+  font-size: calc(1rem + 3vw) !important;
+  line-height: calc(1rem + 3vw) !important;
 }
 
 .flexnav li a span {
@@ -3964,7 +3971,9 @@ hr {
   line-height: 20px;
   margin: 0 auto;
 }
-
+.tp-team-item img{
+  object-position: top;
+}
 }
 
 
@@ -3974,7 +3983,10 @@ hr {
   margin-bottom: 20px!important;
   margin-right: 0%!important;
 }
-
+.brandOne .tp-brand-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
 .row_padding_top {
   padding-top:12vw;
 }

@@ -451,7 +451,7 @@ footer .tp-footer-big-title {
 .tp-team-area .tp-hover-btn-item, .tp-team-area .tp-hover-btn-item>img {
   /* background: #dea647; */
   /* background: #9E9E9E; */
-  background-color: #009dd6 ;
+  /* background-color: #009dd6 ; */
 }
 .tp-footer-menu ul li a .tp-menu-text {
   font-family: '__Onest_492953' !important;
@@ -1541,7 +1541,13 @@ img.rightImage {
  .brandOne{
   background-color: #ebebeb;
  }
+ .classic-menu .flexnav li .sub-menu a {
+  line-height: 30px;
+  font-size: 14px !important;
+}
+
 @media (max-width:1440px){
+
   .bannerVideo .tp-hero-content p {
     font-size: 16px;
     max-width: 35rem;
@@ -1612,7 +1618,21 @@ footer .tp-footer-big-title {
     max-width: 98rem;
     padding: 0px 30px;
   }
-
+  .classic-menu .flexnav li .sub-menu a {
+    line-height: 25px;
+    font-size: 12px !important;
+}
+  .projects-list-captions span {
+    font-size: 5vw !important;
+    white-space: pre;
+}
+.projects-list-captions > li {
+  font-size: clamp(28px, 2.5vw, 70px) !important;
+  line-height: clamp(28px, 4.5vw, 80px) !important;
+}
+  .brandOne .container.container-1630 {
+    max-width: 75rem !important;
+}
   .tm-hero-title-big {
     font-size: 7vw !important;
     line-height: 1.2 !important;
@@ -1696,6 +1716,12 @@ header #header-container {
 .tm-hero-area, .cn-contactform-area {
   max-width: 96%;
   margin: 0px auto;
+}
+.classic-menu .flexnav li a {
+  font-size: 13px !important;
+}
+.sub-menu {
+  top: 50px !important;
 }
 }
 @media (max-width:1024px){
@@ -1782,6 +1808,7 @@ header #header-container {
 
 .projects-list-captions span {
 	font-size: 32px !important;
+  line-height: 44px !important;
 }
 
 .tp-testimonial-arrow-box {
@@ -1797,6 +1824,19 @@ header #header-container {
   .bannerVideo .tp-hero-title .boldHeading {
     font-size: 2.5rem;
     line-height: 2.5rem;
+}
+.tp-testimonial-area.pb-120, .tp-team-area.pt-10.md\:pt-20.md\:pb-120.pb-20.fix {
+	padding-bottom: 60px;
+}
+.awardsSec .tp-blog-area.pb-70.blogOnemain {
+	padding-bottom: 40px;
+}
+.videoSec video {
+	border-radius: 20px;
+	border: 8px solid #ffffff;
+}
+.tp-team-area svg {
+	width: 12px;
 }
 .tm-herointro h4.tp-service-3-title {
   font-size: 22px;
