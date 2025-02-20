@@ -14,6 +14,8 @@ import Image from "next/image";
 import { Libre_Franklin } from "next/font/google";
 import { config } from "../../config";
 import BrandOne from "@/components/brand/brand-one";
+import PainSection from "@/components/what-us-diff/whatusdiff";
+
 
 
 const businessesData = [
@@ -288,6 +290,8 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
+
+                      <PainSection />
 
                       {/* <div
                         className="content-row full text-align-center dark-section"
