@@ -1,0 +1,76 @@
+/* Pain Section */
+.painSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  .painTitle {
+    font-weight: bold;
+    transition: font-size 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  /* Black Section */
+  .blackSection {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .blackTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Cards */
+  .cardContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 30px auto;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cardIcon {
+    margin-bottom: 15px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cardDescription {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
