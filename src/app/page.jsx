@@ -262,7 +262,9 @@ export default function Home() {
                       >
                         <hr />
 
-                        <div className="one_half"></div>
+                        <div className="one_half">
+                       
+                        </div>
 
                         <div className="one_half last">
                           <p className="bigger has-shuffle">
