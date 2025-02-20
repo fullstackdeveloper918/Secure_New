@@ -321,6 +321,7 @@ h1, h2, h4, h4, h5, h6 {
 .tp-section-title {
   font-family: '__Onest_492953';
   font-weight: 600;
+  color: #000 !important;
 }
 .tp-section-title span {
   color: #009dd6 !important;
@@ -637,6 +638,13 @@ h4.tp-team-title-sm {
 /*--------------------------------------------------
 	Showcase Portfolio
 ---------------------------------------------------*/
+.showcase-portfolio.expand-grid.filp-grid.flip-completed .clapat-item, .showcase-portfolio.expand-grid.filp-grid.flip-completed {
+  background: #ebebeb !important;
+}
+.showcasePportfolio h2.main_heading {
+  text-align: center;
+  margin: 40px 0px 0px;
+}
 .showcase-portfolio .slide-caption .slide-title {
   font-size: 24px;
   line-height: 32px;

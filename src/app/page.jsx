@@ -15,6 +15,10 @@ import { Libre_Franklin } from "next/font/google";
 import { config } from "../../config";
 import BrandOne from "@/components/brand/brand-one";
 import PainSection from "@/components/what-us-diff/whatusdiff";
+import ProjectOne from "@/components/project/project-one";
+import ProjectFour from "@/components/project/project-four";
+import ProjectFive from "@/components/project/project-five";
+import ProjectSix from "@/components/project/project-six";
 
 
 
@@ -607,6 +611,9 @@ export default function Home() {
                         </div>
                       </div>
                       {/* <!--/Row --> */}
+
+                      {/* projectsec */}
+                
                     </div>
                   </div>
                 </div>
@@ -716,6 +723,10 @@ export default function Home() {
             <div className="awardsSec">
               <AwardOne data={data} />
             </div>
+
+                  {/* <ProjectFive /> */}
+                  <ProjectSix />
+                      {/* projectsec end */}
 
             <div className="container-fluid p-0">
               <div className="row g-0">
