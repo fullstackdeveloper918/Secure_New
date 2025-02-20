@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/assets/img/logo/logo-white.png';
+import logo from '../../../public/images/secure365-logo.png';
 import { RightArrow, SvgBgSm } from '@/components/svg';
 import Link from 'next/link';
 
