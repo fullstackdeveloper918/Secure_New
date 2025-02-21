@@ -112,7 +112,10 @@
   .blackTitle {
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 0px;}
+    margin-bottom: 0px;
+    padding: 0px 15px;
+  
+}
 .painTitle {
   font-size: 30px !important;
 }

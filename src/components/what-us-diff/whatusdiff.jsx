@@ -1,39 +1,43 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import whatusImage3 from "../../../public/images/1.svg"
 import whatusImage4 from "../../../public/images/4.svg"
 import whatusImage5 from "../../../public/images/5.svg"
 import styles from "./whatus.module.css";
-
 export default function PainSection() {
   const [fontSize, setFontSize] = useState("3vw");
   const [opacity, setOpacity] = useState(1);
   const [background, setBackground] = useState("#F5F5F5");
   const [textColor, setTextColor] = useState("#000");
-  let lastScrollY = 0;
-
+  // let lastScrollY = 0;
   useEffect(() => {
+    let lastScrollY = window.scrollY;
     const handleScroll = () => {
-      const painSection = document.getElementById("pain-section");
+      const painSection = document.getElementById("pain-sec");
       if (!painSection) return;
-      
       const rect = painSection.getBoundingClientRect();
+      console.log("rect",rect)
       const windowHeight = window.innerHeight;
-      
-      const scrollDirection = window.scrollY > lastScrollY ? "down" : "up";
+      console.log("rectwindowHeight",windowHeight)
+      const scrollDirection = window.scrollY >= lastScrollY ? "down" : "up";
       lastScrollY = window.scrollY;
-      
       const progress = Math.max(0, Math.min(1, Math.abs(rect.top) / windowHeight));
-      let minFontSize = 3; // in VW
-      let maxFontSize = 800; // Adjusted max zoom size
-      let newSize = scrollDirection === "down" 
-        ? maxFontSize - (maxFontSize - minFontSize) * progress // Zoom out when scrolling down
-        : minFontSize + (minFontSize - minFontSize) * progress; // Zoom in when scrolling up
+      let minFontSize = 3; // Minimum font size in VW
+      let maxFontSize = 200; // Maximum font size in VW
+      // **Fix: Ensure font size scales properly**
+      let newSize = minFontSize + (maxFontSize - minFontSize) * (1 - progress);
+      // **Clamp newSize to avoid going too small or too large**
+      // newSize = Math.max(minFontSize, Math.min(maxFontSize, newSize));
+      console.log("newSize",newSize)
+      console.log("reactTop",rect.top)
+      console.log("progress",progress)
+      if (rect.top < 480) {
+        newSize = minFontSize; // Keep it small once it reaches a certain point
+      }
       setFontSize(`${newSize}vw`);
-      
-      if (rect.top < 0) {
+      // **Background color change logic**
+      if (rect.top < 800) {
         setBackground("#101010");
         setTextColor("#101010");
       } else {
@@ -41,11 +45,9 @@ export default function PainSection() {
         setTextColor("#101010");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <div>
       {/* Pain Section */}
@@ -62,7 +64,7 @@ export default function PainSection() {
           We Understand Your Pain
         </h2>
       </section>
-
+          <span className="" id="pain-sec"></span>
       {/* Black Section */}
       <section id="black-section" className={styles.blackSection}>
         <h2 className={styles.blackTitle}>What Makes Us Different?</h2>

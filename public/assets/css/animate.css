@@ -1474,6 +1474,7 @@ span.textline-1 {
 /* .cn-contact-thumb{
   height: 350px;
 } */
+
 .cn-contact-thumb img{
   object-fit: cover;
 }
@@ -1841,6 +1842,19 @@ header #header-container {
     font-size: 2.5rem;
     line-height: 2.5rem;
 }
+.ab-about-area .ab-about-content P {
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  font-weight: 500;
+}
+.aboutIcon {
+  margin: 0 0 20px;
+}
+.awardsContent {
+  margin: 20px 0 0;
+}
 .tp-testimonial-area.pb-120, .tp-team-area.pt-10.md\:pt-20.md\:pb-120.pb-20.fix {
 	padding-bottom: 60px;
 }
@@ -1903,7 +1917,7 @@ header #header-container {
   display: none;
 } */
 .bannerVideo .container {
-  padding: 0px 20px 60px;
+  padding: 0px 0px 60px 20px;
   margin: 0px auto 0px;
 }
 header #header-container {

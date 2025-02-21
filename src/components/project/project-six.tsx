@@ -88,7 +88,7 @@ export default function ProjectSix() {
       </div>
       <div className="slide-date"><span>2024</span></div>
       <div className="slide-cat">
-        <span data-text="Photography">A portfolio of Darcy's artwork,</span>
+        <span data-text="Photography">Darcy's artwork,</span>
       </div>
     </div>
   </div>
