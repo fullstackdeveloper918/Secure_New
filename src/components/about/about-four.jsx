@@ -7,7 +7,7 @@ export default function AboutFour({aboutResponse}) {
       <div className="container container-1560">
         <div className="row">
           <div className="col-xl-12">
-            <div className="tp-about-5-title-box pb-90">
+            <div className="tp-about-5-title-box lg:pb-90 pb-30">
               <h2 className="tp-about-5-title p-relative tp_fade_bottom">
                 <span className="tp-about-5-subtitle tp_fade_left">
                {aboutResponse?.data?.about_our_servics_heading}

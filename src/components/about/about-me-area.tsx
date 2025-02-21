@@ -5,7 +5,7 @@ import shape from '@/assets/img/inner-about/about/shape-1.png';
 
 export default function AboutMeArea() {
   return (
-    <div className="ab-about-area ab-about-mt pb-90 z-index-5">
+    <div className="ab-about-area ab-about-mt lg:pb-90 pb-20 z-index-5">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
