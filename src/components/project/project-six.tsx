@@ -33,7 +33,7 @@ export default function ProjectSix() {
       </div>
       <div className="slide-date"><span>2025</span></div>
       <div className="slide-cat">
-        <span data-text="Branding">Contact us for your gym price list!</span>
+        <span data-text="Branding">Best gym price list!</span>
       </div>
     </div>
   </div>
