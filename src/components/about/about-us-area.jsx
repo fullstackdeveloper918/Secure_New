@@ -11,7 +11,7 @@ import ab_3 from "@/assets/img/inner-about/about/about-2.png";
 export default function AboutUsArea({aboutResponse}) {
   console.log(aboutResponse, 'aboutResponse')
   return (
-    <div className="ab-about-area ab-about-mt pb-90 z-index-5">
+    <div className="ab-about-area ab-about-mt lg:pb-90 pb-5 z-index-5">
       <div className="container container-1480">
         <div className="ab-about-thumb-wrap mb-180">
           <div className="row align-items-end">
@@ -44,24 +44,24 @@ export default function AboutUsArea({aboutResponse}) {
             </div>
           </div>
         </div>
-        <div id="about-info" className="row">
-          <div className="col-xxl-9">
+        <div id="about-info" className="about-info-wrap row">
+          <div className="about-title text-center">
             <div className="ab-about-content p-relative">
-              <span>
+              {/* <span>
                 <Hand />
                 Hi!
-              </span>
+              </span> */}
               <p className="tp-dropcap tp_fade_bottom">
               {/* Our Core Values */}
               {aboutResponse?.data?.about_our_core_headning_main}
               </p>
             </div>
           </div>
-        </div>
+       
         <div className="row">
           <div className="col-xl-12">
-            <div className="row">
-              <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
+            <div className="about-inner row">
+              {/* <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
                   <h2 className="ab-about-category-title">
                     {aboutResponse?.data?.about_our_core_something_section} <br />
@@ -73,30 +73,25 @@ export default function AboutUsArea({aboutResponse}) {
                     alt="shape"
                   />
                 </div>
-              </div>
-              <div className="col-xl-7 col-lg-7 col-md-8">
+              </div> */}
+              <div className="about-category">
                 <div className="row">
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
+                  {/* <div className="col-xl-6 col-lg-6 col-md-6"> */}
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
-                      <ul>
+                      <ul className="md:flex gap-4">
                         {
                         aboutResponse &&  aboutResponse?.data?.about_page_customer_approach_data?.map((item,index) => (
                           <React.Fragment key={index}>
 
-                          <li>
+                          <li> 
                           <h3 className="h5-title">{item?.about_page_customer_first_approach}</h3>
                           <p>{item?.about_page_customer_integrity_transparency}</p>
                         </li>
                           </React.Fragment>
                         ) )
                         }
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
-                    <div className="ab-about-category-list category-space-2 tp_fade_bottom">
-                      <ul>
-                      {
+
+{
                         aboutResponse &&  aboutResponse?.data?.about_page_security_responsibility_data?.map((item,index) => (
                           <React.Fragment key={index}>
 
@@ -107,14 +102,17 @@ export default function AboutUsArea({aboutResponse}) {
                           </React.Fragment>
                         ) )
                         }
-
                       </ul>
+
+               
                     </div>
-                  </div>
+                  {/* </div> */}
+                  
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

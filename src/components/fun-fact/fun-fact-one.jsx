@@ -33,7 +33,29 @@ export default function FunFactOne({aboutResponse}) {
     <div className="ab-funfact-area pb-40">
       <div className="container container-1480">
         <div className="row">
-          <div className="col-xl-4">
+          <div className="ab-fun-title">
+          <span className="ab-inner-subtitle mb-25">
+                <Leaf />
+               {aboutResponse?.data?.about_counter_section_fun_fact}
+              </span>
+              <h2 className="ab-inner-funfact-title tp_title_anim">
+                {aboutResponse?.data?.about_counter_section_fun_agency_heading} <br /> Snapshots
+              </h2>
+          </div>
+          <div className="ab-counter flex">
+          {counter_data.map((item) => (
+                  <div key={item.id} className="count">
+                    <div className="ab-funfact-item mb-90">
+                      <span>
+                        <CounterItem min={0} max={item.count} />
+                        {item.text}
+                      </span>
+                      <p>{item.title}</p>
+                    </div>
+                  </div>
+                ))}
+          </div>
+          {/* <div className="col-xl-4">
             <div className="ab-funfact-title-box">
               <span className="ab-inner-subtitle mb-25">
                 <Leaf />
@@ -43,8 +65,8 @@ export default function FunFactOne({aboutResponse}) {
                 {aboutResponse?.data?.about_counter_section_fun_agency_heading} <br /> Snapshots
               </h2>
             </div>
-          </div>
-          <div className="col-xl-8">
+          </div> */}
+          {/* <div className="col-xl-8">
             <div className="ab-funfact-wrap">
               <div className="row gx-75">
                 {counter_data.map((item) => (
@@ -60,7 +82,7 @@ export default function FunFactOne({aboutResponse}) {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

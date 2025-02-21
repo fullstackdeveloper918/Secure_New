@@ -36,8 +36,9 @@ export default function AboutThree({aboutResponse}) {
         </div>
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-4">
-            <div className="tp-about-3-shape text-lg-end">
-              <Image src={shape} alt="shape" style={{ height: "auto" }} />
+            <div className=" about-img">
+            <Image src="/images/about-us.png"  alt="shape" width={500} height={300} style={{ width: "auto", height: "auto" }} 
+/>
             </div>
           </div>
           <div className="col-xl-6 col-lg-6 col-md-8">
