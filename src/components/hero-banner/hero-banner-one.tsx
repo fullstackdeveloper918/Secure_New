@@ -87,12 +87,12 @@ const HeroBannerOne = () => {
 
                 <div className="btn_sec flex gap-3 flex-wrap">
                   {/* <button className="BtnOne btnWrapper"> */}
-                    <Link href="/contact" className="BtnOne btnWrapper">
+                    <Link href="/contact-us" className="BtnOne btnWrapper">
                     Get started
                     </Link>
                     {/* </button> */}
                   {/* <button > */}
-                  <Link href="/contact" className="BtnTwo btnWrapper">
+                  <Link href="/contact-us" className="BtnTwo btnWrapper">
                   Let's Connect
                     <span>
                       <svg

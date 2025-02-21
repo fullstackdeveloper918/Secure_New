@@ -1341,6 +1341,14 @@ span.textline-1 {
 }
 /* serives end*/
 /* conatcPage */
+.cn-contact-2-info-area .cn-contact-2-thumb {
+  background: #f9f9f9;
+  width: 100%;
+  max-width: 80px;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 50px;
+}
 .innerDivConatct {
   display: flex;
   gap: 30px;
@@ -1463,9 +1471,9 @@ span.textline-1 {
 .cn-contact-2-content:hover{
   box-shadow: 0px 0px 30px 0px rgb(0 174 239/9%);
 }
-.cn-contact-thumb{
+/* .cn-contact-thumb{
   height: 350px;
-}
+} */
 .cn-contact-thumb img{
   object-fit: cover;
 }

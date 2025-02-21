@@ -75,7 +75,10 @@ const AnimationHeader = async () => {
                                 <span data-hover="About Us" data-text="About Us">{item?.title}</span>
                               </div>
                             </Link>
-                            <div className="sub-menu">
+                            {
+                              item?.children.length > 0 
+                              &&
+                              <div className="sub-menu">
 
                             {
                               item?.children?.map((child, childIndex) => (
@@ -97,6 +100,7 @@ const AnimationHeader = async () => {
                               ))
                             }
                             </div>
+                            }
                           </li>
                         </React.Fragment>
                       ))

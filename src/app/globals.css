@@ -1676,7 +1676,7 @@ i.arrow-icon-up::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   backdrop-filter: blur(14px);
   max-width: 106rem;
   box-shadow: none;
