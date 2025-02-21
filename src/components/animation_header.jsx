@@ -112,7 +112,7 @@ const AnimationHeader = async () => {
               <Link
                 className="header-button ajax-link"
                 data-type="page-transition"
-                href="contact.html"
+                href="/contact-us"
               >
                 <div className="button-icon-link right">
                   <div className="icon-wrap-scale">

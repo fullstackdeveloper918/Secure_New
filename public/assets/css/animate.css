@@ -1835,12 +1835,25 @@ header #header-container {
   height: 26px !important;
   width: 27px !important;
 }
-
+.bannerVideo .tp-hero-title-wrap, .bannerVideo .tp-hero-content
+{
+  max-width: 100%;
+}
+.videoSec {
+  justify-content: flex-start;
+  margin: 30px 0px 0px;
+}
 }
 @media (max-width:767px){
   .bannerVideo .tp-hero-title .boldHeading {
     font-size: 2.5rem;
     line-height: 2.5rem;
+}
+.videoSec {
+  margin: 0px 0px 0px;
+}
+section#pain-section {
+  display: none;
 }
 .ab-about-area .ab-about-content P {
   font-size: 30px;
