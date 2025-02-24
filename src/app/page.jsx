@@ -19,6 +19,8 @@ import ProjectOne from "@/components/project/project-one";
 import ProjectFour from "@/components/project/project-four";
 import ProjectFive from "@/components/project/project-five";
 import ProjectSix from "@/components/project/project-six";
+// import bannerDiv from "../../../public/assets/img/inner-faq/faq/InnerDiv.png";
+import bannerDiv from "../../public/assets/img/inner-faq/faq/InnerDiv.png";
 
 
 
@@ -100,7 +102,7 @@ export default function Home() {
               <div id="main-content">
                 <div id="main-page-content">
                   <div id="itemsWrapperLinks">
-                    <div id="itemsWrapper" className="webgl-fitthumbs fx-one">
+                    <div id="itemsWrapper" className="webgl-fitthumbs fx-one relative">
                       {/* <div className="showcase-portfolio expand-grid filp-grid">
                         <div className="clapat-item not-expanded">
                           <div
@@ -261,16 +263,22 @@ export default function Home() {
                       </div>
 
                       <div
-                        className="content-row light-section row_padding_bottom "
+                        className="content-row light-section flex items-center  md:flex-row flex-col aboutsec"
                         data-bgcolor="#ebebeb"
-                      >
-                        <hr />
+                      > 
+                        {/* <hr /> */}
 
-                        <div className="one_half">
-                       
+                        <div className="one_half col-xl-6 col-md-6 col-sm-12">
+                        <Image
+                        className="rightImage"
+                        src={bannerDiv}
+                        alt="shape"
+                        width={500}
+                        height={300}
+                      />
                         </div>
 
-                        <div className="one_half last">
+                        <div className="one_half last col-xl-6 col-md-6 col-sm-12">
                           <p className="bigger has-shuffle">
                             {data?.home_page_challenge_section_challenge}
                           </p>

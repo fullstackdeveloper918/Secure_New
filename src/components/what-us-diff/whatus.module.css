@@ -81,7 +81,25 @@
     color: #bbb;
     line-height: 1.7rem;
   }
-
+  .blacksec h2 {
+    font-size: 4vw;
+}
+.blacksec .sliderSec>div>div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cardtitile {
+  font-size: 1.3vw !important;
+  text-align: left;
+  line-height: 1.7vw !important;
+  font-weight:500 !important;
+}
+ .cardDecription {
+  font-size: 1.4vw;
+  font-weight: 400;
+}
   @media (max-width:1440px){
     .card {
       padding: 2rem 1rem;
@@ -116,6 +134,7 @@
     padding: 0px 15px;
   
 }
+
 .painTitle {
   font-size: 30px !important;
 }
