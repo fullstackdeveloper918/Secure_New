@@ -7,7 +7,7 @@ import ser_hero_shape from "@/assets/img/inner-service/hero/hero-shape-1.jpg";
 
 export default function ServiceHero({serviceBannerData}) {
   return (
-    <div className="sv-hero-area sv-hero-ptb">
+    <div className="sv-hero-area sv-hero-ptb bann-p-block">
       <div className="container container-1530">
         <div className="row">
           <div className="col-xl-10">

@@ -49,8 +49,8 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
               <div className="container container-1530">
                 <div className="row">
                   <div className="col-xl-12">
-                    <div className="tp-service-5-title-box md:mb-30 mb-90">
-                      <span className="ab-inner-subtitle mb-20">
+                    <div className="tp-service-5-title-box mb-10">
+                      <span className="ab-inner-subtitle mb-10">
                         <Leaf />
                         {serviceData?.data?.service_why_choose_section_heading} <span className="blueColor">{serviceData?.data?.service_why_choose_section_heading_second}</span>
                       </span>
@@ -70,7 +70,7 @@ const ServiceMain = ({serviceData,serviceBannerData}) => {
         
             <ServiceSix serviceData={serviceData}/>
    
-            <div className="tp-brand-4-area pt-120 pb-120">
+            <div className="tp-brand-4-area">
               <div className="container">
                 <div className="row gx-0">
                   <BrandItems serviceData={serviceData} />

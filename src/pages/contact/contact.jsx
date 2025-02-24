@@ -50,13 +50,13 @@ const ContactMain = ({contactData}) => {
           >
             <main>
               {/* hero area start */}
-              <div className="tm-hero-area tm-hero-ptb p-relative pt-40 xxl:pt-96">
+              <div className="tm-hero-area tm-hero-ptb p-relative bann-p-block ">
                 <div className="container">
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
                         <span className="tm-hero-subtitle">Secure 365</span>
-                        <h1 className="tm-hero-title-big tp-char-animation">
+                        <h1 className="tp-char-animation sv-hero-title">
                          {contactData?.reach_contact_section_heading}
                         </h1>
                         <p>

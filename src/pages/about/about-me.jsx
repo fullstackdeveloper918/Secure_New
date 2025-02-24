@@ -56,7 +56,7 @@ const AboutMeMain = () => {
 
             <AboutWork />
 
-            <div className="tp-brand-4-area pt-120 pb-120">
+            <div className="tp-brand-4-area">
               <div className="container">
                 <div className="row gx-0">
                   <BrandItems />

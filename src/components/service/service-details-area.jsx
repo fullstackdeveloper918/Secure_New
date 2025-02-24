@@ -10,7 +10,7 @@ import sv_3 from "@/assets/img/inner-service/sercive-details/sv-details-2.png";
 export default function ServiceDetailsArea({ serviceBannerData }) {
   console.log(serviceBannerData, "serviceBannerData");
   return (
-    <div className="service-details__area service-details__space pt-200">
+    <div className="service-details__area service-details__space bann-p-block">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -24,8 +24,8 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
             </div>
           </div>
           <div className="row">
-            <div className="offset-xl-4 col-xl-5">
-              <div className="service-details__banner-text md:mb-20 mb-8">
+            <div className=" col-xl-5">
+              <div className="service-details__banner-text mb-8">
                 <p className="mb-30 tp_title_anim">
                   Optimize your business’s operations
                   <br /> with managed server solutions and secure <br /> cloud
@@ -42,7 +42,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
       <div className="container-fluid">
         <div className="row">
           <div className="col-xl-12">
-            <div className="service-details__tab-wrapper text-center mb-120">
+            <div className="service-details__tab-wrapper text-center mb-50">
               <div className="service-details__tab-thumb">
                 <Image
                   data-speed="0.4"
@@ -59,7 +59,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
         <div className="row">
           <div className="col-xl-7 col-lg-7">
             <div className="service-details__left-wrap">
-              <div className="service-details__left-text pb-10">
+              <div className="service-details__left-text pb-6">
                 <h2 className="tp_title_anim">
                   Benefits of Choosing Secure365
                 </h2>
@@ -86,7 +86,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
               </div>
               <div className="service-details__sm-thumb-wrap md:mb-10 mb-4">
                 <div className="row">
-                  <div className="col-xl-6 col-lg-6 col-md-6 md:mb-20 mb-10">
+                  <div className="col-xl-6 col-lg-6 col-md-6">
                     <div className="service-details__sm-thumb">
                       <Image
                         src={sv_2}
@@ -95,7 +95,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                       />
                     </div>
                   </div>
-                  <div className="col-xl-6 col-lg-6 col-md-6 md:mb-20 mb-10">
+                  <div className="col-xl-6 col-lg-6 col-md-6">
                     <div className="service-details__sm-thumb">
                       <Image
                         src={sv_3}
@@ -139,7 +139,7 @@ export default function ServiceDetailsArea({ serviceBannerData }) {
                 <h2>
                   Why Choose Secure365 <br /> for Server & Cloud Management?
                 </h2>
-                <p className="md:mb-20 mb-10">
+                <p className="mb-10">
                   {serviceBannerData?.service_details_right_why_choose_section_heading_paragraph}
                 </p>
                 <Link className="tp-btn-white background-black" href="/contact">

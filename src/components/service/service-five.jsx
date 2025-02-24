@@ -7,7 +7,7 @@ export function ServiceItems({serviceData}) {
   
   return (
     <div className="row">
-      <div className="col-xxl-3"></div>
+      {/* <div className="col-xxl-3"></div> */}
       {serviceData && serviceData?.data?.service_why_choose_proactive_data?.map((item,index) => (
         <div key={index} className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
           <div className="tp-service-5-item tp_fade_bottom space-1">
@@ -34,7 +34,7 @@ export default function ServiceFive() {
       <div className="container container-1775">
         <div className="row">
           <div className="col-xl-12">
-            <div className="tp-service-5-title-box mb-90">
+            <div className="tp-service-5-title-box mb-50">
               <h4 className="tp-service-5-title p-relative tp_fade_right">
                 <span className="tp-service-5-subtitle tp_fade_left">
                   SERVICES

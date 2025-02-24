@@ -87,7 +87,7 @@ const service_data = [
 export default function ServiceThree({serviceBannerData}) {
   return (
     <div
-      className="tp-service-4-area lg:pt-120 pt-30 lg:pb-170 pb-20 fix"
+      className="tp-service-4-area pt-30 pb-10 fix"
       data-background="assets/img/home-04/brand/overly.png"
       style={{ backgroundImage: "url(/assets/img/home-04/brand/overly.png)" }}
     >
