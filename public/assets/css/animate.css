@@ -1572,9 +1572,13 @@ img.rightImage {
   font-weight: 400;
 }
 
-@media (min-width:1760){
+
+@media (min-width:1280px){
   .mainCoantinersec {
-    height: calc(200vh - 60vh);
+    height: calc(170vh - 0vh);
+  }
+  .aboutsec {
+    padding: 30px 0px 50px;
   }
 }
 @media (min-width:1472px){
@@ -1585,20 +1589,21 @@ img.rightImage {
     padding: 30px 0px 80px;
   }
 }
-@media (min-width:1280px){
+@media (min-width:1760px){
   .mainCoantinersec {
-    height: calc(170vh - 0vh);
-  }
-  .aboutsec {
-    padding: 30px 0px 50px;
+    height: calc(200vh - 60vh);
   }
 }
+
 @media (max-width:1440px){
 
   .bannerVideo .tp-hero-content p {
     font-size: 16px;
     max-width: 35rem;
     line-height: 28px;
+}
+.showcase-portfolio.expand-grid .clapat-item {
+  margin-top: 10px !important;
 }
 .tp-testimonial-item p {
   font-size: 24px;
