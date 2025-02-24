@@ -180,6 +180,19 @@
     }
 }
 .cn-contact{
+    &-h2{
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1;
+        color: var(--tp-common-white);
+        margin-bottom: 160px;
+        @media #{$xl}{
+            font-size: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 10px;
+        }
+    }
     &-info-bg{
         padding: 120px 150px;
         @media #{$xxl,$xl}{
@@ -234,7 +247,7 @@
             margin-bottom: 90px;
         }
         &-title{
-            font-size: 40px;
+            font-size: 34px;
             font-weight: 500;
             line-height: 1;
             color: var(--tp-common-white);

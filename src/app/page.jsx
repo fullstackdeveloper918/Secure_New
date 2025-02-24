@@ -437,7 +437,7 @@ export default function Home() {
 
                       {/* <!-- Row --> */}
                       <div
-                        className="content-row full text-align-center dark-section"
+                        className="content-row full text-align-center dark-section d-mb-none"
                         data-bgcolor="#ebebeb"
                       >
                         <div className="projects-list-wrapper invert-header-color">

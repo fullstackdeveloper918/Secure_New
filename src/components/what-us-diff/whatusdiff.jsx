@@ -74,7 +74,7 @@ function PainSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="absolute top-[576px] inset-0 flex flex-col items-center justify-center bg-black text-white md:p-10 blacksec p-2"
+          className="absolute top-[576px] inset-0 flex flex-col items-center justify-center bg-black text-white md:p-10 blacksec p-2 overflow-hidden"
         >
           <motion.h2
            

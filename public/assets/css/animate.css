@@ -1352,7 +1352,7 @@ span.textline-1 {
 .innerDivConatct {
   display: flex;
   gap: 30px;
-  align-items: flex-start;
+  align-items: center;
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
 }
@@ -1403,7 +1403,6 @@ span.textline-1 {
   padding-left: 0px !important;
 }
 .cn-contact-left-title {
-  /* margin-bottom: 50px !important; */
   margin-bottom: 20px !important;
 }
 .contactInfosec {
@@ -1483,7 +1482,9 @@ span.textline-1 {
   padding-inline: 50px;
   padding-block: 30px;
   border-radius: 10px;
-  background-color: #fff
+  background-color: #fff;
+  border: 1px solid #ddd;
+    box-shadow: 1px 1px 4px -3px rgba(0, 0, 0, 0.75);
 }
 .cn-contact-info-item{
   background-color: #f5f5f5;
@@ -1894,9 +1895,7 @@ header #header-container {
 .tp-testimonial-item span {
   color: #111 !important;
 }
-.cn-contact-2-content{
-  margin-top: 0 !important;
-}
+
 .cn-contact-2-info-area{
   padding-block: 40px !important;
 }

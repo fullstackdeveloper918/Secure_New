@@ -45,11 +45,11 @@ const location_data = [
 ];
 const ContactLocationTwo = ({contactData}) => {
   return (
-    <div className="cn-contact-2-info-area pb-90 pt-90">
+    <div className="cn-contact-2-info-area pb-50 pt-90">
       <div className="container container-1530">
         <div className="row">
           {contactData && contactData?.contact_secure_loop.map((item,index) => (
-            <div key={index} className="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div key={index} className="col-xl-4 col-lg-4 col-md-6 contact-col">
               <div className={`cn-contact-2-content ${index+1  == 2 ? "mt-20" : ""} text-center`}>
               <div className="cn-contact-2-thumb d-flex justify-content-center">
                <Image

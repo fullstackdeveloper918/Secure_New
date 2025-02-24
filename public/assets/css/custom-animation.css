@@ -193,9 +193,24 @@
 	margin-bottom: 0;
 }
 
+.cn-contact-2-content{
+	padding: 40px 50px !important;
+	margin-top: 0 !important;
+	box-shadow: 1px 1px 11px -3px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 1px 1px 11px -3px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 11px -3px rgba(0, 0, 0, 0.75);
+}
+.cn-contact-right h2 {
+	font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.sv-hero-title{
 		font-size: 70px !important;
+	}
+	.cn-contact-right h2 {
+		font-size: 30px;
 	}
 }
 
@@ -214,6 +229,7 @@
 	}
 	
 }
+
 @media (max-width:1024px) and (min-width:768px){
 	#about-info .md\:flex.gap-4 {
 		display: grid;
@@ -249,13 +265,32 @@
 	  }
 	  .ab-funfact-item p {
 		font-size: 12px !important;
+	 }
+		.ab-brand-area .ab-brand-title-box.mb-100, .ab-brand-area .ab-brand-wrapper.mb-20 {
+		margin-bottom: 30px;
+		}
+		.ab-award-style .col-xl-12.col-lg-7.row.pt-20.grid.grid-cols-2.gap-5 {
+		grid-template-columns: 1fr;
+		}
+}
+@media (max-width: 991px){
+	.contact-col{
+		margin-bottom: 20px;
 	}
-.ab-brand-area .ab-brand-title-box.mb-100, .ab-brand-area .ab-brand-wrapper.mb-20 {
-	margin-bottom: 30px;
-  }
-  .ab-award-style .col-xl-12.col-lg-7.row.pt-20.grid.grid-cols-2.gap-5 {
-	grid-template-columns: 1fr;
-  }
+	.service-details__right-wrap{
+		padding: 10px 15px !important;
+	}
+	.service-details__area{
+		padding-bottom: 0!important;
+	}
+	.cn-contact-left-wrap, 
+	.cn-contact-right-wrap{
+		padding-inline: 20px;
+		margin-top: 20px;
+	}
+	.cn-contactform-area {
+		padding-bottom: 50px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.ab-about-category-list ul li{
@@ -280,8 +315,34 @@
 	.tp-about-3-area .tp-about-3-content {
 		padding-top: 20px !important;
 	}
-	
-
+	.d-mb-none{
+		display: none;
+	}
+	.showcasePportfolio h2.main_heading, 
+	.showcasePportfolio .main_heading.h2{
+		margin-block: 15px; 
+	}
+	.cn-contact-left-info {
+		padding-top: 10px;
+	}
+	.cn-contact-left {
+		gap: 5px !important;
+	}
+	.cn-contact-left-info{
+		padding-top: 20px !important;
+	}
+	.cn-contactform-area {
+		padding-bottom: 30px !important;
+	}
+	.innerDivConatct span {
+		width: 39px;
+		height: 35px;
+		padding: 7px;
+ }
+ .cn-contact-left-title,
+ .cn-contact-right h2{
+	font-size: 30px;
+ }
 }
 @-webkit-keyframes jump {
 	0% {
