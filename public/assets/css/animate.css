@@ -1562,7 +1562,37 @@ img.rightImage {
   line-height: 30px;
   font-size: 14px !important;
 }
+.cardtitile {
+  font-size: 26px;
+  text-align: left;
+  line-height: 40px;
+  font-weight: 500 !important;
+}
+ .cardDecription {
+  font-weight: 400;
+}
 
+@media (min-width:1760){
+  .mainCoantinersec {
+    height: calc(200vh - 60vh);
+  }
+}
+@media (min-width:1472px){
+  .mainCoantinersec {
+    height: calc(200vh - 20vh);
+  }
+  .aboutsec {
+    padding: 30px 0px 80px;
+  }
+}
+@media (min-width:1280px){
+  .mainCoantinersec {
+    height: calc(170vh - 0vh);
+  }
+  .aboutsec {
+    padding: 30px 0px 50px;
+  }
+}
 @media (max-width:1440px){
 
   .bannerVideo .tp-hero-content p {
@@ -1631,6 +1661,31 @@ footer .tp-footer-big-title {
 }
 
 @media (max-width:1280px){
+  .mainCoantinersec {
+    height: 200vh;
+  }
+  .slidecol {
+    width: 100% !important;
+    max-width: 300px;
+    padding: 20px !important;
+    height: auto !important;
+    margin-left: 20px !important;
+  }
+  .slidecol img {
+    max-width: 40px;
+    height: 40px;
+  }
+  .cardtitile {
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+    font-weight: 500 !important;
+  }
+  .cardDecription {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
   .bannerVideo .container {
     max-width: 98rem;
     padding: 0px 30px;
@@ -1775,6 +1830,24 @@ header .clapat-nav-wrapper.open {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 }
+.mainCoantinersec {
+	height: 240vh;
+}
+.slidecol {
+  width: 100% !important;
+  max-width: 200px;
+  padding: 20px 15px !important;
+}
+.slidecol img {
+  max-width: 40px;
+  height: 40px;
+}
+.cardtitile {
+  font-size: 17px;
+  text-align: left;
+  line-height: 25px;
+  font-weight: 500 !important;
+}
 .contactInfosec {
   grid-template-columns: repeat(2, 1fr);
   display: grid;
@@ -1844,10 +1917,24 @@ header #header-container {
   margin: 30px 0px 0px;
 }
 }
+@media (max-width:840px){
+  .mainCoantinersec {
+    height: 280vh;
+  }
+}
 @media (max-width:767px){
   .bannerVideo .tp-hero-title .boldHeading {
     font-size: 2.5rem;
     line-height: 2.5rem;
+}
+.bannersection .tp-hero-content.p-relative.Zindex100 {
+	margin-bottom: 30px;
+}
+.bannerVideo .tp-hero-content p {
+	margin-top: 20px;
+}
+.mainCoantinersec {
+  height: 130vh;
 }
 .videoSec {
   margin: 0px 0px 0px;
