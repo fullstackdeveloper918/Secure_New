@@ -65,7 +65,7 @@ function PainSection() {
             style={{ fontSize, scale }}
             className="text-center font-bold px-4 transition-colors duration-300 whitespace-nowrap"
           >
-            We Understand Your Pain
+             What Makes Us Different?
           </motion.h2>
         </motion.section>
       </div>

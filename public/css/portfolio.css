@@ -379,7 +379,7 @@
 	max-width: calc(33.3333% - 80px);
 	flex: 1 1 33.33%;
 	height:32vw;
-	margin:60px 40px 120px 40px;
+	margin:30px 40px 120px 40px;
 	box-sizing:border-box;
 	padding:0px;		
 	z-index:10;

@@ -21,6 +21,8 @@ import ProjectFive from "@/components/project/project-five";
 import ProjectSix from "@/components/project/project-six";
 // import bannerDiv from "../../../public/assets/img/inner-faq/faq/InnerDiv.png";
 import bannerDiv from "../../public/assets/img/inner-faq/faq/InnerDiv.png";
+import SecureSection from "@/components/whysecure/SecureSection";
+
 
 
 
@@ -307,134 +309,7 @@ export default function Home() {
 
                       <PainSection />
 
-                      {/* <div
-                        className="content-row full text-align-center dark-section"
-                        data-bgcolor="#ebebeb"
-                      >
-                        <div className="projects-list-wrapper invert-header-color">
-                          <ul className="projects-list-captions">
-                            {data &&
-                              data?.home_page_projects_list_captions_data?.map(
-                                (item, index) => (
-                                  <React.Fragment key={index}>
-                                    <li data-centerline="OPEN">
-                                      <a
-                                        className="list-link"
-                                        data-type="page-transition"
-                                        href="project05.html"
-                                      ></a>
-                                      <span>
-                                        {item?.projects_list_captions_title}
-                                      </span>
-                                    </li>
-                                  </React.Fragment>
-                                )
-                              )}
-                          </ul>
-
-                          <ul className="projects-list-images">
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="/images/011hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                  <div className="hero-video-wrapper"></div>
-                                </div>
-                                <img
-                                  src="images/011hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/012hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                </div>
-                                <img
-                                  src="images/012hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/013hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                </div>
-                                <img
-                                  src="images/013hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/014hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                </div>
-                                <img
-                                  src="images/014hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/015hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                </div>
-                                <img
-                                  src="images/015hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="trigger-item">
-                              <div className="img-mask">
-                                <div className="section-image trigger-item-link">
-                                  <img
-                                    src="images/016hero.jpg"
-                                    className="item-image grid__item-img"
-                                    alt=""
-                                  />
-                                </div>
-                                <img
-                                  src="images/016hero.jpg"
-                                  className="grid__item-img grid__item-img--large"
-                                  alt=""
-                                />
-                              </div>
-                            </li>
-                            <li className="pixels-cover"></li>
-                          </ul>
-                        </div>
-                      </div> */}
-
+                      
                       {/* <!-- Row --> */}
                       <div
                         className="content-row full text-align-center dark-section d-mb-none"
@@ -620,7 +495,7 @@ export default function Home() {
                       </div>
                       {/* <!--/Row --> */}
 
-                      {/* projectsec */}
+                
                 
                     </div>
                   </div>
@@ -728,9 +603,16 @@ export default function Home() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
+
+            
+            
             <div className="awardsSec">
               <AwardOne data={data} />
             </div>
+
+             {/* securesec */}
+             <SecureSection />
+             {/* securesec end*/}
 
                   {/* <ProjectFive /> */}
                   <ProjectSix />
