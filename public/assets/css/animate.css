@@ -1582,7 +1582,9 @@ img.rightImage {
  .cardDecription {
   font-weight: 400;
 }
-
+.awardsSec .tp-award-area {
+	padding-bottom: 80px;
+}
 
 @media (min-width:1280px){
   .mainCoantinersec {
@@ -1819,6 +1821,7 @@ header #header-container {
   nav.clapat-nav-wrapper ul li a span {
     color: #fff;
 }
+
 .tp-team-area .swiper-wrapper .swiper-slide, .tp-team-area .swiper-wrapper .swiper-slide > div, .tp-team-area .swiper-wrapper .swiper-slide .tp-team-area .tp-hover-btn-item, .tp-team-area .swiper-slide .tp-hover-btn-item img {
   height: 370px !important;
 }
@@ -1884,6 +1887,9 @@ header .clapat-nav-wrapper.open {
 }
 #clapat-logo img {
   max-width: 160px !important;
+}
+.awardsSec .tp-award-area {
+	padding-bottom: 50px;
 }
 header #header-container {
   padding: 10px 20px;
@@ -2055,6 +2061,10 @@ header #header-container {
   .contactInfosec {
     grid-template-columns:1fr;
   }
+  .Btnthree.btnWrapper {
+    font-size: 16px;
+    margin: 0px 0px 40px;
+  }
 }
 
 .bg-liner, .bg-liner #main-page-content {
@@ -2086,6 +2096,7 @@ p.bigger.has-opacity{
   backdrop-filter: blur(14px);
   top: 60px;
 }
+
 .header-link:hover .sub-menu{
   display: block;
 }

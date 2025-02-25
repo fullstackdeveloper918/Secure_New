@@ -98,7 +98,7 @@ const AnimationHeader = async () => {
                                 </React.Fragment>
                               ))
                             }
-                            </div>
+</div>
                             }
                           </li>
                         </React.Fragment>
