@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 // import FaqMain from "@/pages/faq/faq-main";
-import WhyChooseUs from "@/pages/whychooseus/whychooseus";
+import WhyChooseUs from "@/pages/WhyChooseUs/WhyChooseUs";
 import { config } from "../../../config";
 
 export const metadata = {
