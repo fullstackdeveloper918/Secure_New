@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
 
 // images
@@ -57,7 +58,11 @@ export default function BrandFive({}) {
                 connection. That is why some of the biggest companies stayed with
                 us for years.
               </p>
-              <span>More about us</span>
+              <div className="btn_sec flex gap-3 flex-wrap text-align-center ">
+              <Link href="/contact-us" className="tp-btn-white-sm border-style">
+                Get started
+              </Link>
+            </div>
             </div>
           </div>
         </div>

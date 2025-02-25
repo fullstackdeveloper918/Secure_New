@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { BallRound } from "../svg";
 
 export default function AboutFour({aboutResponse}) {
@@ -23,6 +24,7 @@ export default function AboutFour({aboutResponse}) {
                 </span>
                 {aboutResponse?.data?.about_our_servics_heading_fourth}</h2>
             </div>
+           
           </div>
         </div>
       </div>
@@ -50,6 +52,12 @@ export default function AboutFour({aboutResponse}) {
               {aboutResponse?.data?.about_our_service_cybersecurity_paragraph_second}
               </p>
             </div>
+          </div>
+
+          <div className="btn_sec flex gap-3 flex-wrap text-align-center justify-content-center">
+          <Link href="/contact-us" className="tp-btn-white-sm border-style">
+            Get started
+          </Link>
           </div>
         </div>
       </div>

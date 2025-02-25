@@ -123,9 +123,9 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <a className="mb-10" href="#">Linkedin</a>
-                <a className="mb-10" href="#">Twitter</a>
-                <a className="mb-10" href="#">Instagram</a>
+                <a className="foot-link" href="#">Linkedin</a>
+                <a className="foot-link" href="#">Twitter</a>
+                <a className="foot-link" href="#">Instagram</a>
               </div>
             </div>
           </div>
