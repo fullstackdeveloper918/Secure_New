@@ -22,3 +22,4 @@ const FaqPage = async () => {
 };
 
 export default FaqPage;
+// test
