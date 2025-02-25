@@ -27,20 +27,20 @@ const service_data = [
 export default function ServiceFour({whyChooseData}) {
   
   return (
-    <div className="tp-service-3-area md:py-20 py-10 tm-herointro">
+    <div className="tp-service-3-area  py-10 pb-14 tm-herointro">
       <div className="container">
         <div className="row">
           <div className="col-xl-9">
-            <div className="tp-service-3-title-box mb-20 p-relative">
-              <div className="tp-service-3-icon">
+            <div className="tp-service-3-title-box mb-10 p-relative">
+              {/* <div className="tp-service-3-icon">
                 <Image 
                 src={icon} 
                 alt="icon"
                 width={100}
                 height={100}
                 />
-              </div>
-              <h2 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
+              </div> */}
+              <h2 className="tp_text_invert tp_fade_bottom">
             {whyChooseData?.why_choose_core_strength_main_heading} {whyChooseData?.why_choose_core_strength_main_heading_second}
               </h2>
             </div>
@@ -49,7 +49,7 @@ export default function ServiceFour({whyChooseData}) {
 
         {whyChooseData && whyChooseData?.why_choose_core_strengths?.map((item) => (
           <div key={item.id} className="tp-service-3-wrap tp_fade_bottom">
-            <div className="row align-items-start">
+            <div className="row align-items-center">
               <div className="col-xl-3 col-lg-3">
                 <div className="tp-service-3-title-box">
                   <h3 className="tp-service-3-title">
@@ -68,7 +68,7 @@ export default function ServiceFour({whyChooseData}) {
                 </div>
               </div>
               <div className="col-xl-2 col-lg-2">
-                <div className="tp-service-3-btn-box text-start text-md-end">
+                <div className="tp-service-3-btn-box text-start text-lg-end">
                   <Link
                     className="tp-btn-zikzak-sm p-relative"
                     href="/service"

@@ -71,7 +71,6 @@ const AnimationHeader = async () => {
                               href={`/${item?.slug}`}
                             >
                               <div className="before-span">
-
                                 <span data-hover="About Us" data-text="About Us">{item?.title}</span>
                               </div>
                             </Link>
