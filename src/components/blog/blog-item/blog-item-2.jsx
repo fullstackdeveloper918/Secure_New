@@ -1,16 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { IBlogDT } from "@/types/blog-d-t";
+
 import Link from "next/link";
-interface NewsProps {
-  id: number;
-  title: string;
-  date: string;
-  content: string;
-  external_link: string;
-  featured_image: string;
-}
-export default function BlogItemTwo({ item }: { item: NewsProps }) {
+
+export default function BlogItemTwo({ item }) {
   console.log("iblogDt", item);
   return (
     <div className="tp-blog-item tp_fade_bottom w-full">
