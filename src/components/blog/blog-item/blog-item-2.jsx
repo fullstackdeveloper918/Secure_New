@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function BlogItemTwo({ item }) {
-  console.log("iblogDt", item);
+  
   return (
     <div className="tp-blog-item tp_fade_bottom w-full">
       <Link href={item.external_link}>

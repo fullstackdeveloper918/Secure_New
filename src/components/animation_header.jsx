@@ -64,16 +64,17 @@ const AnimationHeader = async () => {
                     {
                       headerData && headerData?.menu_items?.map((item, index) => (
                         <React.Fragment key={index}>
-                          <li className="menu-timeline link header-link">
-                            <Link
+                        <Link
                               className="ajax-link"
-                              data-type="page-transition"
                               href={`/${item?.slug}`}
+                              
                             >
+                          <li className="menu-timeline link header-link">
+                            
                               <div className="before-span">
                                 <span data-hover="About Us" data-text="About Us">{item?.title}</span>
                               </div>
-                            </Link>
+                          
                             {
                               item?.children.length > 0 
                               &&
@@ -83,17 +84,7 @@ const AnimationHeader = async () => {
                               item?.children?.map((child, childIndex) => (
                                 <React.Fragment key={childIndex}>
                                   
-                                  {/* <ul>
-                                    <li>
-                                    <Link
-                                    className="ajax-link"
-                                    href={`/service/${child?.slug}`}
-                                    data-type="page-transition"
-                                    >
-                                    {child?.title}
-                                    </Link>
-                                    </li>
-                                    </ul> */}
+                                 
                                   <Link href={`/service/${child?.slug}`}>{child?.title}</Link>
                                 </React.Fragment>
                               ))
@@ -101,6 +92,7 @@ const AnimationHeader = async () => {
 </div>
                             }
                           </li>
+                          </Link>
                         </React.Fragment>
                       ))
                     }
