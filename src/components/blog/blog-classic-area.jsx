@@ -9,11 +9,11 @@ import BlogSidebar from "./blog-sidebar";
 import { blog_classic } from "@/data/blog-data";
 import { Quote, QuoteTwo } from "../svg";
 import usePagination from "@/hooks/use-pagination";
-import { IBlogDT } from "@/types/blog-d-t";
+// import { IBlogDT } from "@/types/blog-d-t";
 // import PaginationCom from "../ui/pagination";
 
 // slider setting
-const slider_setting: SwiperOptions = {
+const slider_setting = {
   slidesPerView: 1,
   loop: true,
   autoplay: false,
@@ -30,17 +30,13 @@ const slider_setting: SwiperOptions = {
   },
 };
 
-// prop type
-type IProps = {
-  setIsVideoOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  setVideoId: React.Dispatch<React.SetStateAction<string>>;
-};
 
-export default function BlogClassicArea({setIsVideoOpen,setVideoId}:IProps) {
+
+export default function BlogClassicArea({setIsVideoOpen,setVideoId}) {
   const blog_items = [...blog_classic.filter((b) => !b.blogHeroSlider)];
-  const { currentItems, handlePageClick, pageCount } = usePagination<IBlogDT>(blog_items,4);
+  const { currentItems, handlePageClick, pageCount } = usePagination(blog_items,4);
 
-  function handleVideoModal(id: string) {
+  function handleVideoModal(id) {
     setIsVideoOpen(true);
     setVideoId(id);
   }
@@ -58,13 +54,13 @@ export default function BlogClassicArea({setIsVideoOpen,setVideoId}:IProps) {
                   {!item.blogQuote && !item.blogQuoteTwo && !item.imgSlider && (
                     <div className="postbox__thumb">
                       <Link href={`/blog-details/${item.id}`}>
-                        <Image src={item.img!} alt="blog-img" />
+                        <Image src={item.img} alt="blog-img" />
                       </Link>
                       {item.video && (
                         <div className="postbox__play-btn">
                           <a
                             className="popup-video pointer"
-                            onClick={() => handleVideoModal(item.videoId!)}
+                            onClick={() => handleVideoModal(item.videoId)}
                           >
                             <i className="fa-sharp fa-solid fa-play"></i>
                           </a>
