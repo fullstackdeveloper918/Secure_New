@@ -270,17 +270,17 @@ export default function Home() {
                       > 
                         {/* <hr /> */}
 
-                        <div className="one_half col-xl-6 col-md-6 col-sm-12">
-                        <Image
+                        <div className="one_half">
+                        {/* <Image
                         className="rightImage"
                         src={bannerDiv}
                         alt="shape"
                         width={500}
                         height={300}
-                      />
+                      /> */}
                         </div>
 
-                        <div className="one_half last col-xl-6 col-md-6 col-sm-12">
+                        <div className="one_half last">
                           <p className="bigger has-shuffle">
                             {data?.home_page_challenge_section_challenge}
                           </p>
