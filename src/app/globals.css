@@ -3689,9 +3689,20 @@ p .link-text {
   .light-section-wrapper, .dark-section-wrapper {
     width: 100% !important;
   }
+
 }
 
 @media only screen and (max-width: 767px) {
+  .aboutsec h2, .thirdweb h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.thirdwebContent {
+  flex-direction: column;
+}
+.mainheding {
+  font-size: 2rem;
+}
 
 figcaption {
   background-color: rgba(0,0,0,0.3);

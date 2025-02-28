@@ -1,6 +1,8 @@
+"use-client"
+
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-// import { Shield, Layers, Users, Lock } from "lucide-react";
+import { Shield, Layers, Users, Lock } from "lucide-react";
 import whatusImage3 from "../../../public/images/1.svg"
 import Image from "next/image";
 import whatusImage4 from "../../../public/images/4.svg"
@@ -9,24 +11,31 @@ import whatusImage5 from "../../../public/images/5.svg"
 function PainSection() {
   const firstSectionRef = useRef(null);
   const [showSecondSection, setShowSecondSection] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
   const { scrollYProgress: firstSectionProgress } = useScroll({
     target: firstSectionRef,
     offset: ["start end", "end start"],
   });
+
   const smoothProgress = useSpring(firstSectionProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
-  const gapSpacing = useTransform(smoothProgress, [0, 0.8], [800, 80]);
-  const fontSize = useTransform(smoothProgress, [0.4,0.5, 1], ["4vw","400vw", "2000vw"]);
+
+  const gapSpacing = useTransform(smoothProgress, [0, 1], [250, 20]);
+
+  const fontSize = useTransform(smoothProgress, [0.3,0.7], ["3vw","1000vw"]);
   const scale = useTransform(smoothProgress, [0.2, 0.5], [1, 1.8]);
   const backgroundColor = useTransform(smoothProgress, [0.4, 0.5], ["#FFFFFF", "#000000"]);
+
   useEffect(() => {
     return smoothProgress.on("change", (value) => {
       setShowSecondSection(value >= 0.5);
     });
   }, [smoothProgress]);
+
   const cards = [
     {
       icon: whatusImage3,
@@ -50,10 +59,18 @@ function PainSection() {
     },
   ];
 
-
-  // console.log(cards, 'checkcards')
-  // :white_check_mark: Duplicate cards for infinite loop
+  // ✅ Duplicate cards for infinite loop
   const duplicatedCards = [...cards, ...cards];
+
+  
+  useEffect(() => {
+    return gapSpacing.on("change", (value) => {
+      setIsFixed(value >= 120); // ✅ Convert MotionValue to state
+    });
+  }, [gapSpacing]);
+
+  console.log("fixed",isFixed)
+
   return (
     <div className="relative">
       <div ref={firstSectionRef} className="mainCoantinersec">
@@ -65,10 +82,11 @@ function PainSection() {
             style={{ fontSize, scale }}
             className="text-center font-bold px-4 transition-colors duration-300 whitespace-nowrap"
           >
-             we understand your pain
+            We Understand Your Pain
           </motion.h2>
         </motion.section>
       </div>
+
       {showSecondSection && (
         <motion.section
           initial={{ opacity: 0 }}
@@ -117,4 +135,5 @@ function PainSection() {
     </div>
   );
 }
+
 export default PainSection;
