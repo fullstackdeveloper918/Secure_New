@@ -250,7 +250,7 @@ export default function Home() {
                                     data-bgcolor="#000"
                                   >
                                     <div
-                                      class="hidden-image"
+                                      className="hidden-image"
                                       style={{
                                         backgroundImage: `url(${item.we_empower_businesses_image})`,
                                         backgroundColor: "rgb(0, 0, 0)",
