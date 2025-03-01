@@ -7,26 +7,26 @@ import Image from "next/image"
 export default function LoadingPage() {
   const [progress, setProgress] = useState(0)
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setProgress(100)
-  //   }, 3000)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setProgress(100)
+    }, 3000)
   
-  //   const interval = setInterval(() => {
-  //     setProgress((prev) => {
-  //       if (prev >= 100) {
-  //         clearInterval(interval)
-  //         return 100
-  //       }
-  //       return prev + 0.5 // Smaller increments for smooth animation
-  //     })
-  //   }, 30)
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(interval)
+          return 100
+        }
+        return prev + 0.5 // Smaller increments for smooth animation
+      })
+    }, 30)
   
-  //   return () => {
-  //     clearTimeout(timer)
-  //     clearInterval(interval)
-  //   }
-  // }, [])
+    return () => {
+      clearTimeout(timer)
+      clearInterval(interval)
+    }
+  }, [])
 
   return (
 

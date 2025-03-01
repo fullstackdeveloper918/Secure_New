@@ -11,11 +11,11 @@ import AnimationHeader from "@/components/animation_header";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
-//   useEffect(() => {
-//     setTimeout(() => {
-//       setIsLoading(false);
-//     }, 5000); 
-//   }, []);  
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); 
+  }, []);  
 
   if (isLoading) {
     return <LoadingPage />;
