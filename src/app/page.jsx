@@ -22,6 +22,7 @@ import ProjectSix from "@/components/project/project-six";
 // import bannerDiv from "../../../public/assets/img/inner-faq/faq/InnerDiv.png";
 import bannerDiv from "../../public/assets/img/inner-faq/faq/InnerDiv.png";
 import SecureSection from "@/components/whysecure/SecureSection";
+import HeroBannerAi from "@/components/hero-banner/hero-banner-ai";
 
 
 
@@ -86,7 +87,7 @@ export default function Home() {
 
   return (
     <>
-      <PreLoader />
+      {/* <PreLoader /> */}
 
       <div className="cd-index cd-main-content homepage">
         <div
@@ -97,7 +98,8 @@ export default function Home() {
           {/* <AnimationHeader /> */}
           <div id="content-scroll">
             <div id="main">
-              <HeroSection data={data?.featured_section_heading} />
+              {/* <HeroSection data={data?.featured_section_heading} /> */}
+              <HeroBannerAi />
 
               <BrandOne />
 
