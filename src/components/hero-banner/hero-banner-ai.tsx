@@ -20,9 +20,11 @@ const HeroBannerAi = () => {
   // nothing dvvdssv jhbsdcdbsbs
 
   return (
-    <div className="bannersection">
+    <div className="bannersection" id="hero">
+      <div id="hero-styles">
       <div
-        className="tp-hero-area main-slider banner-ai h-screen "
+        className="tp-hero-area main-slider banner-ai "
+        
         style={{
         //   background: "url(../assets/img/home-01/hero/zipi-bg.jpg)",
         }}
@@ -97,6 +99,7 @@ const HeroBannerAi = () => {
       <img src="/assets/img/home-01/hero/center-top.webp" className="hero_parallax layer07"></img>
       </div>
       <img src="/assets/img/home-01/hero/spaceship-foreground.svg" className="curve-overlay"></img>
+    </div>
     </div>
     </div>
     </div>

@@ -308,10 +308,14 @@
 .bannersection{
 	overflow: hidden;
 }
+.banner-ai .container{
+	z-index: 999;
+}
 .banner-ai{
   overflow: hidden;
   background-color: #0f021b;
-  padding-block: 30px
+  padding-block: 30px;
+  height: 120vh;
 }
 .banner-ai .space-title{
   font-size: 70px !important;
@@ -323,25 +327,27 @@
   margin-bottom: 15px;
 }
 .banner-ai h2 {
-  color: #fff !important;
-  font-size: 20px;
-	line-height: 1;
-  margin-bottom: 0;
-	max-width: 58%;
-  width: 100%;
-  margin-inline: auto;
+    color: #fff !important;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 0;
+    max-width: 58%;
+    width: 100%;
+    margin-inline: auto;
+    line-height: 28px;
 }
 .banner-ai .space-content {
   color:#fff !important;
   font-size: 18px !important;
 }
 .banner-ai .btn{
-  background-color: transparent;
-  font-size: 16px;
-  border-radius: 20px;
-  padding: 10px 30px;
-  border: 2px solid #fff;
-  color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #f5f5f5;
+    color: #fff;
+    border-radius: 30px;
 }
 .banner-ai .btn:hover{
   background-color: #fff;
@@ -475,6 +481,12 @@
 @media screen and (max-width: 1299px) { 
 	.ab-about-category-list ul li {
 		width: 50% !important;
+	}
+	.banner-data {
+		padding-top: 40px;
+	}
+	.banner-ai .space-title {
+		font-size: 50px !important;
 	}
 	.tp-about-3-area .tp-about-3-content {
 		padding-right: 0px;

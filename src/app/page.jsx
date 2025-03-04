@@ -27,6 +27,7 @@ import HeroBannerAi from "@/components/hero-banner/hero-banner-ai";
 
 
 
+
 const businessesData = [
   {
     text: "We help businesses",
@@ -87,7 +88,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <PreLoader /> */}
+      <PreLoader />
 
       <div className="cd-index cd-main-content homepage">
         <div
@@ -101,7 +102,7 @@ export default function Home() {
               {/* <HeroSection data={data?.featured_section_heading} /> */}
               <HeroBannerAi />
 
-              <BrandOne />
+              {/* <BrandOne /> */}
 
               <div id="main-content">
                 <div id="main-page-content">
@@ -315,7 +316,7 @@ export default function Home() {
                       {/* <!-- Row --> */}
                       <div
                         className="content-row full text-align-center dark-section d-mb-none"
-                        data-bgcolor="#ebebeb"
+                        data-bgcolor="#EBEBEB"
                       >
                         <div className="projects-list-wrapper invert-header-color">
                           <ul className="projects-list-captions">
@@ -368,7 +369,7 @@ export default function Home() {
                               <span>SEO & Marketing</span>
                             </li>
                           </ul>
-
+                          
                           <ul className="projects-list-images">
                             <li className="trigger-item">
                               <div className="img-mask">
