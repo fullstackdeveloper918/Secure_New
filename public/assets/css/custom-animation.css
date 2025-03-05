@@ -315,7 +315,7 @@
   overflow: hidden;
   background-color: #0f021b;
   padding-block: 30px;
-  height: 120vh;
+  height: 120vh !important;
 }
 .banner-ai .space-title{
   font-size: 70px !important;
@@ -357,6 +357,7 @@
 .banner-ai p{
   color: #fff;
 }
+
 .bann-ai{
 	position: absolute;
 	bottom: 0;
@@ -406,6 +407,7 @@
 .layer07{
 	transform: translate3d(0.299952vw, 0vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 	z-index: 5;
+	bottom: -66px;
 }
 .space-title b{
 	font-family: '__Onest_492953' !important;
@@ -417,8 +419,19 @@
 }
 .curve-overlay{
 	position: absolute;
-	bottom: -85px;
+	bottom: -45px;
 	z-index: 99;
+}
+
+.buss-sec {
+	background: #0F021B;
+	padding-block: 80px;
+}
+.buss-sec h2{
+	color: #fff;
+}
+.hidden-image{
+	background: #0F021B;
 }
 
 /* Contact page */
@@ -482,8 +495,8 @@
 	.ab-about-category-list ul li {
 		width: 50% !important;
 	}
-	.banner-data {
-		padding-top: 40px;
+	.banner-ai{
+		height: 100vh;
 	}
 	.banner-ai .space-title {
 		font-size: 50px !important;
@@ -516,6 +529,9 @@
 	.cn-contactform-area {
 		padding-top: 40px !important;
 		padding-bottom: 40px !important;
+	}
+	.curve-overlay{
+		bottom: -10px;
 	}
 }
 
@@ -560,6 +576,9 @@
 		}
 		.ab-award-style .col-xl-12.col-lg-7.row.pt-20.grid.grid-cols-2.gap-5 {
 		grid-template-columns: 1fr;
+		}
+		.banner-ai{
+			height: 80vh;
 		}
 	
 }
@@ -627,6 +646,7 @@
 		gap: 10px;
 		text-align: center;
 	}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){

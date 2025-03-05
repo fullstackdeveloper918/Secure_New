@@ -8,6 +8,7 @@ import TeamOne from "@/components/team/team-one";
 import TestimonialOne from "@/components/testimonial/testimonial-one";
 import BlogOne from "@/components/blog/blog-one";
 import FooterFour from "@/layouts/footers/footer-four";
+import RealEstateSection from "@/components/about/about-six";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -99,145 +100,17 @@ export default function Home() {
           {/* <AnimationHeader /> */}
           <div id="content-scroll">
             <div id="main">
-              <HeroSection data={data?.featured_section_heading} />
-              {/* <HeroBannerAi /> */}
+              {/* <HeroSection data={data?.featured_section_heading} /> */}
+              <HeroBannerAi />
+              <RealEstateSection />
 
-              <BrandOne />
+              {/* <BrandOne /> */}
 
               <div id="main-content">
                 <div id="main-page-content">
                   <div id="itemsWrapperLinks">
                     <div id="itemsWrapper" className="webgl-fitthumbs fx-one relative">
-                      {/* <div className="showcase-portfolio expand-grid filp-grid">
-                        <div className="clapat-item not-expanded">
-                          <div
-                            className="slide-inner trigger-item"
-                           
-                          >
-                            <div className="img-mask pixels-cover">
-                              <Link
-                                className="slide-link"
-                                data-type="page-transition"
-                                href="/project"
-                              ></Link>
-                              <div className="section-image trigger-item-link">
-                                <Image
-                                  src="/images/01hero1.jpg"
-                                  className="item-image grid__item-img"
-                                  alt="hero-1"
-                                  width={214}
-                                  height={345}
-                                />
-                              </div>
-                              <Image
-                                src="/images/01hero1.jpg"
-                                className="grid__item-img grid__item-img--large"
-                                alt="01hero01"
-                                width={1000}
-                                height={1000}
-                              />
-                            </div>
-                            <div className="slide-caption trigger-item-link-secondary">
-                              <div className="slide-title">
-                                <span>Esakle</span>
-                              </div>
-                              <div className="slide-date">
-                                <span>2024</span>
-                              </div>
-                              <div className="slide-cat">
-                                <span> The Sport Wear </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="clapat-item expanded">
-                          <div
-                            className="slide-inner trigger-item"
-                           
-                          >
-                            <div className="img-mask pixels-cover">
-                              <Link
-                                className="slide-link"
-                                data-type="page-transition"
-                                href="/project"
-                              ></Link>
-                              <div className="section-image  trigger-item-link">
-                                <div className="video_hoverlay">
-                                  <h4>See Our Work Showcase</h4>
-                                </div>
-                                <video
-                                  className="play-video"
-                                  loop={true}
-                                  muted={true}
-                                  autoPlay={true}
-                                  playsInline={true}
-                                >
-                                  <source
-                                    src="images/Untitled design.mp4"
-                                    type="video/mp4"
-                                  />
-                                </video>
-                              </div>
-                             
-                            </div>
-                            <div className="slide-caption trigger-item-link-secondary">
-                              <div className="slide-title">
-                                <span>Work Showcase</span>
-                              </div>
-                              <div className="slide-date">
-                                <span>2024</span>
-                              </div>
-                              <div className="slide-cat">
-                                <span>Templates</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="clapat-item not-expanded">
-                          <div
-                            className="slide-inner trigger-item"
-                        
-                          >
-                            <div className="img-mask pixels-cover">
-                              <Link
-                                className="slide-link"
-                                data-type="page-transition"
-                                href="/project"
-                              ></Link>
-                              <div className="section-image trigger-item-link">
-                                <Image
-                                  src="/images/03hero.png"
-                                  className="item-image grid__item-img"
-                                  alt="03hero"
-                                  width={500}
-                                  height={500}
-                                />
-                              </div>
-                              <Image
-                                src="/images/03hero.png"
-                                className="grid__item-img grid__item-img--large"
-                                alt="hero-03"
-                                width={500}
-                                height={500}
-                              />
-                            </div>
-                            <div className="slide-caption trigger-item-link-secondary">
-                              <div className="slide-title">
-                                <span>B2B</span>
-                              </div>
-                              <div className="slide-date">
-                                <span>2024</span>
-                              </div>
-                              <div className="slide-cat">
-                                <span>The AI For B2B Growth</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                      <div
+                      {/* <div
                         className="content-row full row_padding_left row_padding_right light-section fadeout-element pt-10"
                         data-bgcolor="#ebebeb"
                       >
@@ -265,22 +138,15 @@ export default function Home() {
                             )
                           )}
                         </h2>
-                      </div>
+                      </div> */}
 
-                      <div
+                      {/* <div
                         className="content-row light-section flex items-center  md:flex-row flex-col aboutsec"
                         data-bgcolor="#ebebeb"
                       > 
-                        {/* <hr /> */}
 
                         <div className="one_half">
-                        {/* <Image
-                        className="rightImage"
-                        src={bannerDiv}
-                        alt="shape"
-                        width={500}
-                        height={300}
-                      /> */}
+   
                         </div>
 
                         <div className="one_half last">
@@ -308,7 +174,7 @@ export default function Home() {
                             </Link>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
 
                       <PainSection />
 
