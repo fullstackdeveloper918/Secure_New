@@ -99,10 +99,10 @@ export default function Home() {
           {/* <AnimationHeader /> */}
           <div id="content-scroll">
             <div id="main">
-              {/* <HeroSection data={data?.featured_section_heading} /> */}
-              <HeroBannerAi />
+              <HeroSection data={data?.featured_section_heading} />
+              {/* <HeroBannerAi /> */}
 
-              {/* <BrandOne /> */}
+              <BrandOne />
 
               <div id="main-content">
                 <div id="main-page-content">
